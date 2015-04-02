@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://services.api.appengine.foi.org.hr/" xmlns:tns="http://services.api.appengine.foi.org.hr/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="createDataModelOntology" type="tns:createDataModelOntology"/>
+
+  <xs:element name="createDataModelOntologyResponse" type="tns:createDataModelOntologyResponse"/>
+
+  <xs:element name="createEntitiesFromDataOntology" type="tns:createEntitiesFromDataOntology"/>
+
+  <xs:element name="createEntitiesFromDataOntologyResponse" type="tns:createEntitiesFromDataOntologyResponse"/>
+
+  <xs:element name="delete" type="tns:delete"/>
+
+  <xs:element name="deleteKeyName" type="tns:deleteKeyName"/>
+
+  <xs:element name="deleteKeyNameResponse" type="tns:deleteKeyNameResponse"/>
+
+  <xs:element name="deleteResponse" type="tns:deleteResponse"/>
+
+  <xs:element name="get" type="tns:get"/>
+
+  <xs:element name="getCapabilityStatus" type="tns:getCapabilityStatus"/>
+
+  <xs:element name="getCapabilityStatusResponse" type="tns:getCapabilityStatusResponse"/>
+
+  <xs:element name="getDataTypesInCurrentData" type="tns:getDataTypesInCurrentData"/>
+
+  <xs:element name="getDataTypesInCurrentDataResponse" type="tns:getDataTypesInCurrentDataResponse"/>
+
+  <xs:element name="getEntitiesOfKind" type="tns:getEntitiesOfKind"/>
+
+  <xs:element name="getEntitiesOfKindResponse" type="tns:getEntitiesOfKindResponse"/>
+
+  <xs:element name="getResponse" type="tns:getResponse"/>
+
+  <xs:element name="put" type="tns:put"/>
+
+  <xs:element name="putResponse" type="tns:putResponse"/>
+
+  <xs:element name="query" type="tns:query"/>
+
+  <xs:element name="queryResponse" type="tns:queryResponse"/>
+
+  <xs:element name="retrieve" type="tns:retrieve"/>
+
+  <xs:element name="retrieveResponse" type="tns:retrieveResponse"/>
+
+  <xs:element name="testReturnOfList" type="tns:testReturnOfList"/>
+
+  <xs:element name="testReturnOfListResponse" type="tns:testReturnOfListResponse"/>
+
+  <xs:complexType name="put">
+    <xs:sequence>
+      <xs:element name="entity" type="tns:googleEntity" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="googleEntity">
+    <xs:sequence>
+      <xs:element name="googleEntityKey" type="tns:googleKey" minOccurs="0"/>
+      <xs:element name="googleEntityKind" type="xs:string" minOccurs="0"/>
+      <xs:element name="googleEntityProperties" type="tns:googleProperty" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="googleKey">
+    <xs:sequence>
+      <xs:element name="googleKeyId" type="xs:long"/>
+      <xs:element name="googleKeyKind" type="xs:string" minOccurs="0"/>
+      <xs:element name="googleKeyName" type="xs:string" minOccurs="0"/>
+      <xs:element name="googleKeyNamespace" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="googleProperty">
+    <xs:sequence>
+      <xs:element name="googleProperyName" type="xs:string" minOccurs="0"/>
+      <xs:element name="googleProperyValue" type="xs:anyType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="putResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deleteKeyName">
+    <xs:sequence>
+      <xs:element name="keyName" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deleteKeyNameResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="testReturnOfList">
+    <xs:sequence>
+      <xs:element name="entityKind" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="testReturnOfListResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getCapabilityStatus">
+    <xs:sequence>
+      <xs:element name="capability" type="tns:capability" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="capability">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getCapabilityStatusResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getDataTypesInCurrentData">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getDataTypesInCurrentDataResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="retrieve">
+    <xs:sequence>
+      <xs:element name="entity" type="tns:googleKey" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="retrieveResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="query">
+    <xs:sequence>
+      <xs:element name="GQLquery" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="queryResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createEntitiesFromDataOntology">
+    <xs:sequence>
+      <xs:element name="pathToOntology" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createEntitiesFromDataOntologyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="get">
+    <xs:sequence>
+      <xs:element name="keyName" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="delete">
+    <xs:sequence>
+      <xs:element name="entity" type="tns:googleKey" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deleteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createDataModelOntology">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="createDataModelOntologyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getEntitiesOfKind">
+    <xs:sequence>
+      <xs:element name="entityKind" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getEntitiesOfKindResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

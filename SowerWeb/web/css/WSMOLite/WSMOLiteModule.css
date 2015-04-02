@@ -1,0 +1,158 @@
+.wsmolite-home-button-icon {
+	background: url(../../images/WSMOLite/home-button-icon.png) no-repeat center left !important;
+}
+
+.wsmolite-dashboard-overview-button .mb-sublayer-2 {
+	background-image:url(../../images/WSMOLite/dashboard-overview-button-front.png) !important;
+}
+
+.icon-tree-joint-c {
+	background-image:url(../../icons/treejc.gif);
+}
+.icon-tree-joint-o {
+	background-image:url(../../icons/treejo.gif);
+}
+.icon-message {
+	background-image:url(../../icons/message.gif);
+}
+.icon-types {
+	background-image:url(../../icons/types.gif);
+}
+.icon-tag {
+	background-image:url(../../icons/tag.gif);
+}
+.icon-txt {
+	background-image:url(../../icons/txticon.gif);
+}
+.icon-part {
+	background-image:url(../../icons/part.gif);
+}
+.icon-attr {
+	background-image:url(../../icons/attr.gif);
+}
+.icon-element {
+	background-image:url(../../icons/type.gif);
+}
+.icon-ann-attr {
+	background-image:url(../../icons/attrExts.gif);
+}
+.icon-complex-type {
+	background-image:url(../../icons/ctype.gif);
+}
+.icon-fault {
+	background-image:url(../../icons/faulticon.gif);
+}
+.icon-input {
+	background-image:url(../../icons/input.gif);
+}
+.icon-interface {
+	background-image:url(../../icons/interface.gif);
+}
+.icon-ann-lift {
+	background-image:url(../../icons/lift.gif);
+}
+.icon-ann-low {
+	background-image:url(../../icons/low.gif);
+}
+.icon-operation {
+	background-image:url(../../icons/operation.gif);
+}
+.icon-output {
+	background-image:url(../../icons/output.gif);
+}
+.icon-schema {
+	background-image:url(../../icons/schema.gif);
+}
+.icon-import-schema {
+	background-image:url(../../icons/schemagray.gif);
+}
+
+.icon-simple-type {
+	background-image:url(../../icons/stype.gif);
+}
+
+.icon-wsdl {
+	background-image:url(../../icons/wsdl16.gif);
+}
+.icon-binding {
+	background-image:url(../../icons/binding.gif);
+}
+.icon-service {
+	background-image:url(../../icons/webservice.gif);
+}
+
+.icon-wsmo-onto {
+	background-image:url(../../icons/wsmo/ontoicon.gif);
+}
+.icon-wsmo-axiom {
+	background-image:url(../../icons/wsmo/axiom.gif);
+}
+.icon-wsmo-concept {
+	background-image:url(../../icons/wsmo/concept.gif);
+}
+.icon-wsmo-instance {
+	background-image:url(../../icons/wsmo/instance.gif);
+}
+.icon-wsmo-rel {
+	background-image:url(../../icons/wsmo/relation.gif);
+}
+.icon-wsmo-attr {
+	background-image:url(../../icons/wsmo/attribute.gif);
+}
+.icon-wsmo-attr-value {
+	background-image:url(../../icons/wsmo/attributeg.gif);
+}
+
+.icon-wsmo-relation {
+	background-image:url(../../icons/wsmo/relation.gif);
+}
+.icon-wsmo-rel-inst {
+	background-image:url(../../icons/wsmo/relinstance.gif);
+}
+
+.icon-open-ws {
+	background-image:url(../../icons/open_ws.gif);
+}
+.icon-open-onto {
+	background-image:url(../../icons/open_on.gif);
+}
+.icon-open {
+	background-image:url(../../icons/open.gif);
+}
+.icon-new {
+	background-image:url(../../icons/new.gif);
+}
+.icon-save {
+	background-image:url(../../icons/save_edit.gif);
+}
+.icon-close {
+	background-image:url(../../icons/close.gif);
+}
+.icon-copy {
+	background-image:url(../../icons/copy_edit.gif);
+}
+.icon-cut {
+	background-image:url(../../icons/cut_edit.gif);
+}
+.icon-help {
+	background-image:url(../../icons/help_contents.gif);
+}
+.icon-paste {
+	background-image:url(../../icons/paste_edit.gif);
+}
+.icon-undo {
+	background-image:url(../../icons/undo_edit.gif);
+}
+.icon-about {
+	background-image:url(../../icons/about.gif);
+}
+.icon-upload {
+	background-image:url(../../icons/upload.gif);
+}
+.icon-preview {
+	background-image:url(../../icons/preview_icon.gif);
+}
+.icon-export {
+	background-image:url(../../icons/export_wiz.png);
+}
+

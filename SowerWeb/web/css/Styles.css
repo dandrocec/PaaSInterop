@@ -1,0 +1,31 @@
+/* Some temporal style data */ 
+ 
+.dummy-app1-dashboard-icon {
+	background: url(../images/dashboard/soa4all_profile-dashboard-icon.png) no-repeat center !important;
+}
+ 
+.dummy-app2-dashboard-icon {
+	background: url(../images/dashboard/soa4all_composer-dashboard-icon.png) no-repeat center !important;
+}
+ 
+.dummy-app3-dashboard-icon {
+	background: url(../images/dashboard/soa4all_search-dashboard-icon.png) no-repeat center !important;
+}
+ 
+.dummy-app4-dashboard-icon {
+	background: url(../images/dashboard/soa4all_monitor-dashboard-icon.gif) no-repeat center !important;
+}
+
+.dummy-app5-dashboard-icon {
+	background: url(../images/dashboard/soa4all_webservice-dashboard-icon.png) no-repeat center !important;
+}
+
+.logo-name-txt {
+	font-weight: 700 !important;
+	color: #333333 !important;
+	padding: 0 20px 0 0 !important;
+}
+.label-text {
+	font-size: 0.6em !important;
+}
+

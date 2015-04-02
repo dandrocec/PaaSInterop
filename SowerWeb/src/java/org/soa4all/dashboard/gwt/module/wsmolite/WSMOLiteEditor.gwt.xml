@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 1.7.0//EN" "http://google-web-toolkit.googlecode.com/svn/tags/1.7.0/distro-source/core/src/gwt-module.dtd">
+
+<module rename-to="WSMOLiteModule">
+    
+   
+	<inherits name='com.google.gwt.user.User' />
+ 
+	<inherits name="com.extjs.gxt.ui.GXT" />
+	<inherits name="org.soa4all.dashboard.gwt.core.shared.CoreShared" />
+	<inherits name="org.soa4all.dashboard.gwt.core.Core" />
+        <inherits name="com.google.gwt.http.HTTP" />
+    
+
+<!--
+        <inherits name="org.soa4all.dashboard.gwt.module.wsmolite.client.WSMOLiteEditor" />
+         <source path="."></source>
+         
+         -->
+        
+	<stylesheet src="css/WSMOLite/WSMOLiteModule.css" />
+<!--    <stylesheet src="css/xtheme-soa4all-black.css" /> -->
+<!--	<stylesheet src="css/xtheme-silverCherry.css" /> -->
+       <stylesheet src="css/ext-all.css" /> 
+       <stylesheet src="css/xtheme-silverCherry.css" />
+<!--       <stylesheet src="css/xtheme-gray.css" /> -->
+        <stylesheet src="css/form.css" />
+        
+         <entry-point class="org.soa4all.dashboard.gwt.module.wsmolite.client.WSMOLiteEditor"/>
+
+	
+	
+<!--   <servlet path='WsmoLiteDataService.do' class='org.soa4all.dashboard.gwt.server.rpc.WsmoLiteFrontHostedModeServiceDelegate' /> -->
+    <!--
+     <servlet path='/WSMOLiteModule/WsmoLiteDataService.do' class='org.soa4all.dashboard.gwt.module.wsmolite.server.WsmoLiteDataServiceImpl' />
+    <entry-point class='org.soa4all.dashboard.gwt.module.wsmolite.client.WSMOLiteEditor'/>
+    -->	
+	<!-- 
+	Some comments: I think this appears in the Wiki if it does not please append it because it would be useful for others.
+
+	1. Is better if you use this way of accessing the services because you will have Spring IOC also in hosted mode. I created the 
+		WsmoLiteFrontHostedModeServiceDelegate class for you.
+
+	<servlet path='/WsmoLiteDataService.do' class='org.soa4all.dashboard.gwt.server.rpc.WsmoLiteFrontHostedModeServiceDelegate' />
+
+	2.	To make your life easier then refractor DataServiceImpl to WsmoLiteDataServiceImpl (naturally the interfaces also) because this relies
+		a bit in some name convention only for the hosted mode.
+	
+	3.	Also you could construct the client side service reference in this simpler way:
+			((WsmoLiteDataServiceAsync) getRemoteServiceHelper().setupRemoteService((ServiceDefTarget) GWT.create(WsmoLiteDataService.class)));
+	
+	<manuel.gallego@tieglobal.com>
+	-->
+	
+</module>

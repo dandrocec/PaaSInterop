@@ -1,0 +1,52 @@
+/** Add css rules here for your application. */
+	/** Example rules used by the template application (remove for your app) */
+.pc-template-btn {
+	display: block;
+	font-size: 16pt
+}
+
+#pc-template-img {
+	margin-top: 20px;
+}
+
+.dashboard-home-button-icon {
+	background: url(../images/dashboard/home-button-icon-dashboard.png) no-repeat center left !important;
+}
+
+.dashboard-user-status-icon {
+/*
+		background: url(../images/icons/extra/soa4all_16x16__12.gif) no-repeat center left !important;
+*/		
+		background: url(../images/icons/test/user.png) no-repeat center left !important;
+}
+
+.dashboard-user-world-icon {
+/*
+		background: url(../images/icons/extra/soa4all_16x16__06.gif) no-repeat center left !important;
+*/
+		background: url(../images/icons/test/world.png) no-repeat center left !important;
+		}
+
+/*
+.dashboard-home-button-close {
+	background-image: url(../images/soa4all-black/shared/clear.gif);
+}
+
+.dashboard-home-button-close .x-btn-left {
+	background-image: url(../images/soa4all-black/shared/clear.gif);
+}
+
+.dashboard-home-button-close .x-btn-right {
+	background-image: url(../images/soa4all-black/shared/clear.gif);
+}
+
+.dashboard-home-button-close .x-btn-center {
+	background-image: url(../images/soa4all-black/shared/clear.gif);
+}
+
+.dashboard-home-button-close .x-btn-text {
+*/
+/*	background-image: url(../images/icons/soa4all_edit-cancel-icon.png); */
+.dashboard-home-button-close {
+	background: url(../images/icons/soa4all_edit-cancel-icon.png) no-repeat center right !important;
+}

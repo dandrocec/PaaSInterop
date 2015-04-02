@@ -1,0 +1,28 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>WSMO-Lite Editor</display-name>	
+	
+	<welcome-file-list>
+		<welcome-file>WSMOLiteModule.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-class>org.soa4all.dashboard.gwt.module.wsmolite.server.WsmoLiteDataServiceImpl</servlet-class>
+		<servlet-name>WsmoLiteDataService</servlet-name>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>WsmoLiteDataService</servlet-name>
+	    <url-pattern>/WSMOLiteModule/WsmoLiteDataService.do</url-pattern>
+	 </servlet-mapping>
+
+	<servlet>
+		<servlet-name>FileUploaderServlet</servlet-name>
+		<servlet-class>org.soa4all.dashboard.gwt.module.wsmolite.server.FileUploaderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FileUploaderServlet</servlet-name>
+		<url-pattern>/WSMOLiteModule/fileupload</url-pattern>
+	</servlet-mapping>
+</web-app>

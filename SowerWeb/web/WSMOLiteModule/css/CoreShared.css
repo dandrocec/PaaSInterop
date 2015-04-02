@@ -1,0 +1,266 @@
+@CHARSET "ISO-8859-1";
+/*
+	CoreShared CSS
+	@author Manuel J. Gallego <manuel.gallego@tieglobal.com>
+*/ 
+/* Components */
+.mb-sublayer {
+	width: 100%;
+	height: 100%;
+}
+
+.canvas-pointer-default {
+	cursor: default;
+}
+
+.canvas-pointer-select {
+	cursor: crosshair;
+}
+
+.canvas-pointer-drag {
+	cursor: move;
+}
+
+.popup {
+  background-color: gray;
+  border-color: gray gray gray gray;
+  border-width: 1px 3px 3px 1px;
+  border-style: solid solid solid solid;
+}
+ 
+.popup-item {
+  font-weight: normal;
+  font-size: 80%;
+}
+
+/* Common dashboard button */
+.soa4all-dashboard-button-default .mb-sublayer-1 {
+	background: url(../images/dashboard/soa4all_dashboard_bg.png) no-repeat
+		center left !important;
+}
+
+.soa4all-dashboard-button-default-over .mb-sublayer-1 {
+	background: url(../images/dashboard/soa4all_dashboard_bg_over.png)
+		no-repeat center left !important;
+}
+
+.soa4all-dashboard-button-default .mb-sublayer-2 {
+	background-attachment: scroll !important;
+	background-color: transparent !important;
+	background-image: url(../images/dashboard/soa4all_dashboard_default.png)
+		!important;
+	background-position: 45px 35px;
+	background-repeat: no-repeat !important;
+}
+
+/* icons */
+.help-contents-icon {
+	background: url(../images/icons/soa4all_help-contents.gif) no-repeat
+		center !important;
+}
+
+.document-open-icon {
+	background: url(../images/icons/soa4all_document-open.gif) no-repeat
+		center !important;
+}
+
+.document-close-icon {
+	background: url(../images/icons/soa4all_document-close.gif) no-repeat
+		center !important;
+}
+
+.document-save-icon {
+	background: url(../images/icons/soa4all_document-save.gif) no-repeat
+		center !important;
+}
+
+
+.about-icon {
+	background: url(../images/icons/soa4all_about.gif) no-repeat
+		center !important;
+}
+
+.edit-undo-icon {
+	background: url(../images/icons/soa4all_edit-undo-icon.png) no-repeat
+		center !important;
+}
+
+.edit-redo-icon {
+	background: url(../images/icons/soa4all_edit-redo-icon.png) no-repeat
+		center !important;
+}
+
+.edit-cut-icon {
+	background: url(../images/icons/soa4all_edit-cut-icon.png) no-repeat
+		center !important;
+}
+
+.edit-copy-icon {
+	background: url(../images/icons/soa4all_edit-copy-icon.gif) no-repeat
+		center !important;
+}
+
+.edit-paste-icon {
+	background: url(../images/icons/soa4all_edit-paste-icon.gif) no-repeat
+		center !important;
+}
+
+.edit-delete-icon {
+	background: url(../images/icons/soa4all_edit-delete-icon.gif) no-repeat
+		center !important;
+}
+
+.profile-icon {
+	background: url(../images/icons/soa4all_x-profile-icon.png) no-repeat
+		center left !important;
+}
+
+.back-icon {
+	background: url(../images/icons/soa4all_back-icon.png) no-repeat center
+		!important;
+}
+
+.favorites-icon {
+	background: url(../images/icons/soa4all_favorites-icon.png) no-repeat
+		center left !important;
+}
+
+.forward-icon {
+	background: url(../images/icons/soa4all_forward-icon.png) no-repeat
+		center !important;
+}
+
+.search-icon {
+	background: url(../images/icons/soa4all_search-icon.png) no-repeat
+		center left !important;
+}
+
+.user-status-icon {
+	background: url(../images/icons/soa4all_user-status-icon.png) no-repeat
+		center left !important;
+}
+
+.view-list-icon {
+	background: url(../images/icons/soa4all_view-list-icon.png) no-repeat
+		center !important;
+}
+
+.view-grid-icon {
+	background: url(../images/icons/soa4all_view-grid-icon.png) no-repeat
+		center !important;
+}
+
+.settings-icon {
+	background: url(../images/icons/soa4all_settings-icon.png) no-repeat
+		center !important;
+}
+
+.zoom-in-icon {
+	background: url(../images/icons/soa4all_zoom-in-icon.png) no-repeat
+		center !important;
+}
+
+.zoom-one-icon {
+	background: url(../images/icons/soa4all_zoom-one-icon.png) no-repeat
+		center !important;
+}
+
+.zoom-out-icon {
+	background: url(../images/icons/soa4all_zoom-out-icon.png) no-repeat
+		center !important;
+}
+
+.stop-icon {
+	background: url(../images/icons/soa4all_stop-icon.png) no-repeat center
+		!important;
+}
+
+.comment-icon {
+	background: url(../images/icons/soa4all_comment-icon.png) no-repeat
+		left !important;
+}
+.composer-selection-process-icon {
+	background: url(../images/icons/soa4all_process-icon.gif) no-repeat
+		left !important;
+}
+.start-process-icon {
+	background: url(../images/icons/soa4all_start-icon.gif) no-repeat
+		center left !important;
+}
+.stop-process-icon {
+	background: url(../images/icons/soa4all_stop-icon.gif) no-repeat
+		center left !important;
+}
+
+
+.composer-selection-exclusive-gateway-split-icon {
+	background: url(../images/icons/soa4all_gateway-exclusive-split-icon.gif) no-repeat
+		left !important;
+}
+
+.composer-selection-exclusive-gateway-merge-icon {
+	background: url(../images/icons/soa4all_gateway-exclusive-merge-icon.gif) no-repeat
+		left !important;
+}
+
+.composer-selection-parallel-gateway-split-icon {
+	background: url(../images/icons/soa4all_gateway-parallel-split-icon.gif) no-repeat
+		left !important;
+}
+
+.composer-selection-parallel-gateway-merge-icon {
+	background: url(../images/icons/soa4all_gateway-parallel-merge-icon.gif) no-repeat
+		left !important;
+}
+
+.composer-selection-execute-button-icon {
+	background: url(../images/icons/soa4all_execute-button-icon.png) no-repeat
+		left !important;
+}
+
+.composer-selection-validate-button-icon {
+	background: url(../images/icons/soa4all_validate-button-icon.png) no-repeat
+		left !important;
+}
+
+
+/******* Application Icons *******/
+.x-editor-icon {
+	background: url(../images/icons/soa4all_x-editor-icon.png) no-repeat
+		center left !important;
+}
+
+.x-editor-app-icon {
+	background: url(../images/icons/soa4all_x-editor-app-icon.png) no-repeat
+		center left !important;
+}
+
+.x-monitor-icon {
+	background: url(../images/icons/soa4all_x-monitor-icon.png) no-repeat
+		center left !important;
+}
+
+.x-monitor-app-icon {
+	background: url(../images/icons/soa4all_x-monitor-app-icon.png)
+		no-repeat center left !important;
+}
+
+.x-profile-icon {
+	background: url(../images/icons/soa4all_x-profile-icon.png) no-repeat
+		center left !important;
+}
+
+.x-profile-app-icon {
+	background: url(../images/icons/soa4all_x-profile-app-icon.png)
+		no-repeat center left !important;
+}
+
+.x-search-icon {
+	background: url(../images/icons/soa4all_x-search-icon.png) no-repeat
+		center left !important;
+}
+
+.x-search-app-icon {
+	background: url(../images/icons/soa4all_x-search-app-icon.png) no-repeat
+		center !important;
+}

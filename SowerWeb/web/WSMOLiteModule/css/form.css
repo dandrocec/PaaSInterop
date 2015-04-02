@@ -1,0 +1,101 @@
+.x-combo-list {
+  background-color: white;
+}
+
+.ext-gecko .x-form-file {
+  height: inherit !important;
+}
+
+.x-form-check {
+  background: none !important
+}
+
+.x-form-radio {
+  background: none !important
+}
+
+.x-form-label {
+  padding: 2px 3px 3px 0px;
+  font-size: 12px;
+}
+
+.x-form-label-top .x-form-item {
+  padding-bottom: 0px;
+  margin-bottom: 2px;
+}
+
+.ext-safari .x-form-text {
+  height: 22px; /* safari always same size */
+  padding: 0 3px; /* remove extra top/bottom padding */
+}
+
+.ext-safari .x-small-editor .x-form-text {
+  height: 20px;
+}
+
+.x-form-group .x-form-check-wrap {
+  float: left;
+  padding-right: 2px;
+}
+
+.x-form-group .x-form-check-wrap .x-form-group-label {
+  float: left;
+}
+
+.x-form-group .x-form-radio-wrap {
+  float: left;
+  padding-right: 2px;
+}
+
+.x-form-group-label,.x-form-cb-label {
+  font: normal 12px tahoma, arial, helvetica, sans-serif;
+  padding-right: 10px;
+}
+
+.x-form-list {
+  background: #FFFFFF url(../images/default/form/text-bg.gif) repeat-x scroll 0 0;
+  border: 1px solid #B5B8C8;
+}
+
+/*
+* FileUploadField component styles
+*/
+.x-form-file-wrap {
+  position: relative;
+  height: 22px;
+}
+
+.x-form-file-wrap .x-form-file {
+  position: absolute;
+  right: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity :       0);
+  opacity: 0;
+  z-index: 2;
+  height: 22px;
+}
+
+.x-form-file-wrap .x-form-file-btn {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.x-form-file-wrap .x-form-file-text {
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  color: #777;
+}
+
+.x-form-invalid-icon {
+  background-position: 0 0 !important;
+}
+
+.ext-ie .x-grid-panel .x-small-editor .x-form-text {
+  top: 0 !important;
+}
+
+.x-form-item label {
+  padding: 3px 0px 3px 0px !important;
+}

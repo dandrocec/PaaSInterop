@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:description
+    targetNamespace="http://www.w3.org/2002/ws/sawsdl/spec/wsdl/order#"
+    xmlns="http://www.w3.org/2002/ws/sawsdl/spec/wsdl/order#"
+    xmlns:sawsdl="http://www.w3.org/ns/sawsdl"
+    xmlns:wsdl="http://www.w3.org/ns/wsdl" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <wsdl:types>
+        <xs:schema elementFormDefault="qualified" targetNamespace="http://www.w3.org/2002/ws/sawsdl/spec/wsdl/order#">
+            <xs:element name="OrderRequest"
+                sawsdl:liftingSchemaMapping="http://www.example-one.org/Request2RDFOnt.xml"
+                sawsdl:loweringSchemaMapping="http://www.w3.org/2002/ws/sawsdl/spec/mapping/RDFOnt2Request.xml" sawsdl:modelReference="http://www.w3.org/2002/ws/sawsdl/spec/ontology/purchaseorder#OrderRequest http://www.example-one.org#elementRef">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="customerNo" type="xs:integer"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="1"
+                            name="orderItem" type="item"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:complexType name="item" sawsdl:modelReference="http://www.example-one.org#complexTypeRef">
+                <xs:all>
+                    <xs:element name="UPC" type="xs:string"/>
+                </xs:all>
+                <xs:attribute name="quantity"
+                    sawsdl:modelReference="http://www.example-one.org#attrRef" type="xs:integer"/>
+            </xs:complexType>
+            <xs:element name="OrderResponse" type="confirmation"/>
+            <xs:simpleType name="confirmation" sawsdl:modelReference="http://www.w3.org/2002/ws/sawsdl/spec/ontology/purchaseorder#OrderConfirmation http://www.example-one.org#simpleTypeRef">
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="Confirmed"/>
+                    <xs:enumeration value="Pending"/>
+                    <xs:enumeration value="Rejected"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:interface name="Order" sawsdl:modelReference="http://example.org/categorization/products/electronics http://www.example-one.org#orderRef">
+        <wsdl:operation name="order"
+            pattern="http://www.w3.org/ns/wsdl/in-out" sawsdl:modelReference="http://www.w3.org/2002/ws/sawsdl/spec/ontology/purchaseorder#RequestPurchaseOrder http://www.example-one.org#operationRef">
+            <wsdl:input element="OrderRequest"/>
+            <wsdl:output element="OrderResponse"/>
+        </wsdl:operation>
+        <wsdl:fault name="orderFault" sawsdl:modelReference="http://www.example-one.org#faultRef"/>
+    </wsdl:interface>
+</wsdl:description>
