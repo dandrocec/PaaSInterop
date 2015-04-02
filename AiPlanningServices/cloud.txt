@@ -1,0 +1,11 @@
+5
+createdatamodelontologyoperation
+hasapioperation
+havedataontology
+createdataelementsfromontologyoperation
+datamigrationsuccessfulto
+1
+migratedata
+2
+!createdatamodelontology
+!createdataelementsfromontology
