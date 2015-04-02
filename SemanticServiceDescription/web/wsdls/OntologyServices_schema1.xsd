@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://services.ontology.foi.org.hr/" xmlns:tns="http://services.ontology.foi.org.hr/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="readOntology" type="tns:readOntology"/>
+
+  <xs:element name="readOntologyResponse" type="tns:readOntologyResponse"/>
+
+  <xs:complexType name="readOntology">
+    <xs:sequence>
+      <xs:element name="pathToOntology" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="readOntologyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

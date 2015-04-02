@@ -1,0 +1,144 @@
+WSC: Creating a new connection to https://login.salesforce.com/services/Soap/u/30.0 Proxy = DIRECT username null
+------------ Request start   ----------
+<?xml version="1.0" encoding="UTF-8"?><env:Envelope
+   xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <env:Body>
+  <m:login xmlns:m="urn:partner.soap.sforce.com" xmlns:sobj="urn:sobject.partner.soap.sforce.com">
+   <m:username>darkoandr@yahoo.com</m:username>
+   <m:password>VolimSamoMaju30RUK26kBVFYCkd52LfRj5OOHP</m:password>
+  </m:login>
+ </env:Body>
+</env:Envelope>
+------------ Request end   ----------
+null=[HTTP/1.1 500 Server Error]
+Date=[Fri, 28 Mar 2014 12:30:00 GMT]
+Content-Length=[671]
+Content-Type=[text/xml;charset=UTF-8]
+------------ Response start ----------
+  <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sf="urn:fault.partner.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <soapenv:Body>
+        <soapenv:Fault>
+          <faultcode>sf:UNSUPPORTED_API_VERSION</faultcode>
+          <faultstring>UNSUPPORTED_API_VERSION: Invalid Api version specified on URL</faultstring>
+          <detail>
+            <sf:UnexpectedErrorFault xsi:type="sf:UnexpectedErrorFault">
+              <sf:exceptionCode>UNSUPPORTED_API_VERSION</sf:exceptionCode>
+              <sf:exceptionMessage>Invalid Api version specified on URL</sf:exceptionMessage>
+          </sf:UnexpectedErrorFault>
+        </detail>
+      </soapenv:Fault>
+    </soapenv:Body>
+  </soapenv:Envelope>
+------------ Response end   ----------
+WSC: Creating a new connection to https://login.salesforce.com/services/Soap/u/29.0 Proxy = DIRECT username null
+------------ Request start   ----------
+<?xml version="1.0" encoding="UTF-8"?><env:Envelope
+   xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <env:Body>
+  <m:login xmlns:m="urn:partner.soap.sforce.com" xmlns:sobj="urn:sobject.partner.soap.sforce.com">
+   <m:username>darkoandr@yahoo.com</m:username>
+   <m:password>VolimSamoMaju30RUK26kBVFYCkd52LfRj5OOHP</m:password>
+  </m:login>
+ </env:Body>
+</env:Envelope>
+------------ Request end   ----------
+null=[HTTP/1.1 200 OK]
+Date=[Fri, 28 Mar 2014 12:38:47 GMT]
+Content-Length=[772]
+Content-Encoding=[gzip]
+Content-Type=[text/xml;charset=UTF-8]
+------------ Response start ----------
+  <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn:partner.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <soapenv:Body>
+        <loginResponse>
+          <result>
+            <metadataServerUrl>https://na11.salesforce.com/services/Soap/m/29.0/00DA0000000ZdWQ</metadataServerUrl>
+            <passwordExpired>false</passwordExpired>
+            <sandbox>false</sandbox>
+            <serverUrl>https://na11.salesforce.com/services/Soap/u/29.0/00DA0000000ZdWQ</serverUrl>
+            <sessionId>00DA0000000ZdWQ!AQYAQD.Fm5OcxUhEBmsof7Ro2z_nBMzKPdUOyWphIAQt0eDpcq7InO7DikwAOZjIA6QdEUnoiup6ULQXgQD5LdwLJOmQlacg</sessionId>
+            <userId>005A0000000p3ZeIAI</userId>
+            <userInfo>
+              <accessibilityMode>false</accessibilityMode>
+              <currencySymbol>$</currencySymbol>
+              <orgAttachmentFileSizeLimit>5242880</orgAttachmentFileSizeLimit>
+              <orgDefaultCurrencyIsoCode>USD</orgDefaultCurrencyIsoCode>
+              <orgDisallowHtmlAttachments>false</orgDisallowHtmlAttachments>
+              <orgHasPersonAccounts>false</orgHasPersonAccounts>
+              <organizationId>00DA0000000ZdWQMA0</organizationId>
+              <organizationMultiCurrency>false</organizationMultiCurrency>
+              <organizationName>FOI</organizationName>
+              <profileId>00eA0000000ssupIAA</profileId>
+              <roleId xsi:nil="true"/>
+                <sessionSecondsValid>7200</sessionSecondsValid>
+                <userDefaultCurrencyIsoCode xsi:nil="true"/>
+                  <userEmail>darkoandr@yahoo.com</userEmail>
+                  <userFullName>Darko Androcec</userFullName>
+                  <userId>005A0000000p3ZeIAI</userId>
+                  <userLanguage>en_US</userLanguage>
+                  <userLocale>en_US</userLocale>
+                  <userName>darkoandr@yahoo.com</userName>
+                  <userTimeZone>America/Los_Angeles</userTimeZone>
+                  <userType>Standard</userType>
+                  <userUiSkin>Theme3</userUiSkin>
+              </userInfo>
+            </result>
+          </loginResponse>
+        </soapenv:Body>
+      </soapenv:Envelope>
+------------ Response end   ----------
+WSC: Creating a new connection to https://na11.salesforce.com/services/Soap/u/29.0/00DA0000000ZdWQ Proxy = DIRECT username null
+------------ Request start   ----------
+<?xml version="1.0" encoding="UTF-8"?><env:Envelope
+   xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <env:Header>
+  <SessionHeader xmlns="urn:partner.soap.sforce.com">
+   <sessionId>00DA0000000ZdWQ!AQYAQD.Fm5OcxUhEBmsof7Ro2z_nBMzKPdUOyWphIAQt0eDpcq7InO7DikwAOZjIA6QdEUnoiup6ULQXgQD5LdwLJOmQlacg</sessionId>
+  </SessionHeader>
+ </env:Header>
+ <env:Body>
+  <m:create xmlns:m="urn:partner.soap.sforce.com" xmlns:sobj="urn:sobject.partner.soap.sforce.com">
+   <m:sObjects>
+    <sobj:type xsi:type="xsd:string">Contact</sobj:type>
+    <sobj:FirstName xsi:type="xsd:string">Otto</sobj:FirstName>
+    <sobj:LastName xsi:type="xsd:string">Jespersen</sobj:LastName>
+    <sobj:Salutation xsi:type="xsd:string">Professor</sobj:Salutation>
+    <sobj:Phone xsi:type="xsd:string">(999) 555-1234</sobj:Phone>
+    <sobj:Title xsi:type="xsd:string">Philologist</sobj:Title>
+   </m:sObjects>
+  </m:create>
+ </env:Body>
+</env:Envelope>
+------------ Request end   ----------
+null=[HTTP/1.1 200 OK]
+Date=[Fri, 28 Mar 2014 12:38:49 GMT]
+Content-Length=[274]
+Content-Encoding=[gzip]
+Content-Type=[text/xml;charset=UTF-8]
+------------ Response start ----------
+  <?xml version="1.0" encoding="UTF-8"?>
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn:partner.soap.sforce.com">
+      <soapenv:Header>
+        <LimitInfoHeader>
+          <limitInfo>
+            <current>44</current>
+            <limit>5000</limit>
+            <type>API REQUESTS</type>
+        </limitInfo>
+      </LimitInfoHeader>
+    </soapenv:Header>
+      <soapenv:Body>
+        <createResponse>
+          <result>
+            <id>003G000001d6MudIAE</id>
+            <success>true</success>
+        </result>
+      </createResponse>
+    </soapenv:Body>
+  </soapenv:Envelope>
+------------ Response end   ----------

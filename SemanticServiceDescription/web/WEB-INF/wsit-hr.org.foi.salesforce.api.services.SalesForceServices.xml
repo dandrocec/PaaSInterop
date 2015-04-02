@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <definitions 
+ xmlns="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="SalesForceServices" targetNamespace="http://services.api.salesforce.foi.org.hr/" xmlns:tns="http://services.api.salesforce.foi.org.hr/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:fi="http://java.sun.com/xml/ns/wsit/2006/09/policy/fastinfoset/service" xmlns:tcp="http://java.sun.com/xml/ns/wsit/2006/09/policy/soaptcp/service" 
+ >
+    <message name="insertDataIntoCreatedCustomObjects"/>
+    <message name="insertDataIntoCreatedCustomObjectsResponse"/>
+    <message name="createCustomObjectsFromDataOntology"/>
+    <message name="createCustomObjectsFromDataOntologyResponse"/>
+    <message name="Exception"/>
+    <message name="printAsyncResultStatus"/>
+    <message name="printAsyncResultStatusResponse"/>
+    <message name="isUserLoggedIn"/>
+    <message name="isUserLoggedInResponse"/>
+    <message name="login"/>
+    <message name="loginResponse"/>
+    <message name="logout"/>
+    <message name="logoutResponse"/>
+    <message name="describeGlobal"/>
+    <message name="describeGlobalResponse"/>
+    <message name="describeSalesforceObject"/>
+    <message name="describeSalesforceObjectResponse"/>
+    <message name="query"/>
+    <message name="queryResponse"/>
+    <message name="getServerTimeStamp"/>
+    <message name="getServerTimeStampResponse"/>
+    <message name="getUserInfo"/>
+    <message name="getUserInfoResponse"/>
+    <message name="sendEmail"/>
+    <message name="sendEmailResponse"/>
+    <message name="create"/>
+    <message name="createResponse"/>
+    <message name="delete"/>
+    <message name="deleteResponse"/>
+    <message name="createSalesforceDataModelOntology"/>
+    <message name="createSalesforceDataModelOntologyResponse"/>
+    <portType name="SalesForceServices">
+        <operation name="insertDataIntoCreatedCustomObjects">
+            <input message="tns:insertDataIntoCreatedCustomObjects"/>
+            <output message="tns:insertDataIntoCreatedCustomObjectsResponse"/>
+        </operation>
+        <operation name="createCustomObjectsFromDataOntology">
+            <input message="tns:createCustomObjectsFromDataOntology"/>
+            <output message="tns:createCustomObjectsFromDataOntologyResponse"/>
+            <fault name="Exception" message="tns:Exception"/>
+        </operation>
+        <operation name="printAsyncResultStatus">
+            <input message="tns:printAsyncResultStatus"/>
+            <output message="tns:printAsyncResultStatusResponse"/>
+            <fault name="Exception" message="tns:Exception"/>
+        </operation>
+        <operation name="isUserLoggedIn">
+            <input message="tns:isUserLoggedIn"/>
+            <output message="tns:isUserLoggedInResponse"/>
+        </operation>
+        <operation name="login">
+            <input message="tns:login"/>
+            <output message="tns:loginResponse"/>
+        </operation>
+        <operation name="logout">
+            <input message="tns:logout"/>
+            <output message="tns:logoutResponse"/>
+        </operation>
+        <operation name="describeGlobal">
+            <input message="tns:describeGlobal"/>
+            <output message="tns:describeGlobalResponse"/>
+        </operation>
+        <operation name="describeSalesforceObject">
+            <input message="tns:describeSalesforceObject"/>
+            <output message="tns:describeSalesforceObjectResponse"/>
+        </operation>
+        <operation name="query">
+            <input message="tns:query"/>
+            <output message="tns:queryResponse"/>
+        </operation>
+        <operation name="getServerTimeStamp">
+            <input message="tns:getServerTimeStamp"/>
+            <output message="tns:getServerTimeStampResponse"/>
+        </operation>
+        <operation name="getUserInfo">
+            <input message="tns:getUserInfo"/>
+            <output message="tns:getUserInfoResponse"/>
+        </operation>
+        <operation name="sendEmail">
+            <input message="tns:sendEmail"/>
+            <output message="tns:sendEmailResponse"/>
+        </operation>
+        <operation name="create">
+            <input message="tns:create"/>
+            <output message="tns:createResponse"/>
+        </operation>
+        <operation name="delete">
+            <input message="tns:delete"/>
+            <output message="tns:deleteResponse"/>
+        </operation>
+        <operation name="createSalesforceDataModelOntology">
+            <input message="tns:createSalesforceDataModelOntology"/>
+            <output message="tns:createSalesforceDataModelOntologyResponse"/>
+        </operation>
+    </portType>
+    <binding name="SalesForceServicesPortBinding" type="tns:SalesForceServices">
+        <wsp:PolicyReference URI="#SalesForceServicesPortBindingPolicy"/>
+        <operation name="insertDataIntoCreatedCustomObjects">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="createCustomObjectsFromDataOntology">
+            <input/>
+            <output/>
+            <fault name="Exception"/>
+        </operation>
+        <operation name="printAsyncResultStatus">
+            <input/>
+            <output/>
+            <fault name="Exception"/>
+        </operation>
+        <operation name="isUserLoggedIn">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="login">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="logout">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="describeGlobal">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="describeSalesforceObject">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="query">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getServerTimeStamp">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="getUserInfo">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="sendEmail">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="create">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="delete">
+            <input/>
+            <output/>
+        </operation>
+        <operation name="createSalesforceDataModelOntology">
+            <input/>
+            <output/>
+        </operation>
+    </binding>
+    <service name="SalesForceServices">
+        <port name="SalesForceServicesPort" binding="tns:SalesForceServicesPortBinding"/>
+    </service>
+    <wsp:Policy wsu:Id="SalesForceServicesPortBindingPolicy">
+        <wsp:ExactlyOne>
+            <wsp:All/>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+</definitions>

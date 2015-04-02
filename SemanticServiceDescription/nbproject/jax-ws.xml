@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="AzureServices">
+      <implementation-class>hr.org.foi.azure.api.services.AzureServices</implementation-class>
+    </service>
+    <service name="GoogleAppEngineServices">
+      <implementation-class>hr.org.foi.appengine.api.services.GoogleAppEngineServices</implementation-class>
+    </service>
+    <service name="OntologyServices">
+      <implementation-class>hr.org.foi.ontology.services.OntologyServices</implementation-class>
+    </service>
+    <service name="SalesForceServices">
+      <implementation-class>hr.org.foi.salesforce.api.services.SalesForceServices</implementation-class>
+    </service>
+  </services>
+  <clients>
+    <client name="GoogleAppEngineServices">
+      <wsdl-url>http://localhost:8080/SemanticServiceDescription1/GoogleAppEngineServices?wsdl</wsdl-url>
+      <local-wsdl-file>localhost_8080/SemanticServiceDescription1/GoogleAppEngineServices.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">hr.org.foi.appengine.api.services_client</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>wsdlLocation</wsimport-option-name>
+          <wsimport-option-value>http://localhost:8080/SemanticServiceDescription1/GoogleAppEngineServices?wsdl</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>package</wsimport-option-name>
+          <wsimport-option-value>hr.org.foi.appengine.api.services_client</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </client>
+    <client name="AzureServices">
+      <wsdl-url>http://localhost:8080/SemanticServiceDescription1/AzureServices?wsdl</wsdl-url>
+      <local-wsdl-file>localhost_8080/SemanticServiceDescription1/AzureServices.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">hr.org.foi.azure.api.services_client</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>wsdlLocation</wsimport-option-name>
+          <wsimport-option-value>http://localhost:8080/SemanticServiceDescription1/AzureServices?wsdl</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>package</wsimport-option-name>
+          <wsimport-option-value>hr.org.foi.azure.api.services_client</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </client>
+    <client name="SalesForceServices">
+      <wsdl-url>http://localhost:8080/SemanticServiceDescription1/SalesForceServices?wsdl</wsdl-url>
+      <local-wsdl-file>localhost_8080/SemanticServiceDescription1/SalesForceServices.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">hr.org.foi.salesforce.api.services_client</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>wsdlLocation</wsimport-option-name>
+          <wsimport-option-value>http://localhost:8080/SemanticServiceDescription1/SalesForceServices?wsdl</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>package</wsimport-option-name>
+          <wsimport-option-value>hr.org.foi.salesforce.api.services_client</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </client>
+  </clients>
+</jax-ws>
