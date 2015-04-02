@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.2.0-1 (tags/2.2.0u1-7139; 2012-06-02T10:55:19+0000) JAXWS-RI/2.2.6-2 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://services.api.azure.foi.org.hr/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://services.api.azure.foi.org.hr/">
+
+<xs:element name="createAzureDataModelOntology" type="tns:createAzureDataModelOntology"/>
+
+<xs:element name="createAzureDataModelOntologyResponse" type="tns:createAzureDataModelOntologyResponse"/>
+
+<xs:element name="createBlobContainer" type="tns:createBlobContainer"/>
+
+<xs:element name="createBlobContainerResponse" type="tns:createBlobContainerResponse"/>
+
+<xs:element name="createTable" type="tns:createTable"/>
+
+<xs:element name="createTableFromDataOntology" type="tns:createTableFromDataOntology"/>
+
+<xs:element name="createTableFromDataOntologyResponse" type="tns:createTableFromDataOntologyResponse"/>
+
+<xs:element name="createTableResponse" type="tns:createTableResponse"/>
+
+<xs:element name="deleteBlob" type="tns:deleteBlob"/>
+
+<xs:element name="deleteBlobContainer" type="tns:deleteBlobContainer"/>
+
+<xs:element name="deleteBlobContainerResponse" type="tns:deleteBlobContainerResponse"/>
+
+<xs:element name="deleteBlobResponse" type="tns:deleteBlobResponse"/>
+
+<xs:element name="deleteTable" type="tns:deleteTable"/>
+
+<xs:element name="deleteTableResponse" type="tns:deleteTableResponse"/>
+
+<xs:element name="downloadBlobs" type="tns:downloadBlobs"/>
+
+<xs:element name="downloadBlobsResponse" type="tns:downloadBlobsResponse"/>
+
+<xs:element name="executeQuery" type="tns:executeQuery"/>
+
+<xs:element name="executeQueryResponse" type="tns:executeQueryResponse"/>
+
+<xs:element name="findKeys" type="tns:findKeys"/>
+
+<xs:element name="findKeysResponse" type="tns:findKeysResponse"/>
+
+<xs:element name="getDataTypesInCurrentData" type="tns:getDataTypesInCurrentData"/>
+
+<xs:element name="getDataTypesInCurrentDataResponse" type="tns:getDataTypesInCurrentDataResponse"/>
+
+<xs:element name="insertEntityToTable" type="tns:insertEntityToTable"/>
+
+<xs:element name="insertEntityToTableResponse" type="tns:insertEntityToTableResponse"/>
+
+<xs:element name="insertTodoItem" type="tns:insertTodoItem"/>
+
+<xs:element name="insertTodoItemResponse" type="tns:insertTodoItemResponse"/>
+
+<xs:element name="listBlobs" type="tns:listBlobs"/>
+
+<xs:element name="listBlobsResponse" type="tns:listBlobsResponse"/>
+
+<xs:element name="selectQuery" type="tns:selectQuery"/>
+
+<xs:element name="selectQueryResponse" type="tns:selectQueryResponse"/>
+
+<xs:element name="uploadBlob" type="tns:uploadBlob"/>
+
+<xs:element name="uploadBlobResponse" type="tns:uploadBlobResponse"/>
+
+<xs:complexType name="createTable">
+<xs:sequence>
+<xs:element name="tableName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTableResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createAzureDataModelOntology">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="createAzureDataModelOntologyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteBlob">
+<xs:sequence>
+<xs:element name="containerName" type="xs:string" minOccurs="0"/>
+<xs:element name="blobName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteBlobResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataTypesInCurrentData">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getDataTypesInCurrentDataResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTableFromDataOntology">
+<xs:sequence>
+<xs:element name="pathToOntology" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createTableFromDataOntologyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="downloadBlobs">
+<xs:sequence>
+<xs:element name="containerName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="downloadBlobsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectQuery">
+<xs:sequence>
+<xs:element name="query" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectQueryResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteTable">
+<xs:sequence>
+<xs:element name="tableName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteTableResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="executeQuery">
+<xs:sequence>
+<xs:element name="query" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="executeQueryResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertEntityToTable">
+<xs:sequence>
+<xs:element name="tableName" type="xs:string" minOccurs="0"/>
+<xs:element name="entity" type="tns:tableServiceEntity" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tableServiceEntity">
+<xs:sequence>
+<xs:element name="etag" type="xs:string" minOccurs="0"/>
+<xs:element name="partitionKey" type="xs:string" minOccurs="0"/>
+<xs:element name="rowKey" type="xs:string" minOccurs="0"/>
+<xs:element name="timestamp" type="xs:dateTime" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertEntityToTableResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertTodoItem">
+<xs:sequence>
+<xs:element name="itemId" type="xs:string" minOccurs="0"/>
+<xs:element name="item" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertTodoItemResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findKeys">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="findKeysResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listBlobs">
+<xs:sequence>
+<xs:element name="containerName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listBlobsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createBlobContainer">
+<xs:sequence>
+<xs:element name="containerName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createBlobContainerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadBlob">
+<xs:sequence>
+<xs:element name="containerName" type="xs:string" minOccurs="0"/>
+<xs:element name="fileName" type="xs:string" minOccurs="0"/>
+<xs:element name="path" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadBlobResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteBlobContainer">
+<xs:sequence>
+<xs:element name="containerName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteBlobContainerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

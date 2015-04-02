@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1.1-b09 (branches/2.1-6834; 2011-07-16T17:14:48+0000) JAXWS-RI/2.2.5-promoted-b04 JAXWS/2.2. --><xs:schema xmlns:tns="http://services.api.appengine.foi.org.hr/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://services.api.appengine.foi.org.hr/">
+
+<xs:element name="createDataModelOntology" type="tns:createDataModelOntology"/>
+
+<xs:element name="createDataModelOntologyResponse" type="tns:createDataModelOntologyResponse"/>
+
+<xs:element name="delete" type="tns:delete"/>
+
+<xs:element name="deleteResponse" type="tns:deleteResponse"/>
+
+<xs:element name="get" type="tns:get"/>
+
+<xs:element name="getEntitiesOfKind" type="tns:getEntitiesOfKind"/>
+
+<xs:element name="getEntitiesOfKindResponse" type="tns:getEntitiesOfKindResponse"/>
+
+<xs:element name="getResponse" type="tns:getResponse"/>
+
+<xs:element name="put" type="tns:put"/>
+
+<xs:element name="putResponse" type="tns:putResponse"/>
+
+<xs:element name="query" type="tns:query"/>
+
+<xs:element name="queryResponse" type="tns:queryResponse"/>
+
+<xs:element name="testReturnOfList" type="tns:testReturnOfList"/>
+
+<xs:element name="testReturnOfListResponse" type="tns:testReturnOfListResponse"/>
+
+<xs:complexType name="put">
+<xs:sequence>
+<xs:element name="key" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="putResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="testReturnOfList">
+<xs:sequence>
+<xs:element name="entityKind" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="testReturnOfListResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="query">
+<xs:sequence>
+<xs:element name="GQLquery" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="queryResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get">
+<xs:sequence>
+<xs:element name="keyName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="delete">
+<xs:sequence>
+<xs:element name="keyName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createDataModelOntology">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="createDataModelOntologyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEntitiesOfKind">
+<xs:sequence>
+<xs:element name="entityKind" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEntitiesOfKindResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

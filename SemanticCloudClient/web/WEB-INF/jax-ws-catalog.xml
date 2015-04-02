@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/SemanticServiceDescription/GoogleAppEngineServices?wsdl" uri="wsdl/localhost_8080/SemanticServiceDescription/GoogleAppEngineServices.wsdl"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription/GoogleAppEngineServices?xsd=1" uri="wsdl/localhost_8080/SemanticServiceDescription/GoogleAppEngineServices.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription/SalesForceServices?wsdl" uri="wsdl/localhost_8080/SemanticServiceDescription/SalesForceServices.wsdl"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription/SalesForceServices?xsd=1" uri="wsdl/localhost_8080/SemanticServiceDescription/SalesForceServices.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription/AzureServices?wsdl" uri="wsdl/localhost_8080/SemanticServiceDescription/AzureServices.wsdl"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription/AzureServices?xsd=1" uri="wsdl/localhost_8080/SemanticServiceDescription/AzureServices.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription1/GoogleAppEngineServices?wsdl" uri="wsdl/localhost_8080/SemanticServiceDescription1/GoogleAppEngineServices.wsdl"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription1/GoogleAppEngineServices?xsd=1" uri="wsdl/localhost_8080/SemanticServiceDescription1/GoogleAppEngineServices.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription1/SalesForceServices?wsdl" uri="wsdl/localhost_8080/SemanticServiceDescription1/SalesForceServices.wsdl"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription1/SalesForceServices?xsd=1" uri="wsdl/localhost_8080/SemanticServiceDescription1/SalesForceServices.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription1/AzureServices?wsdl" uri="wsdl/localhost_8080/SemanticServiceDescription1/AzureServices.wsdl"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription1/AzureServices?xsd=1" uri="wsdl/localhost_8080/SemanticServiceDescription1/AzureServices.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription1/OntologyServices?wsdl" uri="wsdl/localhost_8080/SemanticServiceDescription1/OntologyServices.wsdl"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription1/OntologyServices?xsd=1" uri="wsdl/localhost_8080/SemanticServiceDescription1/OntologyServices.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription1/AiPlanningServices?wsdl" uri="wsdl/localhost_8080/SemanticServiceDescription1/AiPlanningServices.wsdl"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription1/AiPlanningServices?xsd=1" uri="wsdl/localhost_8080/SemanticServiceDescription1/AiPlanningServices.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/AiPlanningServices/AiPlanningService?wsdl" uri="wsdl/localhost_8080/AiPlanningServices/AiPlanningService.wsdl"/>
+    <system systemId="http://localhost:8080/AiPlanningServices/AiPlanningService?xsd=1" uri="wsdl/localhost_8080/AiPlanningServices/AiPlanningService.xsd_1.xsd"/>
+</catalog>

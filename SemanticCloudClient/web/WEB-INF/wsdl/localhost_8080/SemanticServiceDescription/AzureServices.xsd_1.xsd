@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1.1-b09 (branches/2.1-6834; 2011-07-16T17:14:48+0000) JAXWS-RI/2.2.5-promoted-b04 JAXWS/2.2. --><xs:schema xmlns:tns="http://services.api.azure.foi.org.hr/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://services.api.azure.foi.org.hr/">
+
+<xs:element name="insertTodoItem" type="tns:insertTodoItem"/>
+
+<xs:element name="insertTodoItemResponse" type="tns:insertTodoItemResponse"/>
+
+<xs:element name="selectQuery" type="tns:selectQuery"/>
+
+<xs:element name="selectQueryResponse" type="tns:selectQueryResponse"/>
+
+<xs:complexType name="insertTodoItem">
+<xs:sequence>
+<xs:element name="itemId" type="xs:string" minOccurs="0"/>
+<xs:element name="item" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertTodoItemResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectQuery">
+<xs:sequence>
+<xs:element name="query" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="selectQueryResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1.1-b09 (branches/2.1-6834; 2011-07-16T17:14:48+0000) JAXWS-RI/2.2.5-promoted-b04 JAXWS/2.2. --><xs:schema xmlns:tns="http://services.api.salesforce.foi.org.hr/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://services.api.salesforce.foi.org.hr/">
+
+<xs:element name="create" type="tns:create"/>
+
+<xs:element name="createResponse" type="tns:createResponse"/>
+
+<xs:element name="createSalesforceDataModelOntology" type="tns:createSalesforceDataModelOntology"/>
+
+<xs:element name="createSalesforceDataModelOntologyResponse" type="tns:createSalesforceDataModelOntologyResponse"/>
+
+<xs:element name="delete" type="tns:delete"/>
+
+<xs:element name="deleteResponse" type="tns:deleteResponse"/>
+
+<xs:element name="describeGlobal" type="tns:describeGlobal"/>
+
+<xs:element name="describeGlobalResponse" type="tns:describeGlobalResponse"/>
+
+<xs:element name="describeSalesforceObject" type="tns:describeSalesforceObject"/>
+
+<xs:element name="describeSalesforceObjectResponse" type="tns:describeSalesforceObjectResponse"/>
+
+<xs:element name="getServerTimeStamp" type="tns:getServerTimeStamp"/>
+
+<xs:element name="getServerTimeStampResponse" type="tns:getServerTimeStampResponse"/>
+
+<xs:element name="getUserInfo" type="tns:getUserInfo"/>
+
+<xs:element name="getUserInfoResponse" type="tns:getUserInfoResponse"/>
+
+<xs:element name="isUserLoggedIn" type="tns:isUserLoggedIn"/>
+
+<xs:element name="isUserLoggedInResponse" type="tns:isUserLoggedInResponse"/>
+
+<xs:element name="login" type="tns:login"/>
+
+<xs:element name="loginResponse" type="tns:loginResponse"/>
+
+<xs:element name="logout" type="tns:logout"/>
+
+<xs:element name="logoutResponse" type="tns:logoutResponse"/>
+
+<xs:element name="query" type="tns:query"/>
+
+<xs:element name="queryResponse" type="tns:queryResponse"/>
+
+<xs:element name="sendEmail" type="tns:sendEmail"/>
+
+<xs:element name="sendEmailResponse" type="tns:sendEmailResponse"/>
+
+<xs:complexType name="createSalesforceDataModelOntology">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="createSalesforceDataModelOntologyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserInfo">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getUserInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="delete">
+<xs:sequence>
+<xs:element name="accountName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sendEmail">
+<xs:sequence>
+<xs:element name="from" type="xs:string" minOccurs="0"/>
+<xs:element name="to" type="xs:string" minOccurs="0"/>
+<xs:element name="subject" type="xs:string" minOccurs="0"/>
+<xs:element name="text" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sendEmailResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="login">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="create">
+<xs:sequence>
+<xs:element name="accountName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="describeSalesforceObject">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="describeSalesforceObjectResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="logout">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="logoutResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="isUserLoggedIn">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="isUserLoggedInResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getServerTimeStamp">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getServerTimeStampResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="query">
+<xs:sequence>
+<xs:element name="query" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="queryResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="describeGlobal">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="describeGlobalResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

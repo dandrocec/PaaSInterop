@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}:${javac.classpath}"/>
+        </taskdef>
+        <condition property="conf-dir" value="${conf.dir}/" else="">
+            <isset property="conf.dir"/>
+        </condition>
+    </target>
+    <target name="wsimport-client-AzureServices" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/AzureServices"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/AzureServices" destdir="${build.generated.dir}/jax-wsCache/AzureServices" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/AzureServices/wsdl/localhost_8080/SemanticServiceDescription1/AzureServices.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://localhost:8080/SemanticServiceDescription1/AzureServices?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/AzureServices/wsdl/localhost_8080/SemanticServiceDescription1/AzureServices.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/AzureServices"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/AzureServices">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-AzureServices" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/hr/org/foi/azure/api/services"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/AzureServices"/>
+    </target>
+    <target name="wsimport-client-GoogleAppEngineServices" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GoogleAppEngineServices"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GoogleAppEngineServices" destdir="${build.generated.dir}/jax-wsCache/GoogleAppEngineServices" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/GoogleAppEngineServices/wsdl/localhost_8080/SemanticServiceDescription1/GoogleAppEngineServices.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://localhost:8080/SemanticServiceDescription1/GoogleAppEngineServices?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/GoogleAppEngineServices/wsdl/localhost_8080/SemanticServiceDescription1/GoogleAppEngineServices.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GoogleAppEngineServices"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GoogleAppEngineServices">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GoogleAppEngineServices" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/hr/org/foi/appengine/api/services"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/GoogleAppEngineServices"/>
+    </target>
+    <target name="wsimport-client-SalesForceServices" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/SalesForceServices"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/SalesForceServices" destdir="${build.generated.dir}/jax-wsCache/SalesForceServices" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/SalesForceServices/wsdl/localhost_8080/SemanticServiceDescription1/SalesForceServices.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://localhost:8080/SemanticServiceDescription1/SalesForceServices?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/SalesForceServices/wsdl/localhost_8080/SemanticServiceDescription1/SalesForceServices.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/SalesForceServices"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/SalesForceServices">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-SalesForceServices" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/hr/org/foi/salesforce/api/services"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/SalesForceServices"/>
+    </target>
+    <target name="wsimport-client-OntologyServices" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/OntologyServices"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/OntologyServices" destdir="${build.generated.dir}/jax-wsCache/OntologyServices" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/OntologyServices/wsdl/localhost_8080/SemanticServiceDescription1/OntologyServices.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://localhost:8080/SemanticServiceDescription1/OntologyServices?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/OntologyServices/wsdl/localhost_8080/SemanticServiceDescription1/OntologyServices.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/OntologyServices"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/OntologyServices">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-OntologyServices" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/hr/org/foi/ontology/services"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/OntologyServices"/>
+    </target>
+    <target name="wsimport-client-AiPlanningService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/AiPlanningService"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/AiPlanningService" destdir="${build.generated.dir}/jax-wsCache/AiPlanningService" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/AiPlanningService/wsdl/localhost_8080/AiPlanningServices/AiPlanningService.wsdl" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://localhost:8080/AiPlanningServices/AiPlanningService?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/AiPlanningService/wsdl/localhost_8080/AiPlanningServices/AiPlanningService.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/AiPlanningService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/AiPlanningService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-AiPlanningService" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/hr/org/foi/aiplanning/services"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/AiPlanningService"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-AzureServices, wsimport-client-GoogleAppEngineServices, wsimport-client-SalesForceServices, wsimport-client-OntologyServices, wsimport-client-AiPlanningService"/>
+</project>
