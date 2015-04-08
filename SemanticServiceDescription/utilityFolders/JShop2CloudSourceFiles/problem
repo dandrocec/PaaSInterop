@@ -1,0 +1,47 @@
+(defproblem problem cloud 
+(
+(hasApiOperation Azure CreateDataOperation)
+(hasApiOperation Azure DeleteDataOperation)
+(hasApiOperation Azure QueryDataOperation)
+(hasApiOperation Azure CreateDataModelOntologyOperation)
+(hasApiOperation Azure CreateDataElementsFromOntologyOperation)
+(hasApiOperation GoogleAppEngine CreateDataOperation)
+(hasApiOperation GoogleAppEngine DeleteDataOperation)
+(hasApiOperation GoogleAppEngine QueryDataOperation)
+(hasApiOperation GoogleAppEngine RetrieveDataOperation)
+(hasApiOperation GoogleAppEngine CreateDataElementsFromOntologyOperation)
+(hasApiOperation GoogleAppEngine CreateDataModelOntologyOperation)
+(hasApiOperation SalesForce DeleteDataOperation)
+(hasApiOperation SalesForce CreateDataOperation)
+(hasApiOperation SalesForce GetUserInfoOperation)
+(hasApiOperation SalesForce QueryDataOperation)
+(hasApiOperation SalesForce UpdateDataOperation)
+(hasApiOperation SalesForce RetrieveDataOperation)
+(hasApiOperation SalesForce LoginOperation)
+(hasApiOperation SalesForce SendEmailOperation)
+(hasApiOperation SalesForce CreateDataElementsFromOntologyOperation)
+(hasApiOperation SalesForce CreateDataModelOntologyOperation)
+
+(ServiceIOType NoSqlDataObjectType)
+(ServiceIOType NoSqlKeyType)
+(ServiceIOType NoSqlDataObjectType)
+(ServiceIOType UserInfoType)
+(ServiceIOType EmailMessageType)
+
+(operationHasInput GoogleAppEngine CreateDataOperation NoSqlDataObjectType)
+(operationHasInput GoogleAppEngine DeleteDataOperation NoSqlKeyType)
+(operationHasInput GoogleAppEngine RetrieveDataOperation NoSqlKeyType)
+(operationHasInput SalesForce SendEmailOperation EmailMessageType)
+
+(operationHasOutput GoogleAppEngine RetrieveDataOperation NoSqlDataObjectType)
+(operationHasOutput SalesForce GetUserInfoOperation UserInfoType)
+
+(TypeHasLiftingSchema SalesForce UserInfoType userInfo_lifting)
+
+(TypeHasLoweringSchema GoogleAppEngine NoSqlDataObjectType userInfo_lowering_to_userentity)
+(TypeHasLoweringSchema SalesForce EmailMessageType userInfo_lowering_to_email)
+
+ ) 
+
+   ((addUserToAnotherPaaS SalesForce GoogleAppEngine UserEntity))
+)

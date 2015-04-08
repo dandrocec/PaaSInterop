@@ -1,0 +1,2 @@
+identifier,user_disabled,user_createDate,user_createUserEmail,user_timezone,user_forgotPasswordKey,user_email,user_password,user_name,user_modUserEmail,user_role,user_modDate
+2,False,Thu Mar 13 09:32:32 CET 2014,guest,UTC,,admin@test.com,$2a$10$UFyphawdkB8ZuT8LlXqcKO/JLj0reE1wXSdqE.fSiKvcxnKgEBNhC,admin,admin@test.com,ADMIN,Thu Mar 13 09:34:13 CET 2014

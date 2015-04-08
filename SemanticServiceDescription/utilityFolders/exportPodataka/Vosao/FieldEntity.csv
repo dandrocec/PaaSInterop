@@ -1,0 +1,4 @@
+index,modUserEmail,mandatory,name,title,createUserEmail,createDate,formId,width,values,fieldType,key,modDate,height,defaultValue
+0,system@vosao.org,False,name,Name,system@vosao.org,2014-03-13T08:32:50,100010,20,,TEXT,60008,2014-03-13T08:32:50,1,
+1,system@vosao.org,False,email,Email,system@vosao.org,2014-03-13T08:32:50,100010,20,,TEXT,70009,2014-03-13T08:32:50,1,
+2,system@vosao.org,False,message,Message,system@vosao.org,2014-03-13T08:32:50,100010,60,,TEXT,110006,2014-03-13T08:32:50,10,

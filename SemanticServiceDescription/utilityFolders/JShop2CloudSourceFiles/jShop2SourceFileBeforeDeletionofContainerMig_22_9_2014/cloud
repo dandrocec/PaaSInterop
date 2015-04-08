@@ -1,0 +1,127 @@
+
+
+(defdomain cloud (
+
+; BEGIN Define a migration of data among Cloud providers
+
+  (:operator (!checkDataTypeMappings ?from) 
+
+	((forall (?p) (typeInCurrentData ?p) (and (dataTypeMappingExists ?p ?x))))
+	() 
+	((hasAllDataTypeMappings ?from))
+  )
+
+
+  (:operator (!createDataModelOntology ?from) 
+	(hasApiOperation ?from CreateDataModelOntologyOperation) 
+	() 
+	((haveDataOntology ?from))
+  )
+
+  (:operator (!createDataElementsFromOntology ?to) 
+	( (hasApiOperation ?to CreateDataElementsFromOntologyOperation)) 
+	() 
+	((dataMigrationSuccessfulTo ?to))
+  )
+
+
+
+  (:method (migrateData ?from ?to)
+	()
+	((!checkDataTypeMappings ?from)(!createDataModelOntology ?from) (!createDataElementsFromOntology ?to))
+  ) 
+
+; END Define a migration of data among Cloud providers
+
+; BEGIN Define a migration of data containers
+
+ (:operator (!checkMigrateDCServiceDataTypeMappings ?from ?to) 
+
+	((operationHasOutput ?from RetrieveDataOperation ?output) (operationHasInput ?to CreateDataOperation ?input)(isOfType ?x ?input) (isOfType ?y ?output) (hasServiceIOMapping ?y ?x))
+	() 
+	((hasServiceDataTypeMapping ?from ?to))
+  )
+
+ (:operator (!getDataContainer ?from ?containerName) 
+	(hasApiOperation ?from RetrieveDataOperation) 
+	() 
+	((haveChosenDataContainer ?from ?containerName))
+  )
+
+  (:operator (!createDataContainer ?from ?to ?containerName) 
+	( (hasApiOperation ?to CreateDataOperation)) 
+	() 
+	((containerIsMigrated ?from ?to ?containerName))
+  )
+
+
+(:method (migrateDC ?from ?to ?containerName)
+	()
+	((!checkMigrateDCServiceDataTypeMappings ?from ?to)(!getDataContainer ?from ?containerName) ((!createDataContainer ?from ?to ?containerName)))
+  ) 
+
+
+; END Define a migration of data containers
+
+; BEGIN Define adding existing user to another PaaS offer
+
+; it checks whether inputs and outputs, and relevant 
+; lifting/lowering schema exist
+(:operator (!checkAddUserServiceDataTypeMappings ?from ?to) 
+	(
+		(operationHasOutput ?from GetUserInfoOperation ?type1)
+		(operationHasInput ?to CreateDataOperation ?type2)
+		(operationHasInput ?from SendEmailOperation ?type3)
+		(TypeHasLiftingSchema ?from UserInfoType ?lifting) 		(TypeHasLoweringSchema ?to NoSqlDataObjectType ?lowering1) 
+		(TypeHasLoweringSchema ?from EmailMessageType ?lowering2))
+	() 
+	(
+		(TransformationDuringExecution GetUserInfoOperation ?from 		UserInfoType ?lifting
+		)
+
+		(TransformationDuringExecution CreateDataOperation ?to	NoSqlDataObjectType ?lowering1
+		)
+
+		(TransformationDuringExecution SendEmailOperation ?from 	EmailMessageType  ?lowering2
+		)
+
+
+
+)
+ )
+
+(:operator (!login ?from) 
+	(hasApiOperation ?from LoginOperation) 
+	() 
+	((userIsLoggedIn ?from))
+)
+
+(:operator (!getUserInfo ?from) 
+	(hasApiOperation ?from GetUserInfoOperation) 
+	() 
+	((userInfoIsObtained ?from))
+)
+
+(:operator (!createData ?to ?containerName) 
+	(hasApiOperation ?to CreateDataOperation) 
+	() 
+	((datObjectIsCreated ?to))
+)
+
+(:operator (!sendEmail ?from) 
+	(hasApiOperation ?from GetUserInfoOperation) 
+	() 
+	((EmailIsSent ?from))
+)
+
+
+
+(:method (addUserToAnotherPaaS ?from ?to ?containerName)
+	()
+	((!checkAddUserServiceDataTypeMappings ?from ?to)(!login ?from) (!getUserInfo ?from) (!createData ?to ?containerName)(!sendEmail ?from))
+  ) 
+
+; END Define adding existing user to another PaaS offer
+  
+)
+)

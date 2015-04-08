@@ -1,0 +1,3 @@
+"Id","OwnerId","IsDeleted","Name","CreatedDate","CreatedById","LastModifiedDate","LastModifiedById","SystemModstamp","name__c","address__c","phone__c"
+"a0BG000000YWyLyMAL","005A0000000p3ZeIAI","0","A-0001","2012-09-10 13:12:27","005A0000000p3ZeIAI","2012-09-10 13:12:27","005A0000000p3ZeIAI","2012-09-10 13:12:27","Pero Peric","Kalnicka 37","123456"
+"a0BG000000YeoN2MAJ","005A0000000p3ZeIAI","0","A-0002","2012-09-13 10:03:49","005A0000000p3ZeIAI","2012-09-13 10:03:49","005A0000000p3ZeIAI","2012-09-13 10:03:49","Ivan Ivic","Zagreba?ka 22","345678"

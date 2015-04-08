@@ -1,0 +1,2 @@
+password,name,createUserEmail,createDate,disabled,role,key,modDate,timezone,modUserEmail,email
+$2a$10$UFyphawdkB8ZuT8LlXqcKO/JLj0reE1wXSdqE.fSiKvcxnKgEBNhC,admin,guest,2014-03-13T08:32:32,False,ADMIN,2,2014-03-13T08:34:13,UTC,admin@test.com,admin@test.com

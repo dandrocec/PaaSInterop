@@ -1,0 +1,3 @@
+identifier,structuretemplate_name,structuretemplate_headContent,structuretemplate_modUserEmail,structuretemplate_type,structuretemplate_modDate,structuretemplate_title,structuretemplate_structureId,structuretemplate_createUserEmail,structuretemplate_createDate,structuretemplate_content
+120009,article-overview,<Text: >,system@vosao.org,VELOCITY,Thu Mar 13 09:32:50 CET 2014,Article overview,140005,system@vosao.org,Thu Mar 13 09:32:50 CET 2014,<Text: <div class=\"post\">\n  <div class=\"right\">\n    <h2><a href=\"$page.friend...>
+130007,article,<Text: >,system@vosao.org,VELOCITY,Thu Mar 13 09:32:50 CET 2014,Article,140005,system@vosao.org,Thu Mar 13 09:32:50 CET 2014,<Text: <div class=\"post\">\n  <div class=\"right\">\n    <h2><a href=\"$page.friend...>

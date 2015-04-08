@@ -1,0 +1,4 @@
+modUserEmail,permission,createUserEmail,createDate,key,modDate,folderId,groupId
+guest,WRITE,guest,2014-03-13T08:32:33,3,2014-03-13T08:32:33,10002,10001
+system@vosao.org,READ,guest,2014-03-13T08:32:32,60001,2014-03-13T08:32:39,30001,10001
+guest,WRITE,guest,2014-03-13T08:32:33,80001,2014-03-13T08:32:33,70001,10001

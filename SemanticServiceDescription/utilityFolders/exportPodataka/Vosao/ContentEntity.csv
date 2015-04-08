@@ -1,0 +1,485 @@
+languageCode,createUserEmail,createDate,content,parentClass,key,modDate,modUserEmail,parentKey
+en,system@vosao.org,2014-03-13T08:32:59,"<h1>
+	Support</h1>
+<p>
+	This web site template is installed by default to clean Vosao CMS instance. If you find any bugs please create an issue on <a href=""http://code.google.com/p/vosao/issues/list"">project tracking system</a>.</p>
+<p>
+	If you have any questions please ask them on project <a href=""http://groups.google.com/group/vosao-cms-development"">Google Group</a>.</p>
+",org.vosao.entity.PageEntity,11,2014-03-13T08:32:59,system@vosao.org,10014
+en,system@vosao.org,2014-03-13T08:32:54,"<?xml version=""1.0"" encoding=""utf-8""?>
+<content>
+<overview><![CDATA[<p>
+	<span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; ""><strong>Lorem Ipsum</strong></span><span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; "">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>
+]]></overview>
+<content><![CDATA[]]></content>
+</content>",org.vosao.entity.PageEntity,10011,2014-03-13T08:32:54,system@vosao.org,80012
+en,system@vosao.org,2014-03-13T08:32:55,"<?xml version=""1.0"" encoding=""utf-8""?>
+<content>
+<overview><![CDATA[<p>
+	<span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; ""><strong>Lorem Ipsum</strong></span><span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; "">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>
+]]></overview>
+<content><![CDATA[]]></content>
+</content>",org.vosao.entity.PageEntity,10012,2014-03-13T08:32:55,system@vosao.org,80013
+en,system@vosao.org,2014-03-13T08:32:56,"<?xml version=""1.0"" encoding=""utf-8""?>
+<content>
+<overview><![CDATA[<p>
+	<span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; ""><strong>Lorem Ipsum</strong></span><span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; "">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>
+]]></overview>
+<content><![CDATA[]]></content>
+</content>",org.vosao.entity.PageEntity,10013,2014-03-13T08:32:56,system@vosao.org,80014
+en,guest,2014-03-13T08:32:34,"<div id=""login-form"">
+    <form>
+        <h3>Sign in with your site user account</h3>
+        <div>
+            <label>Email</label>
+            <input type=""text"" id=""loginEmail"" />
+        </div>
+        <div>
+            <label>Password</label>
+            <input type=""password"" id=""loginPassword"" />
+        </div>
+        <div id=""login-messages""> </div>
+        <div>
+            <input type=""button"" value=""Login"" onclick=""onLogin()"" />
+        </div>    
+    </form>
+</div>
+
+<div style=""clear:both""> </div>
+
+<script type=""text/javascript"">
+        function onLogin() {
+            var email = $('#loginEmail').val();
+            var password = $('#loginPassword').val();
+            if (email == '') {
+            	Vosao.errorMessage('#login-messages', 'Email is empty!');
+            }
+            else {
+            	Vosao.jsonrpc.loginFrontService.login(function (r, e) {
+                    if (Vosao.serviceFailed(e)) return;
+                    if (r.result == 'success') {
+                        $('#login-messages').html('<span style=""color:green"">Success. Logging in...</span>');
+                        document.location.href = r.message;
+                    }
+                    else {
+                        $('#login-messages').html('<span style=""color:red"">' 
+                                + r.message + '</span>');
+                    }
+                }, email, password);
+            }                
+        }
+</script>
+",org.vosao.entity.PageEntity,30003,2014-03-13T08:32:58,system@vosao.org,20002
+en,system@vosao.org,2014-03-13T08:32:59,"#set ($startYear = 2010)
+#set ($endYear = $date.year)
+#set ($year = $date.year)
+#set ($month = $date.month)
+#set ($yearParam = $request.getParameter(""year""))
+#set ($monthParam = $request.getParameter(""month""))
+#if ($yearParam)
+  #set ($year = $math.toInteger($yearParam))
+#end
+#if ($monthParam)
+  #set ($month = $math.toInteger($monthParam))
+#end
+#set ($yearMonth = $month + 1)
+#set ($cal = $date.getCalendar())
+$cal.set($year, $month, 1)
+
+<h2>Archives $date.format('MMMM yyyy', $cal.time)</h2>
+<ul id=""years"">
+#foreach($y in [$startYear..$endYear])
+<li><a href=""#"" class=""more"">$y</a>
+  <ul>
+    <li><a href=""?year=$y&month=0"">January 01</a></li>
+    <li><a href=""?year=$y&month=1"">February 02</a></li>
+    <li><a href=""?year=$y&month=2"">March 03</a></li>
+    <li><a href=""?year=$y&month=3"">April 04</a></li>
+    <li><a href=""?year=$y&month=4"">May 05</a></li>
+    <li><a href=""?year=$y&month=5"">June 06</a></li>
+    <li><a href=""?year=$y&month=6"">July 07</a></li>
+    <li><a href=""?year=$y&month=7"">August 08</a></li>
+    <li><a href=""?year=$y&month=8"">September 09</a></li>
+    <li><a href=""?year=$y&month=9"">October 10</a></li>
+    <li><a href=""?year=$y&month=10"">November 11</a></li>
+    <li><a href=""?year=$y&month=11"">December 12</a></li>
+  </ul>
+</li>
+#end
+</ul>
+
+<ul class=""archive"">
+	#foreach($p in ${service.findPageChildrenMonth(""/blog"", $year, $yearMonth)})
+	<li>
+		<div class=""post-title"">
+			<a href=""$p.friendlyURL"">$p.title</a></div>
+		<div class=""post-details"">
+			Posted on <a href=""#"">${date.format('MMMM dd, yyyy', $p.publishDate)}</a></div>
+	</li>
+	#end
+</ul>
+",org.vosao.entity.PageEntity,30008,2014-03-13T08:32:59,system@vosao.org,20010
+en,guest,2014-03-13T08:32:33,"<h1>Welcome to Vosao CMS default site!</h1>
+ 
+<p>This is a site root page</p><p><a href=""/cms/index.vm"">CMS Configuration</a></p>
+<p>Admin user : admin@test.com</p>
+<p>Admin password: admin</p>
+
+<p>This is automatically generated root page for your site. You can change it in 
+cms configuration area.</p>
+
+<form id=""searchForm"">
+    <input type=""text"" id=""query""/>
+    <input type=""submit"" value=""Search""/>
+</form>
+
+<p>Good luck!</p>
+<p>Vosao CMS team.</p>
+
+
+<script type=""text/javascript"">
+
+$(function() {
+	$('#searchForm').submit(function(){onSearch(); return false;});
+});
+
+function onSearch() {
+	var query = $('#query').val();
+	if (query) {
+	    location.href = '/search?query=' + query;
+	}
+}
+
+</script>
+",org.vosao.entity.PageEntity,50002,2014-03-13T08:33:00,system@vosao.org,30002
+en,system@vosao.org,2014-03-13T08:32:55,"<?xml version=""1.0"" encoding=""utf-8""?>
+<content>
+<overview><![CDATA[<p>
+	<span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; ""><strong>Lorem Ipsum</strong></span><span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; "">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>
+]]></overview>
+<content><![CDATA[]]></content>
+</content>",org.vosao.entity.PageEntity,60010,2014-03-13T08:32:55,system@vosao.org,50008
+en,system@vosao.org,2014-03-13T08:32:56,"<?xml version=""1.0"" encoding=""utf-8""?>
+<content>
+<overview><![CDATA[<p>
+	<span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; ""><strong>Lorem Ipsum</strong></span><span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; "">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>
+]]></overview>
+<content><![CDATA[]]></content>
+</content>",org.vosao.entity.PageEntity,60011,2014-03-13T08:32:56,system@vosao.org,50009
+en,system@vosao.org,2014-03-13T08:32:57,"<?xml version=""1.0"" encoding=""utf-8""?>
+<content>
+<overview><![CDATA[<p>
+	<span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; ""><strong>Lorem Ipsum</strong></span><span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; "">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>
+]]></overview>
+<content><![CDATA[]]></content>
+</content>",org.vosao.entity.PageEntity,60012,2014-03-13T08:32:57,system@vosao.org,50010
+en,system@vosao.org,2014-03-13T08:32:59,"<h1>
+	About this site</h1>
+<p>
+	This is a Vosao CMS default web site. You will get this template deployed after successfull fresh Vosao CMS installation. You can load default site from administration panel by pressing ""Load default site"" button. Also it's export file is available at <a href=""http://www.vosao.org/templates"">Vosao site</a>.</p>
+<p>
+	${plugin.form.render('feedback')}</p>
+",org.vosao.entity.PageEntity,60013,2014-03-13T08:32:59,system@vosao.org,50011
+en,system@vosao.org,2014-03-13T08:33:00,"## Posts number on page
+#set ($count = 5)
+
+#set ($pageNum = 0)
+#set ($pageParam = $request.getParameter(""page""))
+#if ($pageParam)
+  #set($pageNum = $math.toInteger($pageParam))
+#end
+#set ($start = $pageNum * $count)
+#set ($pages = ${service.findPageChildren(""/blog"", $start, $count)})
+#set ($nextPage = $pageNum + 1)
+#set ($prevPage = $pageNum - 1)
+
+#foreach ($p in $pages)
+  ${service.renderStructureContent($p.friendlyURL, ""article-overview"")}
+#end
+
+<div class=""navigation clear"">
+#if ($pages.size() == $count)
+  <div><a href=""/?page=${nextPage}"">« Older Entries</a></div>
+#end
+#if ($start > 0) 
+  <div><a href=""/?page=${prevPage}"">Newer Entries » </a></div>
+#end
+</div>
+
+",org.vosao.entity.PageEntity,70013,2014-03-13T08:33:00,system@vosao.org,100019
+en,system@vosao.org,2014-03-13T08:32:59,"#set ($tags = $service.tag.getTree(""blog"").children)
+#set ($tagId = $tags.get(0).entity.id)
+#set ($tagStr = $request.getParameter(""tag""))
+#if ($tagStr)
+  #set ($tagId = $math.toInteger($tagStr).longValue())
+#end
+#set ($pages = $service.tag.getPagesById($tagId))
+
+<h2>Tag cloud</h2>
+<div id=""tags"">
+#foreach($tag in $tags)
+  #if ($tag.entity.id == $tagId) 
+  $tag.entity.name
+  #else
+  <a href=""?tag=$tag.entity.id"">$tag.entity.name</a>
+  #end
+#end
+</div>
+
+<ul class=""archive"">
+  #foreach($p in $pages)
+  <li>
+    <div class=""post-title"">
+      <a href=""$p.friendlyURL"">$p.title</a>
+    </div>
+    <div class=""post-details"">
+       Posted on <a href=""#"">${date.format('MMMM dd, yyyy', $p.publishDate)}</a>
+    </div>
+  </li>
+  #end
+</ul>
+
+",org.vosao.entity.PageEntity,80016,2014-03-13T08:32:59,system@vosao.org,70012
+en,system@vosao.org,2014-03-13T08:32:59,"<!-- sidebar -->
+<div id=""sidebar"">
+	<div class=""about-me"">
+		<h3>
+			About Me</h3>
+		<p>
+			<a href=""index.html""><img alt=""firefox"" class=""float-left"" height=""40"" src=""/file/theme/coolblue10/images/gravatar.jpg"" width=""40"" /></a> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo <a href=""index.html"">Learn more...</a></p>
+	</div>
+	<div class=""sidemenu"">
+		<h3>
+			Sidebar Menu</h3>
+		<ul>
+			<li>
+				<a href=""/"">Home</a></li>
+			<li>
+				<a href=""/tags"">Tag cloud</a></li>
+			<li>
+				<a href=""/archives"">Archive</a></li>
+			<li>
+				<a href=""/support"">Support</a></li>
+			<li>
+				<a href=""/about"">About</a></li>
+		</ul>
+	</div>
+	<div class=""sidemenu"">
+		<h3>
+			Sponsors</h3>
+		<ul>
+			<li>
+				<a href=""#"" title=""Sponsor #1"">Sponsor #1</a></li>
+			<li>
+				<a href=""#"" title=""Sponsor #2"">Sponsor #2</a></li>
+			<li>
+				<a href=""#"" title=""Sponsor #3"">Sponsor #3</a></li>
+			<li>
+				<a href=""#"" title=""Sponsor #4"">Sponsor #4</a></li>
+		</ul>
+	</div>
+<!-- /sidebar --></div>
+",org.vosao.entity.PageEntity,90012,2014-03-13T08:32:59,system@vosao.org,110009
+en,guest,2014-03-13T08:32:34,"
+<h2>Search</h2>
+
+<form id=""searchForm"">
+    <input type=""text"" id=""query""/>
+    <select id=""pageSize"">
+        <option selected=""selected"" value=""10"">10</option>
+        <option value=""25"">25</option>
+        <option value=""50"">50</option>
+        <option value=""100"">100</option>
+    </select>
+    <input type=""submit"" value=""Search""/>
+    <div id=""searchFilter"">
+     Search options:<br/>
+     <input type=""checkbox"" value=""/"" checked=""checked""/>Whole site
+     <input type=""checkbox"" value=""/blog""/>Blog
+     <input type=""checkbox"" value=""/support"" />Support
+     <input type=""checkbox"" value=""/about"" />About
+    </div>
+</form>
+<div id=""searchCount""></div>
+<div class=""searchPaginator""></div>
+<div id=""searchResults""></div>
+<div class=""searchPaginator""></div>
+
+<script type=""text/javascript"">
+
+var searchPage = 0;
+var searchResult = null;
+var searchCount = 0;
+
+$(function() {
+    try { 
+        searchPage = Number(Vosao.getQueryParam('page'));
+        if (searchPage > 0) {
+            searchPage--;
+        } 
+    } catch (e) {}
+	$('#searchForm').submit(function() {
+		searchPage = 0;
+		onSearch(); 
+		return false;
+	});
+    Vosao.initJSONRpc(checkQuery);
+});
+
+function checkQuery() {
+    var query = decodeURI(Vosao.getQueryParam('query')).replace('+', ' ');
+    if (query) {
+        $('#query').val(query);
+        onSearch();
+    }
+}
+
+function onSearch() {
+    $('#searchResults').html('<img src=""/static/images/ajax-loader.gif"" />');
+    $('#searchCount, .searchPaginator').html('');
+    var query = $('#query').val();
+    var pageSize = Number($('#pageSize').val());
+    var filter = new Array();
+    $('#searchFilter input[type=checkbox]:checked').each(function() {
+        filter.push(this.value);
+    });
+    var start = searchPage * pageSize;
+    Vosao.jsonrpc.searchFrontService.searchFilter(function(r) {
+        searchResult = r.hits.list;
+        searchCount = r.count;
+        showSearchResults();
+    }, Vosao.javaList(filter), query, start, pageSize, 256);
+}
+
+function showSearchResults() {
+	var h = '';
+	if (searchCount == 0) {
+		$('#searchCount').html('Nothing found.');
+        $('#searchResults, .searchPaginator').html('');
+		return;
+	}
+	jQuery.each(searchResult, function(i, hit) {
+	    h += '<div class=""searchItem""><div class=""searchTitle"">' 
+		    + hit.localTitle
+	        + '</div><a href=""' + hit.url + '"">' 
+	        + hit.content + '</a>'
+	        +'</div>';
+	});
+	$('#searchResults').html(h);
+	$('#searchCount').html('Found ' + searchCount + ' results.');
+	showPaginator();
+}
+
+function showPaginator() {
+    var pageSize = Number($('#pageSize').val());
+    var query = $('#query').val();
+	var pagesCount = searchCount / pageSize;
+	var h = '';
+    for (var i = 0; i < pagesCount; i++) {
+        var href = 'href=""/search?query=' + query + '&page=' + (i+1) + '""';
+        if (searchPage == i) {
+            href = 'class=""current""';
+        }
+        h += '<a ' + href + ' >' + (i + 1) + '</a>';
+    }
+	$('.searchPaginator').html(h);
+}
+
+</script>
+",org.vosao.entity.PageEntity,100001,2014-03-13T08:32:58,system@vosao.org,40002
+en,system@vosao.org,2014-03-13T08:32:51,"<?xml version=""1.0"" encoding=""utf-8""?>
+<content>
+<overview><![CDATA[<p>
+	<img alt="""" src=""/file/page/blog/aliquam-risus-justo/snow-landscape-wallpaper.jpg"" style=""width: 500px; height: 200px; "" /></p>
+<p>
+	After deployment to <a href=""http://www.appspot.com"">www.appspot.com</a> you need to make some changes in configuration:</p>
+<ol>
+	<li>
+		Add new administrator user.</li>
+	<li>
+		Login as new administrator user.</li>
+	<li>
+		Disable admin@test.com account.</li>
+	<li>
+		Set <strong>site domain</strong>, <strong>site email</strong>, <strong>comments email</strong>, ""Feedback"" form <strong>sending email</strong>.</li>
+</ol>
+<p>
+	<span style=""color:#f00;"">Attention!</span> Site email must be set to Google app owner email, because it's used to send emails from application.</p>
+]]></overview>
+<content><![CDATA[<p>
+	Full article continues here.</p>
+]]></content>
+</content>",org.vosao.entity.PageEntity,100011,2014-03-13T08:32:51,system@vosao.org,40011
+en,system@vosao.org,2014-03-13T08:32:53,"<?xml version=""1.0"" encoding=""utf-8""?>
+<content>
+<overview><![CDATA[<p>
+	<img alt="""" src=""/file/page/blog/lorem-ipsum-dolor-sit-amet/grass.jpg"" style=""width: 500px; height: 200px; "" /></p>
+<p>
+	At the beginning you can use this site template as simple blog. Add articles to <strong>/blog</strong> url.</p>
+<p>
+	On second step create additional pages on top level.</p>
+<p>
+	For template processing, the system uses the popular and highly-regarded <strong>Apache Velocity</strong> Engine and the <strong>Velocity Toolkit</strong>. (Full documentation is available on the <a href=""http://velocity.apache.org/"">Velocity site</a>.) In addition to the standard Velocity commands, the CMS exposes several toolkit services to templates and (optionally) to page content. &nbsp;</p>
+<p>
+	Take a look at site internals especially to Velocity services usage.&nbsp;</p>
+<ul>
+	<li>
+		<a href=""http://code.google.com/p/vosao/source/browse/trunk/api/src/main/java/org/vosao/velocity/VelocityService.java"">service</a></li>
+	<li>
+		<a href=""http://code.google.com/p/vosao/source/browse/trunk/api/src/main/java/org/vosao/velocity/TagVelocityService.java"">service.tag</a></li>
+</ul>
+]]></overview>
+<content><![CDATA[<p>
+	Full article continues here.</p>
+]]></content>
+</content>",org.vosao.entity.PageEntity,100013,2014-03-13T08:32:53,system@vosao.org,40013
+en,system@vosao.org,2014-03-13T08:32:53,"<?xml version=""1.0"" encoding=""utf-8""?>
+<content>
+<overview><![CDATA[<div class=""image-section"">
+	<img alt=""image post"" height=""200"" src=""/file/theme/coolblue10/images/img-post.jpg"" width=""500"" /></div>
+<p>
+	<strong>Vosao CMS</strong>&nbsp;was successfully installed on this application. To start authoring login to <a href=""/cms/"">admin interface</a>&nbsp;with username: <strong>admin@test.com</strong> and password <strong>admin</strong></p>
+<p>
+	You can find more information about Vosao CMS on the official <a href=""http://www.vosao.org"">website</a>.</p>
+]]></overview>
+<content><![CDATA[<p>
+	Full article continues here.</p>
+]]></content>
+</content>",org.vosao.entity.PageEntity,120011,2014-03-13T08:32:53,system@vosao.org,140007
+en,system@vosao.org,2014-03-13T08:32:54,"<?xml version=""1.0"" encoding=""utf-8""?>
+<content>
+<overview><![CDATA[<p>
+	<span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; ""><strong>Lorem Ipsum</strong></span><span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; "">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>
+]]></overview>
+<content><![CDATA[]]></content>
+</content>",org.vosao.entity.PageEntity,130009,2014-03-13T08:32:54,system@vosao.org,120013
+en,system@vosao.org,2014-03-13T08:32:55,"<?xml version=""1.0"" encoding=""utf-8""?>
+<content>
+<overview><![CDATA[<p>
+	<span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; ""><strong>Lorem Ipsum</strong></span><span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; "">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>
+]]></overview>
+<content><![CDATA[]]></content>
+</content>",org.vosao.entity.PageEntity,130010,2014-03-13T08:32:55,system@vosao.org,120014
+en,system@vosao.org,2014-03-13T08:32:56,"<?xml version=""1.0"" encoding=""utf-8""?>
+<content>
+<overview><![CDATA[<p>
+	<span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; ""><strong>Lorem Ipsum</strong></span><span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; "">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>
+]]></overview>
+<content><![CDATA[]]></content>
+</content>",org.vosao.entity.PageEntity,130011,2014-03-13T08:32:56,system@vosao.org,120015
+en,system@vosao.org,2014-03-13T08:32:57,"<?xml version=""1.0"" encoding=""utf-8""?>
+<content>
+<overview><![CDATA[<p>
+	<span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; ""><strong>Lorem Ipsum</strong></span><span class=""Apple-style-span"" style=""color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans; font-size: 11px; line-height: 14px; "">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>
+]]></overview>
+<content><![CDATA[]]></content>
+</content>",org.vosao.entity.PageEntity,130012,2014-03-13T08:32:57,system@vosao.org,120016
+en,system@vosao.org,2014-03-13T08:32:54,"<?xml version=""1.0"" encoding=""utf-8""?>
+<content>
+<overview><![CDATA[<p>
+	Place article overview here.</p>
+]]></overview>
+<content><![CDATA[<p>
+	Continue article here.</p>
+]]></content>
+</content>",org.vosao.entity.PageEntity,140008,2014-03-13T08:32:54,system@vosao.org,90008

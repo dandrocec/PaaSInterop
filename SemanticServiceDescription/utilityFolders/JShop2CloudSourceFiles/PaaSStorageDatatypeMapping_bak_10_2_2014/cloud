@@ -1,0 +1,32 @@
+; Define a migration of data among Cloud providers
+
+(defdomain cloud (
+
+  (:operator (!checkDataTypeMappings ?from) 
+
+	((forall (?p) (typeInCurrentData ?p) (and (dataTypeMappingExists ?p ?x))))
+	() 
+	((hasAllDataTypeMappings ?from))
+  )
+
+
+  (:operator (!createDataModelOntology ?from) 
+	(hasApiOperation ?from CreateDataModelOntologyOperation) 
+	() 
+	((haveDataOntology ?from))
+  )
+
+  (:operator (!createDataElementsFromOntology ?to) 
+	( (hasApiOperation ?to CreateDataElementsFromOntologyOperation)) 
+	() 
+	((dataMigrationSuccessfulTo ?to))
+  )
+
+  (:method (migrateData ?from ?to)
+	()
+	((!checkDataTypeMappings ?from)(!createDataModelOntology ?from) (!createDataElementsFromOntology ?to))
+  ) 
+
+  
+)
+)

@@ -1,0 +1,24 @@
+; Define a migration of data among Cloud providers
+
+(defdomain cloud (
+
+  (:operator (!createDataModelOntology ?from) 
+	(hasApiOperation ?from CreateDataModelOntologyOperation) 
+	() 
+	((haveDataOntology ?from))
+  )
+
+  (:operator (!createDataElementsFromOntology ?to) 
+	((haveDataOntology ?from) (hasApiOperation ?from CreateDataElementsFromOntologyOperation)) 
+	() 
+	((dataMigrationSuccessfulTo ?to))
+  )
+
+  (:method (migrateData ?from ?to)
+	()
+	((!createDataModelOntology ?from) (!createDataElementsFromOntology ?to))
+  ) 
+
+  
+)
+)

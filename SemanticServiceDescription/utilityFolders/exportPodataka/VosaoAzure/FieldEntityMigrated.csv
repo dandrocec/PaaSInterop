@@ -1,0 +1,4 @@
+identifier,field_defaultValue,field_modDate,field_mandatory,field_fieldType,field_title,field_index,field_modUserEmail,field_values,field_regex,field_formId,field_height,field_name,field_regexMessage,field_width,field_createUserEmail,field_createDate
+110006,,Thu Mar 13 09:32:50 CET 2014,False,TEXT,Message,2,system@vosao.org,,,100010,10,message,,60,system@vosao.org,Thu Mar 13 09:32:50 CET 2014
+60008,,Thu Mar 13 09:32:50 CET 2014,False,TEXT,Name,0,system@vosao.org,,,100010,1,name,,20,system@vosao.org,Thu Mar 13 09:32:50 CET 2014
+70009,,Thu Mar 13 09:32:50 CET 2014,False,TEXT,Email,1,system@vosao.org,,,100010,1,email,,20,system@vosao.org,Thu Mar 13 09:32:50 CET 2014
