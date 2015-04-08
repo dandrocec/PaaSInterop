@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://services.api.azure.foi.org.hr/" xmlns:tns="http://services.api.azure.foi.org.hr/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="createAzureDataModelOntology" type="tns:createAzureDataModelOntology"/>
+
+  <xs:element name="createAzureDataModelOntologyResponse" type="tns:createAzureDataModelOntologyResponse"/>
+
+  <xs:element name="createTableFromDataOntology" type="tns:createTableFromDataOntology"/>
+
+  <xs:element name="createTableFromDataOntologyResponse" type="tns:createTableFromDataOntologyResponse"/>
+
+  <xs:element name="findKeys" type="tns:findKeys"/>
+
+  <xs:element name="findKeysResponse" type="tns:findKeysResponse"/>
+
+  <xs:element name="insertTodoItem" type="tns:insertTodoItem"/>
+
+  <xs:element name="insertTodoItemResponse" type="tns:insertTodoItemResponse"/>
+
+  <xs:element name="selectQuery" type="tns:selectQuery"/>
+
+  <xs:element name="selectQueryResponse" type="tns:selectQueryResponse"/>
+
+  <xs:complexType name="createAzureDataModelOntology">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="createAzureDataModelOntologyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="insertTodoItem">
+    <xs:sequence>
+      <xs:element name="itemId" type="xs:string" minOccurs="0"/>
+      <xs:element name="item" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="insertTodoItemResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createTableFromDataOntology">
+    <xs:sequence>
+      <xs:element name="pathToOntology" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createTableFromDataOntologyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="findKeys">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="findKeysResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="selectQuery">
+    <xs:sequence>
+      <xs:element name="query" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="selectQueryResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://services.api.salesforce.foi.org.hr/" xmlns:tns="http://services.api.salesforce.foi.org.hr/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Exception" type="tns:Exception"/>
+
+  <xs:element name="create" type="tns:create"/>
+
+  <xs:element name="createCustomObjectsFromDataOntology" type="tns:createCustomObjectsFromDataOntology"/>
+
+  <xs:element name="createCustomObjectsFromDataOntologyResponse" type="tns:createCustomObjectsFromDataOntologyResponse"/>
+
+  <xs:element name="createResponse" type="tns:createResponse"/>
+
+  <xs:element name="createSalesforceDataModelOntology" type="tns:createSalesforceDataModelOntology"/>
+
+  <xs:element name="createSalesforceDataModelOntologyResponse" type="tns:createSalesforceDataModelOntologyResponse"/>
+
+  <xs:element name="delete" type="tns:delete"/>
+
+  <xs:element name="deleteResponse" type="tns:deleteResponse"/>
+
+  <xs:element name="describeGlobal" type="tns:describeGlobal"/>
+
+  <xs:element name="describeGlobalResponse" type="tns:describeGlobalResponse"/>
+
+  <xs:element name="describeSalesforceObject" type="tns:describeSalesforceObject"/>
+
+  <xs:element name="describeSalesforceObjectResponse" type="tns:describeSalesforceObjectResponse"/>
+
+  <xs:element name="getServerTimeStamp" type="tns:getServerTimeStamp"/>
+
+  <xs:element name="getServerTimeStampResponse" type="tns:getServerTimeStampResponse"/>
+
+  <xs:element name="getUserInfo" type="tns:getUserInfo"/>
+
+  <xs:element name="getUserInfoResponse" type="tns:getUserInfoResponse"/>
+
+  <xs:element name="insertDataIntoCreatedCustomObjects" type="tns:insertDataIntoCreatedCustomObjects"/>
+
+  <xs:element name="insertDataIntoCreatedCustomObjectsResponse" type="tns:insertDataIntoCreatedCustomObjectsResponse"/>
+
+  <xs:element name="isUserLoggedIn" type="tns:isUserLoggedIn"/>
+
+  <xs:element name="isUserLoggedInResponse" type="tns:isUserLoggedInResponse"/>
+
+  <xs:element name="login" type="tns:login"/>
+
+  <xs:element name="loginResponse" type="tns:loginResponse"/>
+
+  <xs:element name="logout" type="tns:logout"/>
+
+  <xs:element name="logoutResponse" type="tns:logoutResponse"/>
+
+  <xs:element name="printAsyncResultStatus" type="tns:printAsyncResultStatus"/>
+
+  <xs:element name="printAsyncResultStatusResponse" type="tns:printAsyncResultStatusResponse"/>
+
+  <xs:element name="query" type="tns:query"/>
+
+  <xs:element name="queryResponse" type="tns:queryResponse"/>
+
+  <xs:element name="sendEmail" type="tns:sendEmail"/>
+
+  <xs:element name="sendEmailResponse" type="tns:sendEmailResponse"/>
+
+  <xs:complexType name="delete">
+    <xs:sequence>
+      <xs:element name="accountName" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deleteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sendEmail">
+    <xs:sequence>
+      <xs:element name="from" type="xs:string" minOccurs="0"/>
+      <xs:element name="to" type="xs:string" minOccurs="0"/>
+      <xs:element name="subject" type="xs:string" minOccurs="0"/>
+      <xs:element name="text" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sendEmailResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="login">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="loginResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="logout">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="logoutResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createCustomObjectsFromDataOntology">
+    <xs:sequence>
+      <xs:element name="pathToOntology" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createCustomObjectsFromDataOntologyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Exception">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="describeGlobal">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="describeGlobalResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createSalesforceDataModelOntology">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="createSalesforceDataModelOntologyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getUserInfo">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getUserInfoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="printAsyncResultStatus">
+    <xs:sequence>
+      <xs:element name="arg0" type="tns:asyncResult" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="asyncResult">
+    <xs:sequence>
+      <xs:element name="checkOnly" type="xs:boolean"/>
+      <xs:element name="done" type="xs:boolean"/>
+      <xs:element name="id" type="xs:string" minOccurs="0"/>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+      <xs:element name="numberComponentErrors" type="xs:int"/>
+      <xs:element name="numberComponentsDeployed" type="xs:int"/>
+      <xs:element name="numberComponentsTotal" type="xs:int"/>
+      <xs:element name="numberTestErrors" type="xs:int"/>
+      <xs:element name="numberTestsCompleted" type="xs:int"/>
+      <xs:element name="numberTestsTotal" type="xs:int"/>
+      <xs:element name="state" type="tns:asyncRequestState" minOccurs="0"/>
+      <xs:element name="stateDetail" type="xs:string" minOccurs="0"/>
+      <xs:element name="stateDetailLastModifiedDate" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="statusCode" type="tns:statusCode" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="printAsyncResultStatusResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="create">
+    <xs:sequence>
+      <xs:element name="accountName" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="insertDataIntoCreatedCustomObjects">
+    <xs:sequence>
+      <xs:element name="pathToOntology" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="insertDataIntoCreatedCustomObjectsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="describeSalesforceObject">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="describeSalesforceObjectResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="isUserLoggedIn">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="isUserLoggedInResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="query">
+    <xs:sequence>
+      <xs:element name="query" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="queryResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getServerTimeStamp">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getServerTimeStampResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="asyncRequestState">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Queued"/>
+      <xs:enumeration value="InProgress"/>
+      <xs:enumeration value="Completed"/>
+      <xs:enumeration value="Error"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="statusCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ALL_OR_NONE_OPERATION_ROLLED_BACK"/>
+      <xs:enumeration value="ALREADY_IN_PROCESS"/>
+      <xs:enumeration value="ASSIGNEE_TYPE_REQUIRED"/>
+      <xs:enumeration value="BAD_CUSTOM_ENTITY_PARENT_DOMAIN"/>
+      <xs:enumeration value="BCC_NOT_ALLOWED_IF_BCC_COMPLIANCE_ENABLED"/>
+      <xs:enumeration value="CANNOT_CASCADE_PRODUCT_ACTIVE"/>
+      <xs:enumeration value="CANNOT_CHANGE_FIELD_TYPE_OF_APEX_REFERENCED_FIELD"/>
+      <xs:enumeration value="CANNOT_CHANGE_FIELD_TYPE_OF_REFERENCED_FIELD"/>
+      <xs:enumeration value="CANNOT_CREATE_ANOTHER_MANAGED_PACKAGE"/>
+      <xs:enumeration value="CANNOT_DEACTIVATE_DIVISION"/>
+      <xs:enumeration value="CANNOT_DELETE_LAST_DATED_CONVERSION_RATE"/>
+      <xs:enumeration value="CANNOT_DELETE_MANAGED_OBJECT"/>
+      <xs:enumeration value="CANNOT_DISABLE_LAST_ADMIN"/>
+      <xs:enumeration value="CANNOT_ENABLE_IP_RESTRICT_REQUESTS"/>
+      <xs:enumeration value="CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY"/>
+      <xs:enumeration value="CANNOT_MODIFY_MANAGED_OBJECT"/>
+      <xs:enumeration value="CANNOT_RENAME_APEX_REFERENCED_FIELD"/>
+      <xs:enumeration value="CANNOT_RENAME_APEX_REFERENCED_OBJECT"/>
+      <xs:enumeration value="CANNOT_RENAME_REFERENCED_FIELD"/>
+      <xs:enumeration value="CANNOT_RENAME_REFERENCED_OBJECT"/>
+      <xs:enumeration value="CANNOT_REPARENT_RECORD"/>
+      <xs:enumeration value="CANNOT_UPDATE_CONVERTED_LEAD"/>
+      <xs:enumeration value="CANT_DISABLE_CORP_CURRENCY"/>
+      <xs:enumeration value="CANT_UNSET_CORP_CURRENCY"/>
+      <xs:enumeration value="CHILD_SHARE_FAILS_PARENT"/>
+      <xs:enumeration value="CIRCULAR_DEPENDENCY"/>
+      <xs:enumeration value="COMMUNITY_NOT_ACCESSIBLE"/>
+      <xs:enumeration value="CUSTOM_CLOB_FIELD_LIMIT_EXCEEDED"/>
+      <xs:enumeration value="CUSTOM_ENTITY_OR_FIELD_LIMIT"/>
+      <xs:enumeration value="CUSTOM_FIELD_INDEX_LIMIT_EXCEEDED"/>
+      <xs:enumeration value="CUSTOM_INDEX_EXISTS"/>
+      <xs:enumeration value="CUSTOM_LINK_LIMIT_EXCEEDED"/>
+      <xs:enumeration value="CUSTOM_TAB_LIMIT_EXCEEDED"/>
+      <xs:enumeration value="DELETE_FAILED"/>
+      <xs:enumeration value="DELETE_OPERATION_TOO_LARGE"/>
+      <xs:enumeration value="DELETE_REQUIRED_ON_CASCADE"/>
+      <xs:enumeration value="DEPENDENCY_EXISTS"/>
+      <xs:enumeration value="DUPLICATE_CASE_SOLUTION"/>
+      <xs:enumeration value="DUPLICATE_COMM_NICKNAME"/>
+      <xs:enumeration value="DUPLICATE_CUSTOM_ENTITY_DEFINITION"/>
+      <xs:enumeration value="DUPLICATE_CUSTOM_TAB_MOTIF"/>
+      <xs:enumeration value="DUPLICATE_DEVELOPER_NAME"/>
+      <xs:enumeration value="DUPLICATE_EXTERNAL_ID"/>
+      <xs:enumeration value="DUPLICATE_MASTER_LABEL"/>
+      <xs:enumeration value="DUPLICATE_SENDER_DISPLAY_NAME"/>
+      <xs:enumeration value="DUPLICATE_USERNAME"/>
+      <xs:enumeration value="DUPLICATE_VALUE"/>
+      <xs:enumeration value="EMAIL_NOT_PROCESSED_DUE_TO_PRIOR_ERROR"/>
+      <xs:enumeration value="EMPTY_SCONTROL_FILE_NAME"/>
+      <xs:enumeration value="ENTITY_FAILED_IFLASTMODIFIED_ON_UPDATE"/>
+      <xs:enumeration value="ENTITY_IS_ARCHIVED"/>
+      <xs:enumeration value="ENTITY_IS_DELETED"/>
+      <xs:enumeration value="ENTITY_IS_LOCKED"/>
+      <xs:enumeration value="ENVIRONMENT_HUB_MEMBERSHIP_CONFLICT"/>
+      <xs:enumeration value="ERROR_IN_MAILER"/>
+      <xs:enumeration value="FAILED_ACTIVATION"/>
+      <xs:enumeration value="FIELD_CUSTOM_VALIDATION_EXCEPTION"/>
+      <xs:enumeration value="FIELD_FILTER_VALIDATION_EXCEPTION"/>
+      <xs:enumeration value="FIELD_INTEGRITY_EXCEPTION"/>
+      <xs:enumeration value="FILTERED_LOOKUP_LIMIT_EXCEEDED"/>
+      <xs:enumeration value="HTML_FILE_UPLOAD_NOT_ALLOWED"/>
+      <xs:enumeration value="IMAGE_TOO_LARGE"/>
+      <xs:enumeration value="INACTIVE_OWNER_OR_USER"/>
+      <xs:enumeration value="INSUFFICIENT_ACCESS_ON_CROSS_REFERENCE_ENTITY"/>
+      <xs:enumeration value="INSUFFICIENT_ACCESS_OR_READONLY"/>
+      <xs:enumeration value="INVALID_ACCESS_LEVEL"/>
+      <xs:enumeration value="INVALID_ARGUMENT_TYPE"/>
+      <xs:enumeration value="INVALID_ASSIGNEE_TYPE"/>
+      <xs:enumeration value="INVALID_ASSIGNMENT_RULE"/>
+      <xs:enumeration value="INVALID_BATCH_OPERATION"/>
+      <xs:enumeration value="INVALID_CONTENT_TYPE"/>
+      <xs:enumeration value="INVALID_CREDIT_CARD_INFO"/>
+      <xs:enumeration value="INVALID_CROSS_REFERENCE_KEY"/>
+      <xs:enumeration value="INVALID_CROSS_REFERENCE_TYPE_FOR_FIELD"/>
+      <xs:enumeration value="INVALID_CURRENCY_CONV_RATE"/>
+      <xs:enumeration value="INVALID_CURRENCY_CORP_RATE"/>
+      <xs:enumeration value="INVALID_CURRENCY_ISO"/>
+      <xs:enumeration value="INVALID_DATA_CATEGORY_GROUP_REFERENCE"/>
+      <xs:enumeration value="INVALID_DATA_URI"/>
+      <xs:enumeration value="INVALID_EMAIL_ADDRESS"/>
+      <xs:enumeration value="INVALID_EMPTY_KEY_OWNER"/>
+      <xs:enumeration value="INVALID_FIELD"/>
+      <xs:enumeration value="INVALID_FIELD_FOR_INSERT_UPDATE"/>
+      <xs:enumeration value="INVALID_FIELD_WHEN_USING_TEMPLATE"/>
+      <xs:enumeration value="INVALID_FILTER_ACTION"/>
+      <xs:enumeration value="INVALID_GOOGLE_DOCS_URL"/>
+      <xs:enumeration value="INVALID_ID_FIELD"/>
+      <xs:enumeration value="INVALID_INET_ADDRESS"/>
+      <xs:enumeration value="INVALID_LINEITEM_CLONE_STATE"/>
+      <xs:enumeration value="INVALID_MASTER_OR_TRANSLATED_SOLUTION"/>
+      <xs:enumeration value="INVALID_MESSAGE_ID_REFERENCE"/>
+      <xs:enumeration value="INVALID_OPERATION"/>
+      <xs:enumeration value="INVALID_OPERATOR"/>
+      <xs:enumeration value="INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST"/>
+      <xs:enumeration value="INVALID_PACKAGE_VERSION"/>
+      <xs:enumeration value="INVALID_PARTNER_NETWORK_STATUS"/>
+      <xs:enumeration value="INVALID_PERSON_ACCOUNT_OPERATION"/>
+      <xs:enumeration value="INVALID_QUERY_LOCATOR"/>
+      <xs:enumeration value="INVALID_READ_ONLY_USER_DML"/>
+      <xs:enumeration value="INVALID_SAVE_AS_ACTIVITY_FLAG"/>
+      <xs:enumeration value="INVALID_SESSION_ID"/>
+      <xs:enumeration value="INVALID_SETUP_OWNER"/>
+      <xs:enumeration value="INVALID_STATUS"/>
+      <xs:enumeration value="INVALID_TYPE"/>
+      <xs:enumeration value="INVALID_TYPE_FOR_OPERATION"/>
+      <xs:enumeration value="INVALID_TYPE_ON_FIELD_IN_RECORD"/>
+      <xs:enumeration value="IP_RANGE_LIMIT_EXCEEDED"/>
+      <xs:enumeration value="LICENSE_LIMIT_EXCEEDED"/>
+      <xs:enumeration value="LIGHT_PORTAL_USER_EXCEPTION"/>
+      <xs:enumeration value="LIMIT_EXCEEDED"/>
+      <xs:enumeration value="MALFORMED_ID"/>
+      <xs:enumeration value="MANAGER_NOT_DEFINED"/>
+      <xs:enumeration value="MASSMAIL_RETRY_LIMIT_EXCEEDED"/>
+      <xs:enumeration value="MASS_MAIL_LIMIT_EXCEEDED"/>
+      <xs:enumeration value="MAXIMUM_CCEMAILS_EXCEEDED"/>
+      <xs:enumeration value="MAXIMUM_DASHBOARD_COMPONENTS_EXCEEDED"/>
+      <xs:enumeration value="MAXIMUM_HIERARCHY_LEVELS_REACHED"/>
+      <xs:enumeration value="MAXIMUM_SIZE_OF_ATTACHMENT"/>
+      <xs:enumeration value="MAXIMUM_SIZE_OF_DOCUMENT"/>
+      <xs:enumeration value="MAX_ACTIONS_PER_RULE_EXCEEDED"/>
+      <xs:enumeration value="MAX_ACTIVE_RULES_EXCEEDED"/>
+      <xs:enumeration value="MAX_APPROVAL_STEPS_EXCEEDED"/>
+      <xs:enumeration value="MAX_FORMULAS_PER_RULE_EXCEEDED"/>
+      <xs:enumeration value="MAX_RULES_EXCEEDED"/>
+      <xs:enumeration value="MAX_RULE_ENTRIES_EXCEEDED"/>
+      <xs:enumeration value="MAX_TASK_DESCRIPTION_EXCEEEDED"/>
+      <xs:enumeration value="MAX_TM_RULES_EXCEEDED"/>
+      <xs:enumeration value="MAX_TM_RULE_ITEMS_EXCEEDED"/>
+      <xs:enumeration value="MERGE_FAILED"/>
+      <xs:enumeration value="MISSING_ARGUMENT"/>
+      <xs:enumeration value="MIXED_DML_OPERATION"/>
+      <xs:enumeration value="NONUNIQUE_SHIPPING_ADDRESS"/>
+      <xs:enumeration value="NO_APPLICABLE_PROCESS"/>
+      <xs:enumeration value="NO_ATTACHMENT_PERMISSION"/>
+      <xs:enumeration value="NO_INACTIVE_DIVISION_MEMBERS"/>
+      <xs:enumeration value="NO_MASS_MAIL_PERMISSION"/>
+      <xs:enumeration value="NUMBER_OUTSIDE_VALID_RANGE"/>
+      <xs:enumeration value="NUM_HISTORY_FIELDS_BY_SOBJECT_EXCEEDED"/>
+      <xs:enumeration value="OPTED_OUT_OF_MASS_MAIL"/>
+      <xs:enumeration value="OP_WITH_INVALID_USER_TYPE_EXCEPTION"/>
+      <xs:enumeration value="PACKAGE_LICENSE_REQUIRED"/>
+      <xs:enumeration value="PORTAL_NO_ACCESS"/>
+      <xs:enumeration value="PORTAL_USER_ALREADY_EXISTS_FOR_CONTACT"/>
+      <xs:enumeration value="PRIVATE_CONTACT_ON_ASSET"/>
+      <xs:enumeration value="QUERY_TIMEOUT"/>
+      <xs:enumeration value="RECORD_IN_USE_BY_WORKFLOW"/>
+      <xs:enumeration value="REQUEST_RUNNING_TOO_LONG"/>
+      <xs:enumeration value="REQUIRED_FEATURE_MISSING"/>
+      <xs:enumeration value="REQUIRED_FIELD_MISSING"/>
+      <xs:enumeration value="SELF_REFERENCE_FROM_TRIGGER"/>
+      <xs:enumeration value="SHARE_NEEDED_FOR_CHILD_OWNER"/>
+      <xs:enumeration value="SINGLE_EMAIL_LIMIT_EXCEEDED"/>
+      <xs:enumeration value="STANDARD_PRICE_NOT_DEFINED"/>
+      <xs:enumeration value="STORAGE_LIMIT_EXCEEDED"/>
+      <xs:enumeration value="STRING_TOO_LONG"/>
+      <xs:enumeration value="TABSET_LIMIT_EXCEEDED"/>
+      <xs:enumeration value="TEMPLATE_NOT_ACTIVE"/>
+      <xs:enumeration value="TERRITORY_REALIGN_IN_PROGRESS"/>
+      <xs:enumeration value="TEXT_DATA_OUTSIDE_SUPPORTED_CHARSET"/>
+      <xs:enumeration value="TOO_MANY_APEX_REQUESTS"/>
+      <xs:enumeration value="TOO_MANY_ENUM_VALUE"/>
+      <xs:enumeration value="TRANSFER_REQUIRES_READ"/>
+      <xs:enumeration value="UNABLE_TO_LOCK_ROW"/>
+      <xs:enumeration value="UNAVAILABLE_RECORDTYPE_EXCEPTION"/>
+      <xs:enumeration value="UNDELETE_FAILED"/>
+      <xs:enumeration value="UNKNOWN_EXCEPTION"/>
+      <xs:enumeration value="UNSPECIFIED_EMAIL_ADDRESS"/>
+      <xs:enumeration value="UNSUPPORTED_APEX_TRIGGER_OPERATON"/>
+      <xs:enumeration value="UNVERIFIED_SENDER_ADDRESS"/>
+      <xs:enumeration value="USER_OWNS_PORTAL_ACCOUNT_EXCEPTION"/>
+      <xs:enumeration value="USER_WITH_APEX_SHARES_EXCEPTION"/>
+      <xs:enumeration value="WEBLINK_SIZE_LIMIT_EXCEEDED"/>
+      <xs:enumeration value="WRONG_CONTROLLER_TYPE"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+

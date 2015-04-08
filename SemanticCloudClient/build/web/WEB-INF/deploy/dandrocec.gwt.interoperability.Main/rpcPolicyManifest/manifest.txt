@@ -1,0 +1,3 @@
+# Module dandrocec.gwt.interoperability.Main
+# RPC service class, partial path of RPC policy file
+dandrocec.gwt.interoperability.client.GwtInteroperabilityService, 7D5BA146D25FEC2A5D3923D1C6DAF42A.gwt.rpc

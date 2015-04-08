@@ -1,0 +1,2 @@
+serviceClass: dandrocec.gwt.interoperability.client.GwtInteroperabilityService
+path: 7D5BA146D25FEC2A5D3923D1C6DAF42A.gwt.rpc

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/SemanticServiceDescription1/GoogleAppEngineServices?wsdl" uri="wsdl/localhost_8080/SemanticServiceDescription1/GoogleAppEngineServices.wsdl"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription1/GoogleAppEngineServices?xsd=1" uri="wsdl/localhost_8080/SemanticServiceDescription1/GoogleAppEngineServices.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription1/AzureServices?wsdl" uri="wsdl/localhost_8080/SemanticServiceDescription1/AzureServices.wsdl"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription1/AzureServices?xsd=1" uri="wsdl/localhost_8080/SemanticServiceDescription1/AzureServices.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription1/SalesForceServices?wsdl" uri="wsdl/localhost_8080/SemanticServiceDescription1/SalesForceServices.wsdl"/>
+    <system systemId="http://localhost:8080/SemanticServiceDescription1/SalesForceServices?xsd=1" uri="wsdl/localhost_8080/SemanticServiceDescription1/SalesForceServices.xsd_1.xsd"/>
+</catalog>
