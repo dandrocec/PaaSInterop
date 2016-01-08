@@ -1,0 +1,47 @@
+parentUrl,searchable,keywords,commentsEnabled,sortIndex,versionTitle,friendlyURL,title,createDate,velocityProcessing,state,version,template,modDate,skipPostProcessing,structureTemplateId,contentType,description,createUserEmail,structureId,publishDate,key,pageType,wikiProcessing,cached,headHtml,enableCkeditor,attributes,modUserEmail,restful
+/,True,,False,4,New page,/blog,"{""en"":""Blog""}",2010-06-16T12:46:40,False,APPROVED,1,20001,2010-08-09T20:07:57,False,,,,system@vosao.org,,2010-06-16T00:00:00,10,SIMPLE,False,True,,True,,system@vosao.org,False
+/,True,,False,6,New page,/support,"{""en"":""Support""}",2010-06-17T09:10:59,False,APPROVED,1,20006,2010-08-09T20:07:56,False,,,,system@vosao.org,140005,2010-06-17T00:00:00,10014,SIMPLE,False,True,"<script type=""text/javascript"">
+  $(function() {
+    $('#nav ul li:nth(3)').attr('id', 'current');
+  });
+</script>",True,,system@vosao.org,False
+/,False,,False,0,New page,/login,"{""en"":""Site user Login""}",2010-06-13T18:14:18,False,APPROVED,1,20001,2011-02-11T21:18:19,False,,,,system@vosao.org,140005,2010-06-13T00:00:00,20002,SIMPLE,False,True,,False,,kinyelo@gmail.com,False
+/,False,,False,5,New page,/archives,"{""en"":""Archives""}",2010-06-17T09:01:13,True,APPROVED,1,20006,2010-08-09T20:07:55,False,,,,system@vosao.org,140005,2010-06-17T00:00:00,20010,SIMPLE,False,False,"<script type=""text/javascript"">
+  $(function() {
+    $('#nav ul li:nth(2)').attr('id', 'current');
+  });
+</script>",True,,system@vosao.org,False
+,True,,False,0,New page,/,"{""en"":""Home page""}",2010-06-13T18:14:18,False,APPROVED,1,20001,2010-08-09T20:07:55,False,,,,system@vosao.org,,2010-06-13T00:00:00,30002,SIMPLE,False,True,,True,,system@vosao.org,False
+/,True,,False,1,New page,/search,"{en:""Search""}",2010-06-13T18:14:18,False,APPROVED,1,20006,2011-02-11T21:59:48,False,,,,system@vosao.org,140005,2010-06-13T00:00:00,40002,SIMPLE,False,True,,False,,kinyelo@gmail.com,False
+/blog,True,,True,1,New page,/blog/aliquam-risus-justo,"{""en"":""Deploying on AppSpot.com""}",2010-06-16T12:51:34,False,APPROVED,1,20006,2010-08-09T20:07:56,False,130007,,,system@vosao.org,140005,2010-06-01T00:00:00,40011,STRUCTURED,False,True,,True,,system@vosao.org,False
+/blog,True,,True,0,New page,/blog/lorem-ipsum-dolor-sit-amet,"{""en"":""First steps""}",2010-06-16T12:47:22,False,APPROVED,1,20006,2010-08-09T20:07:58,False,130007,,,system@vosao.org,140005,2010-05-01T00:00:00,40013,STRUCTURED,False,True,,True,,system@vosao.org,False
+/blog,True,,False,10,New page,/blog/test-8,"{""en"":""Test 8""}",2010-06-18T06:52:12,False,APPROVED,1,20006,2010-08-09T20:07:55,False,130007,,,system@vosao.org,140005,2010-04-08T00:00:00,50008,STRUCTURED,False,True,,True,,system@vosao.org,False
+/blog,True,,False,7,New page,/blog/test-5,"{""en"":""Test 5""}",2010-06-18T06:51:50,False,APPROVED,1,20006,2010-08-09T20:07:57,False,130007,,,system@vosao.org,140005,2010-04-05T00:00:00,50009,STRUCTURED,False,True,,True,,system@vosao.org,False
+/blog,True,,False,4,New page,/blog/test-2,"{""en"":""Test 2""}",2010-06-18T06:51:30,False,APPROVED,1,20006,2010-08-09T20:07:56,False,130007,,,system@vosao.org,140005,2010-04-02T00:00:00,50010,STRUCTURED,False,True,,True,,system@vosao.org,False
+/,True,,False,3,New page,/about,"{""en"":""About""}",2010-06-13T19:29:38,True,APPROVED,1,20006,2010-08-09T20:07:57,False,,,,system@vosao.org,140005,2010-06-13T00:00:00,50011,SIMPLE,False,True,"<script type=""text/javascript"">
+  $(function() {
+    $('#nav ul li:nth(4)').attr('id', 'current');
+  });
+</script>",True,,system@vosao.org,False
+/,True,,False,7,New page,/tags,"{""en"":""Tags""}",2010-06-19T09:25:05,True,APPROVED,1,20006,2010-08-09T20:07:56,False,,,,system@vosao.org,140005,2010-06-19T00:00:00,70012,SIMPLE,False,False,"<script type=""text/javascript"">
+  $(function() {
+    $('#nav ul li:nth(1)').attr('id', 'current');
+  });
+</script>",True,,system@vosao.org,False
+/blog,True,,False,11,New page,/blog/test-9,"{""en"":""Test 9""}",2010-06-18T06:52:20,False,APPROVED,1,20006,2010-08-09T20:07:57,False,130007,,,system@vosao.org,140005,2010-04-09T00:00:00,80012,STRUCTURED,False,True,,True,,system@vosao.org,False
+/blog,True,,False,8,New page,/blog/test-6,"{""en"":""Test 6""}",2010-06-18T06:51:57,False,APPROVED,1,20006,2010-08-09T20:07:55,False,130007,,,system@vosao.org,140005,2010-04-06T00:00:00,80013,STRUCTURED,False,True,,True,,system@vosao.org,False
+/blog,True,,False,5,New page,/blog/test-3,"{""en"":""Test 3""}",2010-06-18T06:51:36,False,APPROVED,1,20006,2010-08-09T20:07:56,False,130007,,,system@vosao.org,140005,2010-04-03T00:00:00,80014,STRUCTURED,False,True,,True,,system@vosao.org,False
+/blog,True,,True,0,New page,/blog/_default,"{en:""Children default settings""}",2010-08-14T05:39:18,False,EDIT,1,20006,2010-11-27T11:31:19,False,130007,,,system@vosao.org,140005,2010-08-14T05:39:00,90008,STRUCTURED,False,True,,True,,,False
+/,True,,False,0,New page,/_default,"{""en"":""Children default settings""}",2011-02-11T21:19:03,False,EDIT,1,,2011-02-11T21:19:03,False,,,,system@vosao.org,,2011-02-11T21:19:03,100018,SIMPLE,False,True,,True,,kinyelo@gmail.com,False
+,False,,False,0,CoolBlue Home,/,"{""en"":""Home page""}",2010-06-13T18:32:04,True,APPROVED,2,20006,2011-02-11T21:17:02,False,,,,system@vosao.org,140005,2010-06-13T00:00:00,100019,SIMPLE,False,False,"<script type=""text/javascript"">
+  $(function() {
+    $('#nav ul li:nth(0)').attr('id', 'current');
+  });
+</script>",False,,kinyelo@gmail.com,False
+/include,True,,False,0,New page,/include/sidebar,"{""en"":""Sidebar""}",2010-06-13T18:59:37,False,APPROVED,1,20001,2010-08-09T20:07:55,False,,,,system@vosao.org,,2010-06-13T00:00:00,110009,SIMPLE,False,True,,True,,system@vosao.org,False
+/blog,True,,False,12,New page,/blog/test-10,"{""en"":""Test 10""}",2010-06-18T06:52:26,False,APPROVED,1,20006,2010-08-09T20:07:58,False,130007,,,system@vosao.org,140005,2010-04-10T00:00:00,120013,STRUCTURED,False,True,,True,,system@vosao.org,False
+/blog,True,,False,9,New page,/blog/test-7,"{""en"":""Test 7""}",2010-06-18T06:52:04,False,APPROVED,1,20006,2010-08-09T20:07:56,False,130007,,,system@vosao.org,140005,2010-04-07T00:00:00,120014,STRUCTURED,False,True,,True,,system@vosao.org,False
+/blog,True,,False,6,New page,/blog/test-4,"{""en"":""Test 4""}",2010-06-18T06:51:43,False,APPROVED,1,20006,2010-08-09T20:07:54,False,130007,,,system@vosao.org,140005,2010-04-04T00:00:00,120015,STRUCTURED,False,True,,True,,system@vosao.org,False
+/blog,True,,False,3,New page,/blog/test--1,"{""en"":""Test #1""}",2010-06-18T06:51:21,False,APPROVED,1,20006,2010-08-09T20:07:55,False,130007,,,system@vosao.org,140005,2010-04-01T00:00:00,120016,STRUCTURED,False,True,,True,,system@vosao.org,False
+/blog,True,,True,2,New page,/blog/congratulations,"{en:""Congratulations!""}",2010-06-16T13:08:35,False,APPROVED,1,20006,2011-12-25T07:19:06,False,130007,,,system@vosao.org,140005,2010-06-16T00:00:00,140007,STRUCTURED,False,True,,True,,admin@test.com,False
+/,True,,False,2,New page,/include,"{""en"":""Include""}",2010-06-13T18:59:26,False,APPROVED,1,20001,2010-08-09T20:07:57,False,,,,system@vosao.org,,2010-06-13T00:00:00,140009,SIMPLE,False,True,,True,,system@vosao.org,False

@@ -1,0 +1,122 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.0="http://hr.org.foi.ontology/AzureDataModel#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#phoneNumber">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#Customer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#customer_CustomerID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#warningDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Warning"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#amountKn">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#expirationDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#Warning_1">
+    <j.0:credit_CreditID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</j.0:credit_CreditID>
+    <j.0:warningNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:warningNumber>
+    <j.0:warningDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-09-21 00:00:00.0</j.0:warningDate>
+    <j.0:WarningID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:WarningID>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Warning"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#openingDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#CreditId">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#Customer_2">
+    <j.0:phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">456-678</j.0:phoneNumber>
+    <j.0:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adresa 34</j.0:address>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pero</j.0:name>
+    <j.0:CustomerID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</j.0:CustomerID>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#amountCurrency">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#CustomerID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#Credit_1">
+    <j.0:customer_CustomerID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:customer_CustomerID>
+    <j.0:amountCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000.00</j.0:amountCurrency>
+    <j.0:amountKn rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000.00</j.0:amountKn>
+    <j.0:expirationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-28 00:00:00.0</j.0:expirationDate>
+    <j.0:openingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-09-28 00:00:00.0</j.0:openingDate>
+    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">324567899</j.0:label>
+    <j.0:CreditId rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</j.0:CreditId>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Credit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#Customer_1">
+    <j.0:phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123-456</j.0:phoneNumber>
+    <j.0:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adresa 12</j.0:address>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko</j.0:name>
+    <j.0:CustomerID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</j.0:CustomerID>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#credit_CreditID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Warning"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#warningNumber">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Warning"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#address">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#WarningID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Warning"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#Credit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#Warning">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/AzureDataModel#label">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/AzureDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>

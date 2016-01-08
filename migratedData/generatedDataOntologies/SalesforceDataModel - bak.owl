@@ -1,0 +1,88 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.0="http://hr.org.foi.ontology/SalesforceDataModel#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/SalesforceDataModel#openingDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/SalesforceDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/SalesforceDataModel#name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/SalesforceDataModel#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/SalesforceDataModel#phone">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/SalesforceDataModel#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/SalesforceDataModel#customerId">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/SalesforceDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/SalesforceDataModel#amountKn">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/SalesforceDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/SalesforceDataModel#Credit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/SalesforceDataModel#address">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/SalesforceDataModel#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/SalesforceDataModel#amountCurrency">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/SalesforceDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/SalesforceDataModel#Credit_1">
+    <j.0:customerId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a0BG000000YeoN2MAJ</j.0:customerId>
+    <j.0:amountCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#double">123.0</j.0:amountCurrency>
+    <j.0:amountKn rdf:datatype="http://www.w3.org/2001/XMLSchema#double">456.0</j.0:amountKn>
+    <j.0:expirationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">java.util.GregorianCalendar[time=1348351200000,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Europe/Belgrade",offset=3600000,dstSavings=3600000,useDaylight=true,transitions=119,lastRule=java.util.SimpleTimeZone[id=Europe/Belgrade,offset=3600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]],firstDayOfWeek=2,minimalDaysInFirstWeek=1,ERA=1,YEAR=2012,MONTH=8,WEEK_OF_YEAR=39,WEEK_OF_MONTH=4,DAY_OF_MONTH=23,DAY_OF_YEAR=267,DAY_OF_WEEK=1,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=0,HOUR_OF_DAY=0,MINUTE=0,SECOND=0,MILLISECOND=0,ZONE_OFFSET=3600000,DST_OFFSET=3600000]</j.0:expirationDate>
+    <j.0:openingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">java.util.GregorianCalendar[time=1347487200000,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Europe/Belgrade",offset=3600000,dstSavings=3600000,useDaylight=true,transitions=119,lastRule=java.util.SimpleTimeZone[id=Europe/Belgrade,offset=3600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]],firstDayOfWeek=2,minimalDaysInFirstWeek=1,ERA=1,YEAR=2012,MONTH=8,WEEK_OF_YEAR=38,WEEK_OF_MONTH=3,DAY_OF_MONTH=13,DAY_OF_YEAR=257,DAY_OF_WEEK=5,DAY_OF_WEEK_IN_MONTH=2,AM_PM=0,HOUR=0,HOUR_OF_DAY=0,MINUTE=0,SECOND=0,MILLISECOND=0,ZONE_OFFSET=3600000,DST_OFFSET=3600000]</j.0:openingDate>
+    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34566777777</j.0:label>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/SalesforceDataModel#Credit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/SalesforceDataModel#label">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/SalesforceDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/SalesforceDataModel#Customer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/SalesforceDataModel#Credit_2">
+    <j.0:customerId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a0BG000000YWyLyMAL</j.0:customerId>
+    <j.0:amountCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.0</j.0:amountCurrency>
+    <j.0:amountKn rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.0</j.0:amountKn>
+    <j.0:expirationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">java.util.GregorianCalendar[time=1348092000000,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Europe/Belgrade",offset=3600000,dstSavings=3600000,useDaylight=true,transitions=119,lastRule=java.util.SimpleTimeZone[id=Europe/Belgrade,offset=3600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]],firstDayOfWeek=2,minimalDaysInFirstWeek=1,ERA=1,YEAR=2012,MONTH=8,WEEK_OF_YEAR=39,WEEK_OF_MONTH=4,DAY_OF_MONTH=20,DAY_OF_YEAR=264,DAY_OF_WEEK=5,DAY_OF_WEEK_IN_MONTH=3,AM_PM=0,HOUR=0,HOUR_OF_DAY=0,MINUTE=0,SECOND=0,MILLISECOND=0,ZONE_OFFSET=3600000,DST_OFFSET=3600000]</j.0:expirationDate>
+    <j.0:openingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">java.util.GregorianCalendar[time=1347228000000,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="Europe/Belgrade",offset=3600000,dstSavings=3600000,useDaylight=true,transitions=119,lastRule=java.util.SimpleTimeZone[id=Europe/Belgrade,offset=3600000,dstSavings=3600000,useDaylight=true,startYear=0,startMode=2,startMonth=2,startDay=-1,startDayOfWeek=1,startTime=3600000,startTimeMode=2,endMode=2,endMonth=9,endDay=-1,endDayOfWeek=1,endTime=3600000,endTimeMode=2]],firstDayOfWeek=2,minimalDaysInFirstWeek=1,ERA=1,YEAR=2012,MONTH=8,WEEK_OF_YEAR=38,WEEK_OF_MONTH=3,DAY_OF_MONTH=10,DAY_OF_YEAR=254,DAY_OF_WEEK=2,DAY_OF_WEEK_IN_MONTH=2,AM_PM=0,HOUR=0,HOUR_OF_DAY=0,MINUTE=0,SECOND=0,MILLISECOND=0,ZONE_OFFSET=3600000,DST_OFFSET=3600000]</j.0:openingDate>
+    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32123456789</j.0:label>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/SalesforceDataModel#Credit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/SalesforceDataModel#Customer_1">
+    <j.0:phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">345678</j.0:phone>
+    <j.0:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zagrebačka 22</j.0:address>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ivan Ivic</j.0:name>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/SalesforceDataModel#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/SalesforceDataModel#Customer_2">
+    <j.0:phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123456</j.0:phone>
+    <j.0:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kalnicka 37</j.0:address>
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pero Peric</j.0:name>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/SalesforceDataModel#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/SalesforceDataModel#expirationDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/SalesforceDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>

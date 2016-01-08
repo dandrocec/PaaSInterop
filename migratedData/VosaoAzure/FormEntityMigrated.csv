@@ -1,0 +1,2 @@
+identifier,form_modDate,form_letterSubject,form_createDate,form_sendButtonTitle,form_title,form_enableCaptcha,form_enableSave,form_showResetButton,form_resetButtonTitle,form_name,form_createUserEmail,form_modUserEmail,form_email
+100010,Thu Mar 13 09:32:50 CET 2014,Feedback letter,Thu Mar 13 09:32:50 CET 2014,,Feedback,False,False,False,,feedback,system@vosao.org,system@vosao.org,admin@test.com

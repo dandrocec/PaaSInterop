@@ -1,0 +1,13 @@
+title,createUserEmail,createDate,content,key,modDate,modUserEmail
+Blog article,system@vosao.org,2014-03-13T08:32:50,"<structure>
+  <field>
+    <title>Overview</title>
+    <name>overview</name>
+    <type>TEXTAREA</type>
+  </field>
+  <field>
+    <title>Content</title>
+    <name>content</name>
+    <type>TEXTAREA</type>
+  </field>
+</structure>",140005,2014-03-13T08:32:50,

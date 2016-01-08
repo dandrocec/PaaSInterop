@@ -1,0 +1,2 @@
+identifier,formconfig_letterTemplate,formconfig_formTemplate,formconfig_createUserEmail,formconfig_modUserEmail,formconfig_modDate,formconfig_createDate
+110001,<Text: Hi,\n\n<p>User has filled out a form $form.title on the site $config.sit...>,<Text: <div id=\"div-$form.name\">\n\n<form id=\"form-$form.name\" method=\"POST\" ac...>,guest,system@vosao.org,Thu Mar 13 09:32:50 CET 2014,Thu Mar 13 09:32:35 CET 2014

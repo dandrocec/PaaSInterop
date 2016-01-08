@@ -1,0 +1,59 @@
+name,title,createUserEmail,createDate,structureId,content,headContent,key,modDate,modUserEmail,type
+article-overview,Article overview,system@vosao.org,2014-03-13T08:32:50,140005,"<div class=""post"">
+  <div class=""right"">
+    <h2><a href=""$page.friendlyURL"">$page.title</a></h2>
+      <p class=""post-info"">
+	Filed under 
+#foreach ($tag in $service.tag.getTags($page.friendlyURL))
+          <a href=""/tags?tag=$tag.id"">$tag.name</a>,
+#end
+      </p>
+      $content.overview
+      <p><a class=""more"" href=""$page.friendlyURL"">continue reading &raquo;</a></p>
+
+  </div>
+  <div class=""left"">
+    <p class=""dateinfo"">$date.format('MMM', $page.publishDate)<span>$date.format('d', $page.publishDate)</span></p>
+    <div class=""post-meta"">
+      <h4>Post Info</h4>
+      <ul>
+        <li class=""user""><a href=""#"">$service.findUser($page.modUserEmail).name</a></li>
+        <li class=""time""><a href=""#"">$date.format('medium_time', $page.modDate)</a></li>
+        <li class=""comment""><a href=""$page.friendlyURL#comments"">Comments</a></li>
+        <li class=""permalink""><a href=""$page.friendlyURL"">Permalink</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+",,120009,2014-03-13T08:32:50,system@vosao.org,VELOCITY
+article,Article,system@vosao.org,2014-03-13T08:32:50,140005,"<div class=""post"">
+  <div class=""right"">
+    <h2><a href=""$page.friendlyURL"">$page.title</a></h2>
+      <p class=""post-info"">
+	Filed under 
+#foreach ($tag in $service.tag.getTags($page.friendlyURL))
+          <a href=""/tags?tag=$tag.id"">$tag.name</a>,
+#end
+      </p>
+      $content.overview
+      $content.content
+      <div id=""comments"">
+        $page.comments
+      </div>
+  </div>
+  <div class=""left"">
+    <p class=""dateinfo"">$date.format('MMM', $page.publishDate)<span>$date.format('d', $page.publishDate)</span></p>
+    <div class=""post-meta"">
+      <h4>Post Info</h4>
+      <ul>
+        <li class=""user""><a href=""#"">$service.findUser($page.modUserEmail).name</a></li>
+        <li class=""time""><a href=""#"">$date.format('medium_time', $page.modDate)</a></li>
+        <li class=""comment""><a href=""$page.friendlyURL#comments"">Comments</a></li>
+        <li class=""permalink""><a href=""$page.friendlyURL"">Permalink</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+",,130007,2014-03-13T08:32:50,system@vosao.org,VELOCITY

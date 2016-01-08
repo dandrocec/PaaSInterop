@@ -1,0 +1,984 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.0="http://hr.org.foi.ontology/ZohoCrmDataModel#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Employees">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#POTENTIALID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Campaign">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Due_Date">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#LEADID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact_Owner">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#City">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Other_State">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead_1490529000000085001">
+    <j.0:Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Country>
+    <j.0:No_of_Employees rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24</j.0:No_of_Employees>
+    <j.0:Designation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mr</j.0:Designation>
+    <j.0:Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Textual description</j.0:Description>
+    <j.0:Created_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Created_By>
+    <j.0:Company rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tvrtka d.o.o</j.0:Company>
+    <j.0:Skype_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ivoivic</j.0:Skype_ID>
+    <j.0:Fax rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+385678899</j.0:Fax>
+    <j.0:SMOWNERID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMOWNERID>
+    <j.0:Secondary_Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iivic@yahoo.com</j.0:Secondary_Email>
+    <j.0:MODIFIEDBY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:MODIFIEDBY>
+    <j.0:Last_Activity_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 13:55:03</j.0:Last_Activity_Time>
+    <j.0:Zip_Code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">42000</j.0:Zip_Code>
+    <j.0:SMCREATORID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMCREATORID>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <j.0:First_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ivo</j.0:First_Name>
+    <j.0:Lead_Status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contacted</j.0:Lead_Status>
+    <j.0:Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">darkoandr@yahoo.com</j.0:Email>
+    <j.0:LEADID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000085001</j.0:LEADID>
+    <j.0:Mobile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+38512343434</j.0:Mobile>
+    <j.0:Last_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ivic</j.0:Last_Name>
+    <j.0:Lead_Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partner</j.0:Lead_Source>
+    <j.0:Street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zagrebacka 23</j.0:Street>
+    <j.0:City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Varazdin</j.0:City>
+    <j.0:Annual_Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">233</j.0:Annual_Revenue>
+    <j.0:Lead_Owner rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Lead_Owner>
+    <j.0:Modified_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 13:55:03</j.0:Modified_Time>
+    <j.0:Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+38512343434</j.0:Phone>
+    <j.0:Modified_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Modified_By>
+    <j.0:Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acquired</j.0:Rating>
+    <j.0:Website rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.tvrtka.hr</j.0:Website>
+    <j.0:Created_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-07 12:45:33</j.0:Created_Time>
+    <j.0:Email_Opt_Out rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</j.0:Email_Opt_Out>
+    <j.0:Industry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ManagementISV</j.0:Industry>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Billing_Street">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Stage">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Mailing_Country">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Closing_Date">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Billing_State">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#SEMODULE">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Industry">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential_Name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Email">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead_1490529000000085074">
+    <j.0:Fax rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+385778899</j.0:Fax>
+    <j.0:Modified_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Modified_By>
+    <j.0:Designation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mrs.</j.0:Designation>
+    <j.0:Zip_Code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">42000</j.0:Zip_Code>
+    <j.0:MODIFIEDBY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:MODIFIEDBY>
+    <j.0:Annual_Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">567</j.0:Annual_Revenue>
+    <j.0:Street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pavlinska 2</j.0:Street>
+    <j.0:Last_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anic</j.0:Last_Name>
+    <j.0:Mobile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+38577788899</j.0:Mobile>
+    <j.0:First_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ana</j.0:First_Name>
+    <j.0:No_of_Employees rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34</j.0:No_of_Employees>
+    <j.0:Website rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.foi.hr</j.0:Website>
+    <j.0:Secondary_Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aani@gmail.com</j.0:Secondary_Email>
+    <j.0:Company rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FOI</j.0:Company>
+    <j.0:Lead_Owner rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Lead_Owner>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <j.0:Industry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data/Telecom OEM</j.0:Industry>
+    <j.0:Last_Activity_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 13:53:08</j.0:Last_Activity_Time>
+    <j.0:Created_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Created_By>
+    <j.0:Skype_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ana.anic@gmail.com</j.0:Skype_ID>
+    <j.0:City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Varazdin</j.0:City>
+    <j.0:LEADID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000085074</j.0:LEADID>
+    <j.0:Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lead description 2</j.0:Description>
+    <j.0:Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+38568787878</j.0:Phone>
+    <j.0:Modified_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 13:53:08</j.0:Modified_Time>
+    <j.0:Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Country>
+    <j.0:Lead_Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cold Call</j.0:Lead_Source>
+    <j.0:Lead_Status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not Contacted</j.0:Lead_Status>
+    <j.0:SMOWNERID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMOWNERID>
+    <j.0:Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ana.anic@foi.hr</j.0:Email>
+    <j.0:Email_Opt_Out rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</j.0:Email_Opt_Out>
+    <j.0:SMCREATORID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMCREATORID>
+    <j.0:Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Project Cancelled</j.0:Rating>
+    <j.0:Created_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-07 12:46:40</j.0:Created_Time>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact_1490529000000086017">
+    <j.0:Last_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Majic</j.0:Last_Name>
+    <j.0:Other_Zip rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10000</j.0:Other_Zip>
+    <j.0:Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+3857899000</j.0:Phone>
+    <j.0:Lead_Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Employee Referral</j.0:Lead_Source>
+    <j.0:Asst_Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+385779900</j.0:Asst_Phone>
+    <j.0:Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dr</j.0:Title>
+    <j.0:Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contact in the "Habulan" company</j.0:Description>
+    <j.0:Mobile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+385776654</j.0:Mobile>
+    <j.0:Skype_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maja.majic</j.0:Skype_ID>
+    <j.0:Mailing_Zip rdf:datatype="http://www.w3.org/2001/XMLSchema#string">42000</j.0:Mailing_Zip>
+    <j.0:Mailing_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Varazdin</j.0:Mailing_City>
+    <j.0:Created_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-08 08:41:14</j.0:Created_Time>
+    <j.0:ACCOUNTID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086009</j.0:ACCOUNTID>
+    <j.0:Reports_To rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bernarda</j.0:Reports_To>
+    <j.0:MODIFIEDBY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:MODIFIEDBY>
+    <j.0:Add_to_QuickBooks rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</j.0:Add_to_QuickBooks>
+    <j.0:Modified_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 14:22:53</j.0:Modified_Time>
+    <j.0:Other_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zagreb</j.0:Other_City>
+    <j.0:Home_Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+385665543</j.0:Home_Phone>
+    <j.0:Fax rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+385334657</j.0:Fax>
+    <j.0:Assistant rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miro</j.0:Assistant>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <j.0:SMOWNERID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMOWNERID>
+    <j.0:Secondary_Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mmajic@gmail.com</j.0:Secondary_Email>
+    <j.0:First_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maja</j.0:First_Name>
+    <j.0:Mailing_Street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dragutina Tadijanovica 10</j.0:Mailing_Street>
+    <j.0:Email_Opt_Out rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</j.0:Email_Opt_Out>
+    <j.0:Last_Activity_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 14:22:53</j.0:Last_Activity_Time>
+    <j.0:Other_Street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tina Ujevića 7</j.0:Other_Street>
+    <j.0:Mailing_Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Mailing_Country>
+    <j.0:Modified_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Modified_By>
+    <j.0:SMCREATORID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMCREATORID>
+    <j.0:CONTACTID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086017</j.0:CONTACTID>
+    <j.0:Department rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HRM Department</j.0:Department>
+    <j.0:Account_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Habulan</j.0:Account_Name>
+    <j.0:Date_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1984-09-07</j.0:Date_of_Birth>
+    <j.0:Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maja@gmail.com</j.0:Email>
+    <j.0:Other_Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+38567890</j.0:Other_Phone>
+    <j.0:Created_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Created_By>
+    <j.0:Other_Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Other_Country>
+    <j.0:Contact_Owner rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Contact_Owner>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Other_Street">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential_1490529000000086025">
+    <j.0:RELATEDTOID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086017</j.0:RELATEDTOID>
+    <j.0:Send_Notification_Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</j.0:Send_Notification_Email>
+    <j.0:MODIFIEDBY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:MODIFIEDBY>
+    <j.0:SMCREATORID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMCREATORID>
+    <j.0:Closing_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-30</j.0:Closing_Date>
+    <j.0:Priority rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High</j.0:Priority>
+    <j.0:ACTIVITYID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086182</j.0:ACTIVITYID>
+    <j.0:Subject rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meeting</j.0:Subject>
+    <j.0:Probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">75</j.0:Probability>
+    <j.0:SMOWNERID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMOWNERID>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <j.0:Contact_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maja Majic</j.0:Contact_Name>
+    <j.0:Stage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proposal/Price Quote</j.0:Stage>
+    <j.0:ACCOUNTID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086009</j.0:ACCOUNTID>
+    <j.0:Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hopefully we can get it!</j.0:Description>
+    <j.0:Sales_Cycle_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23</j.0:Sales_Cycle_Duration>
+    <j.0:Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a new task for a meeting!</j.0:Description>
+    <j.0:Potential_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Buying</j.0:Potential_Name>
+    <j.0:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Existing Business</j.0:Type>
+    <j.0:Created_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-08 09:22:00</j.0:Created_Time>
+    <j.0:CONTACTID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086017</j.0:CONTACTID>
+    <j.0:Created_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-08 08:43:54</j.0:Created_Time>
+    <j.0:Status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not Started</j.0:Status>
+    <j.0:Created_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Created_By>
+    <j.0:Expected_Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7500</j.0:Expected_Revenue>
+    <j.0:Modified_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 14:30:20</j.0:Modified_Time>
+    <j.0:Next_Step rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contact their manager</j.0:Next_Step>
+    <j.0:POTENTIALID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086025</j.0:POTENTIALID>
+    <j.0:Account_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Habulan</j.0:Account_Name>
+    <j.0:Modified_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 14:25:40</j.0:Modified_Time>
+    <j.0:SEMODULE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contacts</j.0:SEMODULE>
+    <j.0:Modified_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Modified_By>
+    <j.0:Potential_Owner rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Potential_Owner>
+    <j.0:Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10000</j.0:Amount>
+    <j.0:Related_To rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maja Majic</j.0:Related_To>
+    <j.0:Task_Owner rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Task_Owner>
+    <j.0:Overall_Sales_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23</j.0:Overall_Sales_Duration>
+    <j.0:Lead_Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public Relations</j.0:Lead_Source>
+    <j.0:Due_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-15</j.0:Due_Date>
+    <j.0:Last_Activity_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 14:25:40</j.0:Last_Activity_Time>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Home_Phone">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Task">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#End_Date">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Campaign"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Billing_Country">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead_1490529000000086001">
+    <j.0:Mobile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+3857676767</j.0:Mobile>
+    <j.0:Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peric@habulan.hr</j.0:Email>
+    <j.0:MODIFIEDBY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:MODIFIEDBY>
+    <j.0:Secondary_Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pperic@gmail.com</j.0:Secondary_Email>
+    <j.0:Lead_Status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contacted</j.0:Lead_Status>
+    <j.0:Lead_Owner rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Lead_Owner>
+    <j.0:Email_Opt_Out rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</j.0:Email_Opt_Out>
+    <j.0:Created_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-08 08:37:56</j.0:Created_Time>
+    <j.0:Last_Activity_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 13:41:14</j.0:Last_Activity_Time>
+    <j.0:Created_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Created_By>
+    <j.0:Skype_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pero.peric</j.0:Skype_ID>
+    <j.0:Lead_Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OnlineStore</j.0:Lead_Source>
+    <j.0:Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is lead description.</j.0:Description>
+    <j.0:Modified_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Modified_By>
+    <j.0:Modified_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 13:41:14</j.0:Modified_Time>
+    <j.0:Company rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Habulan Ltd-</j.0:Company>
+    <j.0:Designation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mr</j.0:Designation>
+    <j.0:State rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:State>
+    <j.0:SMOWNERID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMOWNERID>
+    <j.0:Fax rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+38556677887</j.0:Fax>
+    <j.0:Industry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data/Telecom OEM</j.0:Industry>
+    <j.0:No_of_Employees rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5678</j.0:No_of_Employees>
+    <j.0:City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zagreb</j.0:City>
+    <j.0:SMCREATORID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMCREATORID>
+    <j.0:Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acquired</j.0:Rating>
+    <j.0:LEADID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086001</j.0:LEADID>
+    <j.0:Zip_Code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10000</j.0:Zip_Code>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <j.0:Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Country>
+    <j.0:Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+3857676767</j.0:Phone>
+    <j.0:Website rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.habulan.hr</j.0:Website>
+    <j.0:Annual_Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23456</j.0:Annual_Revenue>
+    <j.0:Street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Varazdinska</j.0:Street>
+    <j.0:Last_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peric</j.0:Last_Name>
+    <j.0:First_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pero</j.0:First_Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#identifier">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Related_To">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Ticker_Symbol">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact_Name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Priority">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#State">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Sales_Cycle_Duration">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential_1490529000000086059">
+    <j.0:Probability rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100</j.0:Probability>
+    <j.0:Stage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Closed Won</j.0:Stage>
+    <j.0:SMOWNERID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMOWNERID>
+    <j.0:Sales_Cycle_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21</j.0:Sales_Cycle_Duration>
+    <j.0:Account_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FER</j.0:Account_Name>
+    <j.0:Potential_Owner rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Potential_Owner>
+    <j.0:POTENTIALID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086059</j.0:POTENTIALID>
+    <j.0:Closing_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-28</j.0:Closing_Date>
+    <j.0:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Existing Business</j.0:Type>
+    <j.0:Modified_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 14:25:04</j.0:Modified_Time>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <j.0:Lead_Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cold Call</j.0:Lead_Source>
+    <j.0:Potential_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Installation</j.0:Potential_Name>
+    <j.0:ACCOUNTID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086013</j.0:ACCOUNTID>
+    <j.0:Next_Step rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contact manager</j.0:Next_Step>
+    <j.0:Created_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Created_By>
+    <j.0:Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We will probably get it 99%!</j.0:Description>
+    <j.0:Amount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">45678</j.0:Amount>
+    <j.0:Overall_Sales_Duration rdf:datatype="http://www.w3.org/2001/XMLSchema#string">21</j.0:Overall_Sales_Duration>
+    <j.0:SMCREATORID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMCREATORID>
+    <j.0:Last_Activity_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 14:25:04</j.0:Last_Activity_Time>
+    <j.0:Expected_Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">45678</j.0:Expected_Revenue>
+    <j.0:Created_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-08 08:44:42</j.0:Created_Time>
+    <j.0:Modified_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Modified_By>
+    <j.0:MODIFIEDBY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:MODIFIEDBY>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Created_By">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Campaign_1490529000000086067">
+    <j.0:End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-02-18</j.0:End_Date>
+    <j.0:Created_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-08 08:51:02</j.0:Created_Time>
+    <j.0:Status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planning</j.0:Status>
+    <j.0:Campaign_Owner rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Campaign_Owner>
+    <j.0:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advertisement</j.0:Type>
+    <j.0:Expected_Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123456</j.0:Expected_Revenue>
+    <j.0:Modified_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Modified_By>
+    <j.0:SMCREATORID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMCREATORID>
+    <j.0:MODIFIEDBY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:MODIFIEDBY>
+    <j.0:Budgeted_Cost rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23454</j.0:Budgeted_Cost>
+    <j.0:Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Second description of the campaign</j.0:Description>
+    <j.0:CAMPAIGNID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086067</j.0:CAMPAIGNID>
+    <j.0:Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-08</j.0:Start_Date>
+    <j.0:Num_sent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1234</j.0:Num_sent>
+    <j.0:Created_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Created_By>
+    <j.0:Modified_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 14:28:44</j.0:Modified_Time>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Campaign"/>
+    <j.0:Actual_Cost rdf:datatype="http://www.w3.org/2001/XMLSchema#string">500000</j.0:Actual_Cost>
+    <j.0:Campaign_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud service advertisment</j.0:Campaign_Name>
+    <j.0:Expected_Response rdf:datatype="http://www.w3.org/2001/XMLSchema#string">444</j.0:Expected_Response>
+    <j.0:SMOWNERID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMOWNERID>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Phone">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Other_Zip">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Shipping_State">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Add_to_QuickBooks">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Campaign_1490529000000086071">
+    <j.0:Budgeted_Cost rdf:datatype="http://www.w3.org/2001/XMLSchema#string">345</j.0:Budgeted_Cost>
+    <j.0:Modified_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Modified_By>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Campaign"/>
+    <j.0:MODIFIEDBY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:MODIFIEDBY>
+    <j.0:Expected_Response rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</j.0:Expected_Response>
+    <j.0:CAMPAIGNID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086071</j.0:CAMPAIGNID>
+    <j.0:Expected_Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3444</j.0:Expected_Revenue>
+    <j.0:Campaign_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software Advertising</j.0:Campaign_Name>
+    <j.0:Actual_Cost rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1000</j.0:Actual_Cost>
+    <j.0:Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campaign description 1</j.0:Description>
+    <j.0:Created_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Created_By>
+    <j.0:Campaign_Owner rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Campaign_Owner>
+    <j.0:SMOWNERID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMOWNERID>
+    <j.0:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advertisement</j.0:Type>
+    <j.0:Modified_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 14:27:18</j.0:Modified_Time>
+    <j.0:Num_sent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">567</j.0:Num_sent>
+    <j.0:Created_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-08 08:51:26</j.0:Created_Time>
+    <j.0:Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-16</j.0:Start_Date>
+    <j.0:SMCREATORID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMCREATORID>
+    <j.0:Status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planning</j.0:Status>
+    <j.0:End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-09</j.0:End_Date>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact_1490529000000086021">
+    <j.0:Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ms</j.0:Title>
+    <j.0:Other_Street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kalnička 345</j.0:Other_Street>
+    <j.0:Lead_Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seminar Partner</j.0:Lead_Source>
+    <j.0:Assistant rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miki</j.0:Assistant>
+    <j.0:Secondary_Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ebraun@gmail.com</j.0:Secondary_Email>
+    <j.0:Contact_Owner rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Contact_Owner>
+    <j.0:Skype_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editbraun</j.0:Skype_ID>
+    <j.0:Mailing_Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Mailing_Country>
+    <j.0:Mailing_Street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Varazdinska 23</j.0:Mailing_Street>
+    <j.0:SMCREATORID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMCREATORID>
+    <j.0:Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+385670345</j.0:Phone>
+    <j.0:ACCOUNTID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086013</j.0:ACCOUNTID>
+    <j.0:Last_Activity_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 14:13:59</j.0:Last_Activity_Time>
+    <j.0:Other_Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Other_Country>
+    <j.0:Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">edit.braun@yahoo.com</j.0:Email>
+    <j.0:MODIFIEDBY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:MODIFIEDBY>
+    <j.0:Fax rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+385345555</j.0:Fax>
+    <j.0:SMOWNERID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMOWNERID>
+    <j.0:Department rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Department of Software Systems Development</j.0:Department>
+    <j.0:Account_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FER</j.0:Account_Name>
+    <j.0:Modified_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Modified_By>
+    <j.0:Asst_Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+3857778877</j.0:Asst_Phone>
+    <j.0:Modified_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 14:13:59</j.0:Modified_Time>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <j.0:Last_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braun</j.0:Last_Name>
+    <j.0:Other_Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+385778899</j.0:Other_Phone>
+    <j.0:Reports_To rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Andročec</j.0:Reports_To>
+    <j.0:Other_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ludbreg</j.0:Other_City>
+    <j.0:First_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edit</j.0:First_Name>
+    <j.0:CONTACTID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086021</j.0:CONTACTID>
+    <j.0:Date_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1984-05-08</j.0:Date_of_Birth>
+    <j.0:Add_to_QuickBooks rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</j.0:Add_to_QuickBooks>
+    <j.0:Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Additional information</j.0:Description>
+    <j.0:Mailing_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zagreb</j.0:Mailing_City>
+    <j.0:Created_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Created_By>
+    <j.0:Email_Opt_Out rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</j.0:Email_Opt_Out>
+    <j.0:Mailing_Zip rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10000</j.0:Mailing_Zip>
+    <j.0:Home_Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+385677676</j.0:Home_Phone>
+    <j.0:Other_State rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Other_State>
+    <j.0:Mobile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+38599875643</j.0:Mobile>
+    <j.0:Created_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-08 08:42:13</j.0:Created_Time>
+    <j.0:Other_Zip rdf:datatype="http://www.w3.org/2001/XMLSchema#string">42345</j.0:Other_Zip>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Actual_Cost">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Campaign"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Next_Step">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Other_Phone">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Shipping_City">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Created_Time">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Start_Date">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Campaign"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Country">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Subject">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Expected_Revenue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Rating">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Campaign_Name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Campaign"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Secondary_Email">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#ACCOUNTID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Budgeted_Cost">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Campaign"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Date_of_Birth">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Billing_Code">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Account_NameDarko">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Amount">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#SIC_Code">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Department">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Annual_Revenue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Description">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Status">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Task_Owner">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Other_Country">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Company">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Expected_Response">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Campaign"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Last_Activity_Time">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential_Owner">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Title">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Shipping_Code">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead_Source">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Campaign_Owner">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Campaign"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#SMOWNERID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Mailing_Zip">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Billing_City">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Shipping_Country">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#hasLinkToObject">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Other_City">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#SMCREATORID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Reports_To">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Skype_ID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Account_1490529000000086009">
+    <j.0:Fax rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+385773322</j.0:Fax>
+    <j.0:Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+3857646464</j.0:Phone>
+    <j.0:ACCOUNTID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086009</j.0:ACCOUNTID>
+    <j.0:Last_Activity_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 14:03:56</j.0:Last_Activity_Time>
+    <j.0:Account_Site rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Varazdin</j.0:Account_Site>
+    <j.0:Shipping_Street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kalnička 37</j.0:Shipping_Street>
+    <j.0:Modified_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Modified_By>
+    <j.0:Created_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Created_By>
+    <j.0:Created_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-08 08:39:04</j.0:Created_Time>
+    <j.0:Industry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data/Telecom OEM</j.0:Industry>
+    <j.0:Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active</j.0:Rating>
+    <j.0:Modified_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 14:03:56</j.0:Modified_Time>
+    <j.0:Billing_State rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Billing_State>
+    <j.0:Shipping_State rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Shipping_State>
+    <j.0:SMCREATORID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMCREATORID>
+    <j.0:Annual_Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6565</j.0:Annual_Revenue>
+    <j.0:Account_Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partner</j.0:Account_Type>
+    <j.0:Shipping_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goričan</j.0:Shipping_City>
+    <j.0:Website rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.habulan.hr</j.0:Website>
+    <j.0:Account_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Habulan</j.0:Account_Name>
+    <j.0:Ticker_Symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABC</j.0:Ticker_Symbol>
+    <j.0:Billing_Street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planinarska 45</j.0:Billing_Street>
+    <j.0:Account_Owner rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Account_Owner>
+    <j.0:Employees rdf:datatype="http://www.w3.org/2001/XMLSchema#string">56</j.0:Employees>
+    <j.0:SMOWNERID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMOWNERID>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <j.0:Shipping_Code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12345</j.0:Shipping_Code>
+    <j.0:Billing_Code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABCFG</j.0:Billing_Code>
+    <j.0:Billing_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Varaždin</j.0:Billing_City>
+    <j.0:SIC_Code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3423</j.0:SIC_Code>
+    <j.0:MODIFIEDBY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:MODIFIEDBY>
+    <j.0:Shipping_Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Shipping_Country>
+    <j.0:Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shipping is now in progress</j.0:Description>
+    <j.0:Ownership rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public</j.0:Ownership>
+    <j.0:Billing_Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Billing_Country>
+    <j.0:Account_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3332245</j.0:Account_Number>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead_1490529000000086005">
+    <j.0:Fax rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+385678999</j.0:Fax>
+    <j.0:SMOWNERID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMOWNERID>
+    <j.0:Designation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mr</j.0:Designation>
+    <j.0:Annual_Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10000</j.0:Annual_Revenue>
+    <j.0:SMCREATORID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMCREATORID>
+    <j.0:Lead_Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advertisement</j.0:Lead_Source>
+    <j.0:Company rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FER</j.0:Company>
+    <j.0:Industry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERP</j.0:Industry>
+    <j.0:Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Country>
+    <j.0:Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is textual description</j.0:Description>
+    <j.0:Mobile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+38522345678</j.0:Mobile>
+    <j.0:State rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:State>
+    <j.0:First_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John</j.0:First_Name>
+    <j.0:Last_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Horvat</j.0:Last_Name>
+    <j.0:Created_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Created_By>
+    <j.0:Lead_Owner rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Lead_Owner>
+    <j.0:Website rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.foi.hr</j.0:Website>
+    <j.0:Skype_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">john.horvat</j.0:Skype_ID>
+    <j.0:Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+38542786456</j.0:Phone>
+    <j.0:Modified_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Modified_By>
+    <j.0:No_of_Employees rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123</j.0:No_of_Employees>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <j.0:City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zagreb</j.0:City>
+    <j.0:Last_Activity_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 13:34:10</j.0:Last_Activity_Time>
+    <j.0:Zip_Code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10000</j.0:Zip_Code>
+    <j.0:Secondary_Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jhorvat@gmail.com</j.0:Secondary_Email>
+    <j.0:Created_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-08 08:38:24</j.0:Created_Time>
+    <j.0:Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active</j.0:Rating>
+    <j.0:Lead_Status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contacted</j.0:Lead_Status>
+    <j.0:Email_Opt_Out rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</j.0:Email_Opt_Out>
+    <j.0:Street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ulica 45</j.0:Street>
+    <j.0:Modified_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 13:33:55</j.0:Modified_Time>
+    <j.0:LEADID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086005</j.0:LEADID>
+    <j.0:MODIFIEDBY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:MODIFIEDBY>
+    <j.0:Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">john.horvat@foi.hr</j.0:Email>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Ownership">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#First_Name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Shipping_Street">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Account_Number">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Mailing_City">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#ACTIVITYID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Modified_By">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#No_of_Employees">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Designation">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Mailing_Street">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Zip_Code">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#RELATEDTOID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Account_Owner">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Last_Name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Type">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#CAMPAIGNID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Campaign"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#CONTACTID">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Asst_Phone">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Num_sent">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Campaign"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Assistant">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Contact"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Send_Notification_Email">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Fax">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Account_Site">
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead_Status">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Street">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Account_1490529000000086013">
+    <j.0:Last_Activity_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 14:00:19</j.0:Last_Activity_Time>
+    <j.0:Account_Number rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23456789000</j.0:Account_Number>
+    <j.0:Billing_Code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FGHA</j.0:Billing_Code>
+    <j.0:ACCOUNTID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000086013</j.0:ACCOUNTID>
+    <j.0:Account_Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Competitor</j.0:Account_Type>
+    <j.0:Annual_Revenue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">45678</j.0:Annual_Revenue>
+    <j.0:SMOWNERID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMOWNERID>
+    <j.0:Account_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FER</j.0:Account_Name>
+    <j.0:Shipping_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Varaždin</j.0:Shipping_City>
+    <j.0:Modified_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-07 14:00:19</j.0:Modified_Time>
+    <j.0:Modified_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Modified_By>
+    <j.0:MODIFIEDBY rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:MODIFIEDBY>
+    <j.0:Fax rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+385777777</j.0:Fax>
+    <j.0:Shipping_Code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">45678</j.0:Shipping_Code>
+    <j.0:Created_By rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Created_By>
+    <j.0:Ownership rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public</j.0:Ownership>
+    <j.0:Billing_Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Billing_Country>
+    <j.0:Shipping_Country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Shipping_Country>
+    <j.0:Rating rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Active</j.0:Rating>
+    <j.0:Shipping_Street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bratska 44</j.0:Shipping_Street>
+    <j.0:Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ovdje se piše neki proizvoljan opis</j.0:Description>
+    <j.0:Billing_Street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ulica 23</j.0:Billing_Street>
+    <j.0:Phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+3856788787</j.0:Phone>
+    <j.0:SMCREATORID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1490529000000083003</j.0:SMCREATORID>
+    <j.0:SIC_Code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4567</j.0:SIC_Code>
+    <j.0:Industry rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ERP</j.0:Industry>
+    <j.0:Website rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.fer.hr</j.0:Website>
+    <j.0:Account_Site rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.fer.hr</j.0:Account_Site>
+    <j.0:Shipping_State rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Shipping_State>
+    <j.0:Employees rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25</j.0:Employees>
+    <j.0:Ticker_Symbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">456</j.0:Ticker_Symbol>
+    <j.0:Created_Time rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-05-08 08:39:25</j.0:Created_Time>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#AccountDarko"/>
+    <j.0:Billing_State rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croatia</j.0:Billing_State>
+    <j.0:Billing_City rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prelog</j.0:Billing_City>
+    <j.0:Account_Owner rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko Androcec</j.0:Account_Owner>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Overall_Sales_Duration">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Email_Opt_Out">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Website">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Mobile">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead_Owner">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Lead"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Modified_Time">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#MODIFIEDBY">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Task"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/ZohoCrmDataModel#Probability">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/ZohoCrmDataModel#Potential"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,3 @@
+identifier,template_content,template_title,template_createDate,template_url,template_createUserEmail,template_modDate,template_modUserEmail
+20001,<Text: <html>\n<head>\n  <title>$page.title</title>\n</head>  \n<body>\n\n$page.con...>,Simple,Thu Mar 13 09:32:32 CET 2014,simple,guest,Thu Mar 13 09:32:32 CET 2014,guest
+20006,<Text: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w...>,coolblue10,Thu Mar 13 09:32:49 CET 2014,coolblue10,system@vosao.org,Thu Mar 13 09:32:49 CET 2014,

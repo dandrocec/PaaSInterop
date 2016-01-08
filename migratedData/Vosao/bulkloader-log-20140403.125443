@@ -1,0 +1,57 @@
+[INFO     2014-04-03 12:54:43,457 bulkloader.py] Logging to bulkloader-log-20140403.125443
+[INFO     2014-04-03 12:54:43,459 bulkloader.py] Throttling transfers:
+[INFO     2014-04-03 12:54:43,460 bulkloader.py] Bandwidth: 250000 bytes/second
+[INFO     2014-04-03 12:54:43,460 bulkloader.py] HTTP connections: 8/second
+[INFO     2014-04-03 12:54:43,460 bulkloader.py] Entities inserted/fetched/modified: 20/second
+[INFO     2014-04-03 12:54:43,460 bulkloader.py] Batch Size: 100
+[INFO     2014-04-03 12:54:43,729 bulkloader.py] Opening database: bulkloader-progress-20140403.125443.sql3
+[INFO     2014-04-03 12:54:44,134 bulkloader.py] Opening database: bulkloader-results-20140403.125443.sql3
+[DEBUG    2014-04-03 12:54:44,447 adaptive_thread_pool.py] [WorkerThread-0] WorkerThread: started
+[DEBUG    2014-04-03 12:54:44,448 adaptive_thread_pool.py] [WorkerThread-1] WorkerThread: started
+[DEBUG    2014-04-03 12:54:44,450 adaptive_thread_pool.py] [WorkerThread-2] WorkerThread: started
+[DEBUG    2014-04-03 12:54:44,451 adaptive_thread_pool.py] [WorkerThread-3] WorkerThread: started
+[DEBUG    2014-04-03 12:54:44,453 adaptive_thread_pool.py] [WorkerThread-4] WorkerThread: started
+[DEBUG    2014-04-03 12:54:44,453 adaptive_thread_pool.py] [WorkerThread-5] WorkerThread: started
+[DEBUG    2014-04-03 12:54:44,454 adaptive_thread_pool.py] [WorkerThread-6] WorkerThread: started
+[DEBUG    2014-04-03 12:54:44,457 adaptive_thread_pool.py] [WorkerThread-7] WorkerThread: started
+[DEBUG    2014-04-03 12:54:44,457 adaptive_thread_pool.py] [WorkerThread-8] WorkerThread: started
+[DEBUG    2014-04-03 12:54:44,459 adaptive_thread_pool.py] [WorkerThread-9] WorkerThread: started
+[DEBUG    2014-04-03 12:54:44,460 bulkloader.py] Configuring remote_api. url_path = /remote_api, servername = quiet-surface-517.appspot.com
+[DEBUG    2014-04-03 12:54:44,463 bulkloader.py] Bulkloader using app_id: s~quiet-surface-517
+[INFO     2014-04-03 12:54:44,463 bulkloader.py] Connecting to quiet-surface-517.appspot.com/remote_api
+[DEBUG    2014-04-03 12:54:56,375 bulkloader.py] [Thread-11] ExportProgressThread: started
+[DEBUG    2014-04-03 12:54:56,375 bulkloader.py] [Thread-12] DataSourceThread: started
+[INFO     2014-04-03 12:54:56,377 bulkloader.py] Downloading kinds: ['FolderEntity']
+[DEBUG    2014-04-03 12:54:56,536 bulkloader.py] [Thread-12] DataSourceThread: exiting
+[DEBUG    2014-04-03 12:54:56,546 bulkloader.py] Waiting for worker threads to finish...
+[DEBUG    2014-04-03 12:54:56,563 adaptive_thread_pool.py] [WorkerThread-0] Got work item FolderEntity-ASC[None to None]
+[DEBUG    2014-04-03 12:54:56,927 bulkloader.py] bulkloader-results-20140403.125443.sql3 insert: delta=0.009
+[DEBUG    2014-04-03 12:54:56,927 bulkloader.py] Entities transferred total: 15
+[DEBUG    2014-04-03 12:54:57,038 bulkloader.py] delete: delta=0.002
+[DEBUG    2014-04-03 12:54:57,128 bulkloader.py] [WorkerThread-0] FolderEntity-ASC[None to None] Transferred 15 entities in 0.3 seconds
+[DEBUG    2014-04-03 12:54:57,130 adaptive_thread_pool.py] Increasing active thread count to 2
+[DEBUG    2014-04-03 12:54:57,161 adaptive_thread_pool.py] [WorkerThread-6] WorkerThread: exiting
+[DEBUG    2014-04-03 12:54:57,163 adaptive_thread_pool.py] [WorkerThread-0] WorkerThread: exiting
+[DEBUG    2014-04-03 12:54:57,163 adaptive_thread_pool.py] [WorkerThread-5] WorkerThread: exiting
+[DEBUG    2014-04-03 12:54:57,163 adaptive_thread_pool.py] [WorkerThread-7] WorkerThread: exiting
+[DEBUG    2014-04-03 12:54:57,164 adaptive_thread_pool.py] [WorkerThread-8] WorkerThread: exiting
+[DEBUG    2014-04-03 12:54:57,164 adaptive_thread_pool.py] [WorkerThread-9] WorkerThread: exiting
+[DEBUG    2014-04-03 12:54:57,165 adaptive_thread_pool.py] [WorkerThread-1] WorkerThread: exiting
+[DEBUG    2014-04-03 12:54:57,165 adaptive_thread_pool.py] [WorkerThread-3] WorkerThread: exiting
+[DEBUG    2014-04-03 12:54:57,165 adaptive_thread_pool.py] [WorkerThread-2] WorkerThread: exiting
+[DEBUG    2014-04-03 12:54:57,167 adaptive_thread_pool.py] [WorkerThread-4] WorkerThread: exiting
+[DEBUG    2014-04-03 12:54:57,168 adaptive_thread_pool.py] Waiting for Anonymous_WorkerThread to exit
+[DEBUG    2014-04-03 12:54:57,170 adaptive_thread_pool.py] Waiting for Anonymous_WorkerThread to exit
+[DEBUG    2014-04-03 12:54:57,170 adaptive_thread_pool.py] Waiting for Anonymous_WorkerThread to exit
+[DEBUG    2014-04-03 12:54:57,170 adaptive_thread_pool.py] Waiting for Anonymous_WorkerThread to exit
+[DEBUG    2014-04-03 12:54:57,171 adaptive_thread_pool.py] Waiting for Anonymous_WorkerThread to exit
+[DEBUG    2014-04-03 12:54:57,171 adaptive_thread_pool.py] Waiting for Anonymous_WorkerThread to exit
+[DEBUG    2014-04-03 12:54:57,171 adaptive_thread_pool.py] Waiting for Anonymous_WorkerThread to exit
+[DEBUG    2014-04-03 12:54:57,171 adaptive_thread_pool.py] Waiting for Anonymous_WorkerThread to exit
+[DEBUG    2014-04-03 12:54:57,171 adaptive_thread_pool.py] Waiting for Anonymous_WorkerThread to exit
+[DEBUG    2014-04-03 12:54:57,171 adaptive_thread_pool.py] Waiting for Anonymous_WorkerThread to exit
+[DEBUG    2014-04-03 12:54:57,174 bulkloader.py] Waiting for progress_thread to terminate...
+[DEBUG    2014-04-03 12:54:57,191 bulkloader.py] [Thread-11] ExportProgressThread: exiting
+[DEBUG    2014-04-03 12:54:57,204 bulkloader.py] ... done.
+[INFO     2014-04-03 12:54:57,243 bulkloader.py] Have 15 entities, 0 previously transferred
+[INFO     2014-04-03 12:54:57,244 bulkloader.py] 15 entities (7933 bytes) transferred in 13.8 seconds

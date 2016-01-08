@@ -1,0 +1,106 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://hr.org.foi.ontology/GoogleAppEngineDataModel#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#label">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#description">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Product"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#amountKn">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#openingDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#address">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#name">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Product_1">
+    <j.0:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nekakav opis</j.0:description>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Product"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#customerName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Customer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Credit_1">
+    <j.0:openingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20.09.2012</j.0:openingDate>
+    <j.0:amountKn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">750000</j.0:amountKn>
+    <j.0:expirationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20.09.2032</j.0:expirationDate>
+    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">334567890</j.0:label>
+    <j.0:amountCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100000</j.0:amountCurrency>
+    <j.0:customerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko</j.0:customerName>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Credit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Credit_2">
+    <j.0:openingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11.09.2012</j.0:openingDate>
+    <j.0:amountKn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">750000</j.0:amountKn>
+    <j.0:expirationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11.09.2032</j.0:expirationDate>
+    <j.0:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">324567787</j.0:label>
+    <j.0:amountCurrency rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100000</j.0:amountCurrency>
+    <j.0:customerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko</j.0:customerName>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Credit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Customer_3">
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vanja</j.0:name>
+    <j.0:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adresa 345</j.0:address>
+    <j.0:phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123456</j.0:phoneNumber>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Credit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Customer_1">
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darko</j.0:name>
+    <j.0:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adresa 123</j.0:address>
+    <j.0:phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">345678</j.0:phoneNumber>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Customer_2">
+    <j.0:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pero</j.0:name>
+    <j.0:address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adresa 2</j.0:address>
+    <j.0:phoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">345678</j.0:phoneNumber>
+    <rdf:type rdf:resource="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Customer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#phoneNumber">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Customer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Product">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#amountCurrency">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://hr.org.foi.ontology/GoogleAppEngineDataModel#expirationDate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://hr.org.foi.ontology/GoogleAppEngineDataModel#Credit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>

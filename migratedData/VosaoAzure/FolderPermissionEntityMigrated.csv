@@ -1,0 +1,4 @@
+identifier,folderpermission_modUserEmail,folderpermission_groupId,folderpermission_permission,folderpermission_modDate,folderpermission_folderId,folderpermission_createUserEmail,folderpermission_createDate
+3,guest,10001,WRITE,Thu Mar 13 09:32:33 CET 2014,10002,guest,Thu Mar 13 09:32:33 CET 2014
+60001,system@vosao.org,10001,READ,Thu Mar 13 09:32:39 CET 2014,30001,guest,Thu Mar 13 09:32:32 CET 2014
+80001,guest,10001,WRITE,Thu Mar 13 09:32:33 CET 2014,70001,guest,Thu Mar 13 09:32:33 CET 2014
