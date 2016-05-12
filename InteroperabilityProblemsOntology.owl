@@ -1,0 +1,1171 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#"
+     xml:base="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl">
+        <rdfs:comment>The ontology of the technical and semantic interoperability problems of commercial platform as a service APIs.
+</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#actsOnApi -->
+
+    <owl:ObjectProperty rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#actsOnApi">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdfs:comment>Naudet et al.</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Api"/>
+        <rdfs:domain rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#BridgingSolution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#actsOnModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#actsOnModel">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdfs:comment>Naudet et al.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#HomogenisationSolution"/>
+        <rdfs:range rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Model"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#actsOnRepresentation -->
+
+    <owl:ObjectProperty rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#actsOnRepresentation">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdfs:comment>Naudet et al.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#HomogenisationSolution"/>
+        <rdfs:range rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Representation"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#canInduceNewProblem -->
+
+    <owl:ObjectProperty rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#canInduceNewProblem">
+        <rdfs:comment>Naudet et al.</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityProblem"/>
+        <rdfs:domain rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilitySolution"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#causes -->
+
+    <owl:ObjectProperty rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#causes">
+        <rdfs:domain rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityExistenceCondition"/>
+        <rdfs:range rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityProblem"/>
+        <owl:inverseOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#existsIf"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#concernsApi -->
+
+    <owl:ObjectProperty rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#concernsApi">
+        <rdfs:comment>Naudet et al.</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Api"/>
+        <rdfs:domain rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Heterogeneity"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#concernsModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#concernsModel">
+        <rdfs:comment>Naudet et al.
+</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Heterogeneity"/>
+        <rdfs:range rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Model"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#concernsRepresentation -->
+
+    <owl:ObjectProperty rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#concernsRepresentation">
+        <rdfs:comment>Naudet et al.
+
+</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Heterogeneity"/>
+        <rdfs:range rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Representation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#definesCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#definesCondition">
+        <rdfs:comment>Naudet et al.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Indicator"/>
+        <rdfs:range rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityExistenceCondition"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#existsIf -->
+
+    <owl:ObjectProperty rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#existsIf">
+        <rdfs:comment>Naudet et al.
+</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityExistenceCondition"/>
+        <rdfs:domain rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityProblem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#hasHeterogeneity -->
+
+    <owl:ObjectProperty rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#hasHeterogeneity">
+        <rdfs:domain rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Api"/>
+        <rdfs:range rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Heterogeneity"/>
+        <owl:inverseOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#concernsApi"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#isDefinedByIndicator -->
+
+    <owl:ObjectProperty rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#isDefinedByIndicator">
+        <rdfs:range rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Indicator"/>
+        <rdfs:domain rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityExistenceCondition"/>
+        <owl:inverseOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#definesCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#isSolvedUsing -->
+
+    <owl:ObjectProperty rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#isSolvedUsing">
+        <rdfs:domain rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityProblem"/>
+        <rdfs:range rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilitySolution"/>
+        <owl:inverseOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#solvesProblem"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#solvesProblem -->
+
+    <owl:ObjectProperty rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#solvesProblem">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdfs:comment>Naudet et al.</rdfs:comment>
+        <rdfs:range rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityProblem"/>
+        <rdfs:domain rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilitySolution"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#APIOperationNamingProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#APIOperationNamingProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApiOperationLevelProblem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#AbstractionLevelProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#AbstractionLevelProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSApiInteroperabilityProblem"/>
+        <rdfs:comment>Operations and parameter level differences that arise because two semantically similar API operations or parameters are represented at different levels of abstraction
+
+from M. Nagarajan, K. Verma, A. P. Sheth, and J. A. Miller, “Ontology Driven Data Mediation in Web Services,” International Journal of Web Services Research, vol. 4, no. 4, pp. 104–126, 34 2007.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#AntiPattern -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#AntiPattern">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Indicator"/>
+        <rdfs:comment>Naudet et. al
+They are a formalisation of known
+problems, defining the conditions in which the problem appears as
+well as solutions that can be applied.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Api -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Api">
+        <rdfs:comment>Similar to Interface defined in Naudet et al.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApiOperationAggregationProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApiOperationAggregationProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#AbstractionLevelProblem"/>
+        <rdfs:comment>Two semantically similar API operations, one represented as an aggregate of another.
+
+from M. Nagarajan, K. Verma, A. P. Sheth, and J. A. Miller, “Ontology Driven Data Mediation in Web Services,” International Journal of Web Services Research, vol. 4, no. 4, pp. 104–126, 34 2007.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApiOperationGeneralizationProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApiOperationGeneralizationProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#AbstractionLevelProblem"/>
+        <rdfs:comment>Semantically similar API operations are represented at different levels of generalization.
+
+from M. Nagarajan, K. Verma, A. P. Sheth, and J. A. Miller, “Ontology Driven Data Mediation in Web Services,” International Journal of Web Services Research, vol. 4, no. 4, pp. 104–126, 34 2007.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApiOperationHomonymProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApiOperationHomonymProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#APIOperationNamingProblem"/>
+        <rdfs:comment>from M. Nagarajan, K. Verma, A. P. Sheth, and J. A. Miller, “Ontology Driven Data Mediation in Web Services,” International Journal of Web Services Research, vol. 4, no. 4, pp. 104–126, 34 2007.</rdfs:comment>
+        <rdfs:comment>semantically unrelated API operations might have the same name in different PaaS offers (homonyms)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApiOperationLevelProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApiOperationLevelProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSApiInteroperabilityProblem"/>
+        <rdfs:comment>Differences that arise because of using different descriptions for semantically similar API operations.
+
+from M. Nagarajan, K. Verma, A. P. Sheth, and J. A. Miller, “Ontology Driven Data Mediation in Web Services,” International Journal of Web Services Research, vol. 4, no. 4, pp. 104–126, 34 2007.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApiOperationParameterConflictProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApiOperationParameterConflictProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#AbstractionLevelProblem"/>
+        <rdfs:comment>Semantically similar entity modeled as a parameter in one service and entity in the other.
+
+from M. Nagarajan, K. Verma, A. P. Sheth, and J. A. Miller, “Ontology Driven Data Mediation in Web Services,” International Journal of Web Services Research, vol. 4, no. 4, pp. 104–126, 34 2007.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApiOperationSchemaIsomorphismProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApiOperationSchemaIsomorphismProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApiOperationLevelProblem"/>
+        <rdfs:comment>Semantically similar API operations may have different numbers of parameters.
+
+from M. Nagarajan, K. Verma, A. P. Sheth, and J. A. Miller, “Ontology Driven Data Mediation in Web Services,” International Journal of Web Services Research, vol. 4, no. 4, pp. 104–126, 34 2007.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApiOperationSynonymProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApiOperationSynonymProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#APIOperationNamingProblem"/>
+        <rdfs:comment>
+Semantically alike API operations might be named differently in different PaaS offers (synonyms).</rdfs:comment>
+        <rdfs:comment>from M. Nagarajan, K. Verma, A. P. Sheth, and J. A. Miller, “Ontology Driven Data Mediation in Web Services,” International Journal of Web Services Research, vol. 4, no. 4, pp. 104–126, 34 2007.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApisHeterogeneity -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApisHeterogeneity">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Heterogeneity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#AposterioriInteroperabilitySolution -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#AposterioriInteroperabilitySolution">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilitySolution"/>
+        <rdfs:comment>Naudet et al.
+
+solutions correcting problems after they occurred</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApplicationComputerLanguageNotSupportedProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ApplicationComputerLanguageNotSupportedProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSApplicationInteroperabilityProblem"/>
+        <rdfs:comment>Programming language in which the specific application is written may be not supported by specific PaaS vendor.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#AprioriInteroperabilitySolution -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#AprioriInteroperabilitySolution">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilitySolution"/>
+        <rdfs:comment>Naudet et al.
+Solutions solving problems by anticipation</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#BridgingSolution -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#BridgingSolution">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#AposterioriInteroperabilitySolution"/>
+        <rdfs:comment>Naudet et al.
+Bridging
+consists in inserting a new system that will serve as an
+intermediate between inter-related systems causing an interoperability
+problem.
+The
+bridge system is often called an adapter, and it often relies on a
+translation protocol to actually transfer information from and to
+interacting systems.
+It is important to
+note that bridges might use artefacts that are primarily used for
+homogenisation. For example, a unified meta-model might be used
+by a bridge to perform mappings between two models</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ConformancePoint -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ConformancePoint">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Indicator"/>
+        <rdfs:comment>Naudet et. al. 
+Conformance points provide a description of checking points that
+must be verified to test the correspondence between the expected
+behaviour and the actual operation of the system. In our
+ontological representation, check points can be formalised as a
+set of rules.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataAggregationProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataAggregationProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+These conflicts arise when an aggregation is used in one database to identify a set of entities in another database. Also, the properties of the aggregate concept can be an aggregate of the corresponding property of the set of entities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataAttributeEntityProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataAttributeEntityProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+This conflict arises when the same entity is being modeled as an attribute in one database and a relation in another database.
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataAttributeIntegrityConstraintProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataAttributeIntegrityConstraintProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+Two semantically similar attributes might be restricted by constraints which might not be consistent with each other.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerGeneralizationProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerGeneralizationProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+Two entities are represented at different levels of generalization in two different databases.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerHomonymProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerHomonymProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerNamingProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+semantically unrelated entities might have the same name in different databases (homonyms)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerIdentifierProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerIdentifierProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+Two relations modeling the same entity have semantically different keys.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerNamingProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerNamingProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Sheth and Kashyap</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerNamingRestrictionProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerNamingRestrictionProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerNamingProblem"/>
+        <rdfs:comment>Some names are reserved and forbidden, and some types of names can be required (e.g. Salesforce requires that you name your custom object with prefix __c).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerRelationshipProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerRelationshipProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Different means to define relationships between two data containers (e.g foreign key, dedicated data type for relationship definition etc.), or maybe some cloud storage doesn&apos;t have the means to connect two data containers.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerSynonymProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerSynonymProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerNamingProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+Semantically alike entities might be named differently in different databases (synonyms)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerUnionCompatibilityProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataContainerUnionCompatibilityProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+Two entities are union incompatible when the set of attributes are semantically unrelated in such a way that a one-one mapping is not possible between the two sets of attributes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataDefaultValueProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataDefaultValueProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+Two attributes might have different default values in different databases.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataDifferentSupportedDataTypesProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataDifferentSupportedDataTypesProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Each PaaS vendor supports their own set of data types for attributes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataModelDifferencesProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataModelDifferencesProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Zhu et al.
+
+The data model itself is the issue
+and transformations between
+models and differences between
+them are relevant.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataObjectHomonymProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataObjectHomonymProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataObjectNamingProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+two attributes that are semantically unrelated might have the same name (homonyms)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataObjectNamingProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataObjectNamingProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>similar as in Sheth and Kashyap
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataObjectNamingRestrictionProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataObjectNamingRestrictionProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataObjectNamingProblem"/>
+        <rdfs:comment>Some names are reserved and forbiden, and some types of names can be requiered (e.g. Salesforce requires that you name your custom fields with prefix __c).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataObjectSynonymProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataObjectSynonymProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataObjectNamingProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+Two attributes that are semantically alike might have different names (synonyms)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataPrecisionProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataPrecisionProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+Two attributes that are semantically similar might be represented using different precisions. (...)There may be a many-one mapping from
+the domain of the precise attribute to the domain of the coarse attribute
+
+Park and Ram
+data precision
+conflicts (e.g., assignment of building grades may be reported using different
+granularities—a three-point scale with letter grades “excellent,” “good,” “poor,”
+or perhaps a four-point scale with “A,” “B,” “C,” and “D”).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataPrivacyLegislationInteroperabilityProblems -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataPrivacyLegislationInteroperabilityProblems">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSLegalInteroperabilityProblem"/>
+        <rdfs:comment>Different countries have different data privacy laws.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+Two attributes that are semantically similar might have different data types or representations.
+
+Park and Ram: data representation conflicts (e.g., dates can be represented as a sixcharacter
+string, such as “050798” or as a Julian date, such as “7-May-98”),</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataScalingProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataScalingProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+Two attributes that are semantically similar might be represented using different units and measures.
+
+Park and Ram:
+data-unit conflicts (e.g., amount of rainfall may be represented as “centimeters”
+in one database and “inches” in another database)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataSchemaIsomorphismProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataSchemaIsomorphismProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+Semantically similar entities may have different number of attributes giving rise to schema isomorphism conflicts.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataSovereigntyInteroperabilityProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataSovereigntyInteroperabilityProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSLegalInteroperabilityProblem"/>
+        <rdfs:comment>Is the data subject to the jurisdiction where it is physicallly stored or hosted on servers?</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataValueAttributeProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataValueAttributeProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+This conflict arises when the value of an attribute in one database corresponds to an attribute in another database.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataValueEntityProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataValueEntityProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+This conflict arises when the value of an attribute in one database corresponds to a relation in another database.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DifferentQueryLanguageProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DifferentQueryLanguageProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Zhu et al.
+
+The query languages and data
+representations may be different.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DifferentTransactionMechanismProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DifferentTransactionMechanismProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Zhu et. al
+
+Transactions mechanism may be
+different.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Heterogeneity -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Heterogeneity">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Incompatibility"/>
+        <rdfs:comment>Naudet et al.
+Heterogeneous interfaces (e.g. PaaS remote APIs) constitute the most commonly
+considered interoperability problems.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#HomogenisationSolution -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#HomogenisationSolution">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#AprioriInteroperabilitySolution"/>
+        <rdfs:comment>Naudet et al.
+
+It requires two
+basic applicability conditions: first, the modification of the
+concerned systems must be possible, and second, one must have
+a sufficient knowledge about the system’s components to
+homogenise.Homogenisation requires
+transformations, which can be either syntactic or semantic. Such transformations are
+performed using a unified model, which can be of several kinds: a unified language, a unified meta-model, a unified interface. 
+This solution is often
+hardly feasible due to lack of control on the legacy system
+preventing one from modifying it, and/or lack of available models.
+Moreover, this solution induces a series of problems that needs to
+be considered: the validation of the unified model and verification of
+transformations, the errors generated by the modification of systems,
+and changes in performance.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Incompatibility -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Incompatibility">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityExistenceCondition"/>
+        <rdfs:comment>Naudet et al.
+The condition of existence for interoperability problems.
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Indicator -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Indicator">
+        <rdfs:comment>Naudet et al.
+Indicators aim at being checked at runtime to detect the occurrence of potential conflicts</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityExistenceCondition -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityExistenceCondition">
+        <rdfs:comment>Naudet et al.
+This class aims at explicitly formalising the fact
+that a relation is an existence condition for interoperability
+problems.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityProblem">
+        <owl:disjointWith rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilitySolution"/>
+        <rdfs:comment>Naudet et al.
+Problems of interoperability exist when there is a
+relation, of any kind, between incompatible systems within a
+super-system they belong to or they will form.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilitySolution -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilitySolution">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment>Solutions solve problems
+and can in turn induce new problems.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#LibraryNotSupportedProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#LibraryNotSupportedProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSApplicationInteroperabilityProblem"/>
+        <rdfs:comment>Some PaaS vendor may forbid some standard libraries  that application uses (for example, some standard libraries used in J2EE are not supported by some providers)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Misalignment -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Misalignment">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Incompatibility"/>
+        <rdfs:comment>Naudet et al.
+Misalignment can be observed when a system constrains the
+way another one will be built, structured or will behave. Hence we finally admit that
+misalignments concern a system on one side and a relation on the
+other side: between a system and its model (e.g. constraint on the
+structure); between a model and its representation (e.g. constraint
+on the syntax of the model); between a system and its objective
+(e.g. constraint on the behaviour).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#MissingApiOperationProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#MissingApiOperationProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSApiInteroperabilityProblem"/>
+        <rdfs:comment>Some needed API operation is missing from vendor’s remote API.
+
+Ponnekanti and Fox:
+If T removes a method from the base service, or if S adds a
+method, S-applications may use this method and hence be incompatible with
+T. The converse case of extra methods in T does not cause an incompatibility.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#MissingDataItemProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#MissingDataItemProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem"/>
+        <rdfs:comment>Sheth and Kashyap
+
+This conflict arises when of the entity descriptors modeling semantically similar entities, one has a missing attribute.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Model -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Model">
+        <rdfs:comment>Naudet et al.
+A model is a simplified representation of a concrete or abstract reality,
+for a particular purpose (description, cognition, prediction,
+simulation, decision, etc.).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#OwnershipOfDataInteroperabilityProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#OwnershipOfDataInteroperabilityProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSLegalInteroperabilityProblem"/>
+        <rdfs:comment>Aggrements on the temporary or permanent transfer of certain data rights to the service provider by the end-user in exchange for using the cloud services</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSApiInteroperabilityProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSApiInteroperabilityProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityProblem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSApplicationInteroperabilityProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSApplicationInteroperabilityProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityProblem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSDataModelsHeterogeneity -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSDataModelsHeterogeneity">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Heterogeneity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSLegalInteroperabilityProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSLegalInteroperabilityProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityProblem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSOrganizationalInteroperabilityProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSOrganizationalInteroperabilityProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityProblem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSService -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSService">
+        <rdfs:comment>PaaSService is concrete platform as a service offer (e.g. Google App Engine).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSStorageInteroperabilityProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#InteroperabilityProblem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterDataTypeProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterDataTypeProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterLevelProblem"/>
+        <rdfs:comment>Two parameters that are semantically similar might have different data types.
+
+from M. Nagarajan, K. Verma, A. P. Sheth, and J. A. Miller, “Ontology Driven Data Mediation in Web Services,” International Journal of Web Services Research, vol. 4, no. 4, pp. 104–126, 34 2007.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterHomonymProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterHomonymProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterNamingProblem"/>
+        <rdfs:comment>Two parameters that are semantically unrelated might have the same names.
+
+from M. Nagarajan, K. Verma, A. P. Sheth, and J. A. Miller, “Ontology Driven Data Mediation in Web Services,” International Journal of Web Services Research, vol. 4, no. 4, pp. 104–126, 34 2007.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterLevelProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterLevelProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#PaaSApiInteroperabilityProblem"/>
+        <rdfs:comment>Differences that arise because of using different descriptions for semantically similar parameters.
+
+from
+M. Nagarajan, K. Verma, A. P. Sheth, and J. A. Miller, “Ontology Driven Data Mediation in Web Services,” International Journal of Web Services Research, vol. 4, no. 4, pp. 104–126, 34 2007.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterNamingProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterNamingProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterLevelProblem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterScalingProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterScalingProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterLevelProblem"/>
+        <rdfs:comment>Two parameters that are semantically similar might be represented using different precisions.
+
+from M. Nagarajan, K. Verma, A. P. Sheth, and J. A. Miller, “Ontology Driven Data Mediation in Web Services,” International Journal of Web Services Research, vol. 4, no. 4, pp. 104–126, 34 2007.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterSynonymProblem -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterSynonymProblem">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ParameterNamingProblem"/>
+        <rdfs:comment>Two parameters that are semantically alike might have different names.
+
+from M. Nagarajan, K. Verma, A. P. Sheth, and J. A. Miller, “Ontology Driven Data Mediation in Web Services,” International Journal of Web Services Research, vol. 4, no. 4, pp. 104–126, 34 2007.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ProgrammingModelHeterogeneity -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#ProgrammingModelHeterogeneity">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Heterogeneity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#QueryLanguagesHeterogeneity -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#QueryLanguagesHeterogeneity">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Heterogeneity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Representation -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Representation">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment>Naudet et al.
+
+The representation is the aggregation of symbols used to materialise a
+model. It includes the syntax and semantics of a concrete model,
+and carries the model’s pragmatic aspect that defines the possible
+uses of a model</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#SupportedDataTypesHeterogeneity -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#SupportedDataTypesHeterogeneity">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Heterogeneity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#SupportedProgrammingLanguagesHeterogeneity -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#SupportedProgrammingLanguagesHeterogeneity">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Heterogeneity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#TypesofPaaSServicesHeterogeneity -->
+
+    <owl:Class rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#TypesofPaaSServicesHeterogeneity">
+        <rdfs:subClassOf rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#Heterogeneity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForAzureCursorType -->
+
+    <owl:NamedIndividual rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForAzureCursorType">
+        <rdf:type rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForAzureGeographyType -->
+
+    <owl:NamedIndividual rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForAzureGeographyType">
+        <rdf:type rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForAzureGeometryType -->
+
+    <owl:NamedIndividual rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForAzureGeometryType">
+        <rdf:type rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForAzureHierarchyidType -->
+
+    <owl:NamedIndividual rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForAzureHierarchyidType">
+        <rdf:type rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForAzureSqlVariantType -->
+
+    <owl:NamedIndividual rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForAzureSqlVariantType">
+        <rdf:type rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForAzureTableType -->
+
+    <owl:NamedIndividual rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForAzureTableType">
+        <rdf:type rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForAzureUniqueIdentifierType -->
+
+    <owl:NamedIndividual rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForAzureUniqueIdentifierType">
+        <rdf:type rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForAzureXmlType -->
+
+    <owl:NamedIndividual rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForAzureXmlType">
+        <rdf:type rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForSalesforceAnyType -->
+
+    <owl:NamedIndividual rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForSalesforceAnyType">
+        <rdf:type rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForSalesforceCalculatedType -->
+
+    <owl:NamedIndividual rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForSalesforceCalculatedType">
+        <rdf:type rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForSalesforceDataCategoryGroupReferenceType -->
+
+    <owl:NamedIndividual rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForSalesforceDataCategoryGroupReferenceType">
+        <rdf:type rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForSalesforceIdType -->
+
+    <owl:NamedIndividual rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForSalesforceIdType">
+        <rdf:type rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForSalesforceMasterRecordType -->
+
+    <owl:NamedIndividual rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForSalesforceMasterRecordType">
+        <rdf:type rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForSalesforcePicklistType -->
+
+    <owl:NamedIndividual rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForSalesforcePicklistType">
+        <rdf:type rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForSalesforceReferenceType -->
+
+    <owl:NamedIndividual rdf:about="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#NonExistingMappingForSalesforceReferenceType">
+        <rdf:type rdf:resource="http://www.foi.unizg.hr/ontologies/2013/InteroperabilityProblemsOntology.owl#DataRepresentationProblem"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
